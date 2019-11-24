@@ -26,6 +26,11 @@ const paths = {
         source: './resources/sass/main.scss',
         dest: 'css/'
     },
+
+  cssBundle: {
+    source: './resources/css/**/*.css',
+    dest: 'css/'
+  },
     javascript: {
         source:
             [
@@ -80,7 +85,6 @@ const compileCSS = (done) => {
     done();
 }
 
-
 /**
  * Concatinate and compile scripts
  */
@@ -128,6 +132,7 @@ const watchFiles = (done) => {
     ], series(compileCSS));
     watch('./tailwind.config.js', series(compileCSS));
     watch('./resources/sass/**/*.scss', series(compileCSS));
+    watch('./resources/css/**/*.css', series(bundleCSS));
     watch('./resources/js/**/*.js', series(compileJS));
     done();
 }
@@ -190,8 +195,8 @@ const compileCSSPreflight = (done) => {
  */
 const minifyCSSPreflight = (done) => {
     return src([
-        './css/*.css',
-        '!./css/*.min.css'
+        './css/**/*.css',
+        '!./css/**/*.min.css'
     ])
     .pipe(cleanCSS())
     .pipe(rename({
@@ -212,7 +217,7 @@ const minifyCSSPreflight = (done) => {
  *
  * Always double check that everything is still working. If something isn't displaying correctly, it may be because you need to add it to the PurgeCSS whitelist.
  */
-exports.build = series(compileCSSPreflight, minifyCSSPreflight, minifyJS);
+exports.build = series(bundleCSS, compileCSSPreflight, minifyCSSPreflight, minifyJS);
 
 
 /**
@@ -221,4 +226,4 @@ exports.build = series(compileCSSPreflight, minifyCSSPreflight, minifyJS);
  * This will run while you're building the theme and automatically compile any changes.
  * This includes any html changes you make so that the PurgeCSS file will be updated.
  */
-exports.default = series(compileCSS, compileJS, watchFiles);
+exports.default = series(bundleCSS, compileCSS, compileJS, watchFiles);
