@@ -1,7 +1,7 @@
 ---
 title: Why Clojure?
 date: 2018-09-30
-featured_image: /images/blog/post-1.jpg
+featured_image: /images/blog/why-clojure/clojure.svg
 image_caption: Photo by Dylan Gillis on Unsplash
 excerpt: Why not the language I'm already using?
 tags:
