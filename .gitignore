@@ -2,7 +2,8 @@
 node_modules/
 dist/
 package-lock.json
-
+css/
+javascript/
 #amplify
 amplify/\#current-cloud-backend
 amplify/.config/local-*
