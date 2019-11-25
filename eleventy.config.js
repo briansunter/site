@@ -11,7 +11,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addShortcode("addMinCSS", function(src) {
     let newSrc = src.split('.');
     let suffix = newSrc.pop();
-    if (process.env.ELEVENTY_ENV === 'production') {
+    if (process.env.ELEVENTY_ENV !== 'development') {
       newSrc.push('min');
     }
     newSrc.push(suffix);
