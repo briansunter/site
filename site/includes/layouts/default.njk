@@ -6,6 +6,8 @@
     <title>{% if meta_title %}{{ meta_title }}{% else %}{{ title }}{% endif %} | {{ site.name }}</title>
     <meta name="description" content="{% if meta_description %}{{ meta_description }}{% else %}{{ excerpt }}{% endif %}">
     <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <meta name="theme-color" content="#db5945">
+    <link rel="apple-touch-icon" href="{{ site.touchIcon }}"/>
 
     <script async>
       if ("serviceWorker" in navigator)
