@@ -12,16 +12,16 @@ title: Blog
 
         <h1 class="page-title text-white text-3xl md:text-center md:text-5xl mb-16 lg:mb-24 lg:text-6xl">{{ title }}</h1>
 
-        <div class="posts md:flex flex-1">
+        <div class="posts md:flex flex-wrap flex-1 w-full">
 
             {% for post in collections.blog %}
 
-                <article class="article-card mb-8 mx-4 flex-1 bg-white rounded-lg overflow-hidden">
+                <article class="article-card mb-8 mx-4 md:w-1/5 bg-white rounded-lg overflow-hidden">
 
                     {# featured post image & category #}
                     {% if post.data.featured_image %}
 
-                        <a class="featured-image-link block relative overflow-hidden h-48" href="{{ post.url }}">
+                        <a class="featured-image-link block relative overflow-hidden h-32" href="{{ post.url }}">
 
                             {# category link #}
                             <ul class="absolute bottom-0 left-0 flex p-8 z-10">
