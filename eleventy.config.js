@@ -1,6 +1,25 @@
 const htmlmin = require("html-minifier")
+const process = require("process")
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+
+Array.prototype.insert = function (index, item) {
+  this.splice(index, 0, item);
+};
 
 module.exports = eleventyConfig => {
+
+  eleventyConfig.addShortcode("addMinCSS", function(src) {
+    let newSrc = src.split('.');
+    let suffix = newSrc.pop();
+    if (process.env.ELEVENTY_ENV === 'production') {
+      newSrc.push('min');
+    }
+    newSrc.push(suffix);
+    newSrc = newSrc.join('.');
+
+    return `<link rel="stylesheet" href="${newSrc}">`;
+
+  });
 
     // Add a readable date formatter filter to Nunjucks
     eleventyConfig.addFilter("dateDisplay", require("./filters/dates.js"))
@@ -35,6 +54,7 @@ module.exports = eleventyConfig => {
     eleventyConfig.addPassthroughCopy("javascript")
     eleventyConfig.addPassthroughCopy("images")
 
+  eleventyConfig.addPlugin(syntaxHighlight);
     return {
         templateFormats: ["md", "njk"],
         markdownTemplateEngine: 'njk',
