@@ -29,5 +29,8 @@
 		"gulp-uglify": "^3.0.2",
 		"html-minifier": "^4.0.0",
 		"tailwindcss": "^1.0.5"
+	},
+	"dependencies": {
+		"@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3"
 	}
 }

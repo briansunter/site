@@ -86,6 +86,18 @@ const compileCSS = (done) => {
 }
 
 /**
+ * Compile SCSS & Tailwind
+ */
+const bundleCSS = (done) => {
+  return src(paths.cssBundle.source)
+    .pipe(plumber({ errorHandler: onError }))
+    .pipe(dest(paths.cssBundle.dest))
+    .pipe(notify({
+      message: 'Bundle CSS Complete'
+    }));
+  done();
+}
+/**
  * Concatinate and compile scripts
  */
 const compileJS = (done) => {

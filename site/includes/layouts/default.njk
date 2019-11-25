@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="/css/main.min.css">
     {% endif %}
 
+    {% addMinCSS "/css/vendor/dracula-prism.css" %}
+
     {# social meta tags and assets like fonts, favicons etc, should be last #}
     {% include "components/social-meta.njk" %}
     <link rel="icon" type="image/png" href="{{ site.images.favicon }}">
