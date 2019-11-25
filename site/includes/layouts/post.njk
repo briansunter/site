@@ -48,9 +48,9 @@ layout: default
             {# featured post image #}
             {% if featured_image %}
 
-                <figure class="mt-10 md:mt-20">
+                <figure class="mt-10 md:mt-20 flex flex-col">
 
-                    <img src="{{ featured_image }}" alt="{{ image_caption }}">
+                    <img src="{{ featured_image }}" class="object-contain" alt="{{ image_caption }}">
 
                     {% if image_caption %}
 
