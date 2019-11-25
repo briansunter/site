@@ -2,13 +2,15 @@ const htmlmin = require("html-minifier");
 const process = require("process");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginPWA = require("eleventy-plugin-pwa");
-
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 Array.prototype.insert = function (index, item) {
   this.splice(index, 0, item);
 };
 
 module.exports = eleventyConfig => {
   eleventyConfig.addPlugin(pluginPWA);
+
+  eleventyConfig.addPlugin(pluginRss);
 
   eleventyConfig.addShortcode("addMinCSS", function(src) {
     let newSrc = src.split('.');
