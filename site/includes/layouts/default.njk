@@ -7,6 +7,11 @@
     <meta name="description" content="{% if meta_description %}{{ meta_description }}{% else %}{{ excerpt }}{% endif %}">
     <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
+    <script async>
+      if ("serviceWorker" in navigator)
+        navigator.serviceWorker.register("/service-worker.js");
+    </script>
+
     {% if page.fileSlug === "blog" %}
         <meta name="robots" content="noindex,follow" />
     {% endif %}
