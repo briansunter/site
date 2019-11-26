@@ -66,10 +66,12 @@ layout: default
 
         <div class="content post md:px-16">
 
+          <div class="rendered-post">
             {{ content | safe }}
 
             {# category links list #}
             {% if tags %}
+            </div>
 
                 <ul class="flex pt-8 border-t border-gray-100">
 
