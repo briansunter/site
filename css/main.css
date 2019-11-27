@@ -624,7 +624,7 @@ h1, h2, h3, h4, h5, h6 {
 .content p.intro {
   border-bottom-width: 1px;
   border-color: #edf2f7;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   padding-bottom: 2.5rem;
   margin-bottom: 2.5rem;
   font-weight: 300;
@@ -633,7 +633,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 768px) {
   .content p.intro {
-    font-size: 1.875rem;
+    font-size: 2rem;
   }
 }
 
@@ -7965,19 +7965,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .text-lg{
-  font-size: 1.125rem;
-}
-
-.text-xl{
-  font-size: 1.25rem;
-}
-
-.text-2xl{
   font-size: 1.5rem;
 }
 
+.text-xl{
+  font-size: 1.5rem;
+}
+
+.text-2xl{
+  font-size: 1.8rem;
+}
+
 .text-3xl{
-  font-size: 1.875rem;
+  font-size: 2rem;
 }
 
 .text-4xl{
@@ -15655,19 +15655,19 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .sm\:text-lg{
-    font-size: 1.125rem;
-  }
-
-  .sm\:text-xl{
-    font-size: 1.25rem;
-  }
-
-  .sm\:text-2xl{
     font-size: 1.5rem;
   }
 
+  .sm\:text-xl{
+    font-size: 1.5rem;
+  }
+
+  .sm\:text-2xl{
+    font-size: 1.8rem;
+  }
+
   .sm\:text-3xl{
-    font-size: 1.875rem;
+    font-size: 2rem;
   }
 
   .sm\:text-4xl{
@@ -23346,19 +23346,19 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .md\:text-lg{
-    font-size: 1.125rem;
-  }
-
-  .md\:text-xl{
-    font-size: 1.25rem;
-  }
-
-  .md\:text-2xl{
     font-size: 1.5rem;
   }
 
+  .md\:text-xl{
+    font-size: 1.5rem;
+  }
+
+  .md\:text-2xl{
+    font-size: 1.8rem;
+  }
+
   .md\:text-3xl{
-    font-size: 1.875rem;
+    font-size: 2rem;
   }
 
   .md\:text-4xl{
@@ -31037,19 +31037,19 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .lg\:text-lg{
-    font-size: 1.125rem;
-  }
-
-  .lg\:text-xl{
-    font-size: 1.25rem;
-  }
-
-  .lg\:text-2xl{
     font-size: 1.5rem;
   }
 
+  .lg\:text-xl{
+    font-size: 1.5rem;
+  }
+
+  .lg\:text-2xl{
+    font-size: 1.8rem;
+  }
+
   .lg\:text-3xl{
-    font-size: 1.875rem;
+    font-size: 2rem;
   }
 
   .lg\:text-4xl{
@@ -38728,19 +38728,19 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .xl\:text-lg{
-    font-size: 1.125rem;
-  }
-
-  .xl\:text-xl{
-    font-size: 1.25rem;
-  }
-
-  .xl\:text-2xl{
     font-size: 1.5rem;
   }
 
+  .xl\:text-xl{
+    font-size: 1.5rem;
+  }
+
+  .xl\:text-2xl{
+    font-size: 1.8rem;
+  }
+
   .xl\:text-3xl{
-    font-size: 1.875rem;
+    font-size: 2rem;
   }
 
   .xl\:text-4xl{
