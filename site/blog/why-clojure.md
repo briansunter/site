@@ -2,15 +2,15 @@
 title: Why Clojure?
 date: 2018-09-30
 featured_image: /images/blog/why-clojure/clojure.svg
-image_caption: Photo by Dylan Gillis on Unsplash
-excerpt: Why not the language I'm already using?
+image_caption: Clojure Logo
+excerpt: What makes Clojure interesting and well suited for modern software development?
 tags:
     - blog
-    - business
+    - programming
+    - functional
+    - clojure
 ---
-
-# Why Clojure?
->Why not the programming language I'm already using or some other language? What makes Clojure uniquely well suited for modern software development?
+Why not the programming language I'm already using or some other language? What makes Clojure uniquely well suited for modern software development?
 
 - Pure functions and immutable data are the easiest units of software to reason about
 - Deep support for immutable data structures
