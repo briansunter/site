@@ -31,7 +31,15 @@ title: Blog
                         </a>
                     {% else %}
                         <a class="featured-image-link block relative overflow-hidden h-40" href="{{ post.url }}">
-                          <div class="h-40" style="background-color:{% randomLightColor post.data.title %}"></div>
+                            {% if post.data.code_excerpt %}
+                              <div class="blog-code flex items-center justify-center object-contain mt-0" style="background-color:#21173c">
+                            {% highlight post.data.code_lang %}
+                            {{ post.data.code_excerpt | safe }}
+                            {% endhighlight %}
+                              </div>
+                            {% else %}
+                            <div class="h-full flex items-center justify-center object-contain" style="background-color:{% randomLightColor post.data.title %}"></div>
+                            {% endif %}
                         </a>
 
                     {% endif %}

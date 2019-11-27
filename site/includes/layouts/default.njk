@@ -22,6 +22,7 @@
 
     {# for performance gains over the network, if your site's entire CSS comes in under 16kb, you may want to consider just having it inlined in the head #}
     {# include main.css if in development mode #}
+    {% addMinCSS "/css/vendor/dracula-prism.css" %}
     {% if helpers.environment == "development" %}
     <link rel="stylesheet" href="/css/main.css">
     {% else %}
@@ -29,7 +30,6 @@
     <link rel="stylesheet" href="/css/main.min.css">
     {% endif %}
 
-    {% addMinCSS "/css/vendor/dracula-prism.css" %}
 
     {# social meta tags and assets like fonts, favicons etc, should be last #}
     {% include "components/social-meta.njk" %}

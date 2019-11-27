@@ -4,6 +4,14 @@ date: 2019-06-25
 featured_image_: /images/blog/spacemacs/writeroom.png
 image_caption: Photo by Dylan Gillis on Unsplash
 excerpt: What are transducers and why would I want to use them?
+code_lang: clojure
+code_excerpt: >
+  (def double-even-xforms 
+  	(comp 
+  		(filter even?) 
+  		(map #(* 2 %)))) 
+  		(println "hello")
+
 tags:
     - blog
     - business
