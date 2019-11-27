@@ -8,15 +8,14 @@ Array.prototype.insert = function (index, item) {
   this.splice(index, 0, item);
 };
 
-const randomColors = randomColor({luminosity: 'light',seed:2, count: 9999});
-
 
 module.exports = eleventyConfig => {
+
   eleventyConfig.addPlugin(pluginPWA);
 
   eleventyConfig.addPlugin(pluginRss);
 
-  eleventyConfig.addShortcode("randomLightColor", () => randomColors.pop());
+  eleventyConfig.addShortcode("randomLightColor", (s) => randomColor({luminosity: 'light',seed: s}));
 
   eleventyConfig.addShortcode("addMinCSS", (src) => {
     let newSrc = src.split('.');
