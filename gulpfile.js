@@ -25,7 +25,7 @@ const reveal = require('./gulp-reveal');
 const paths = {
     sass: {
         source: './resources/sass/main.scss',
-        dest: 'css/'
+        dest: '.tmp/css/'
     },
 
   talks: {
