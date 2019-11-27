@@ -41,12 +41,12 @@ const paths = {
     source: './resources/js/vendor/**/*.js',
     dest: '.tmp/javascript/vendor/'
   },
-    javascript: {
-        source:
-            [
-                './resources/js/utilities/*.js',
-              './resources/js/local/*.js',
-            ],
+  javascript: {
+    source:
+    [
+      './resources/js/utilities/*.js',
+      './resources/js/local/*.js',
+    ],
         dest: '.tmp/javascript/'
     }
 };
@@ -270,7 +270,7 @@ const minifyCSSPreflight = (done) => {
  *
  * Always double check that everything is still working. If something isn't displaying correctly, it may be because you need to add it to the PurgeCSS whitelist.
  */
-exports.build = series(compileTalks, bundleJs, bundleCSS, compileCSSPreflight, minifyCSSPreflight, minifyJS, compileTalks);
+exports.build = series(compileTalks, bundleJs, compileJS, bundleCSS, compileCSSPreflight, minifyCSSPreflight, minifyJS, compileTalks);
 
 /**
  * [DEFAULT] task
