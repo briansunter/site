@@ -59,12 +59,14 @@ module.exports = eleventyConfig => {
 
     // Include our static assets
     eleventyConfig.addPassthroughCopy("css")
-  eleventyConfig.addPassthroughCopy("manifest.json")
-  eleventyConfig.addPassthroughCopy("robots.txt")
+    eleventyConfig.addPassthroughCopy("manifest.json")
+    eleventyConfig.addPassthroughCopy("robots.txt")
     eleventyConfig.addPassthroughCopy("javascript")
     eleventyConfig.addPassthroughCopy("images")
+  eleventyConfig.addPassthroughCopy({"reveal-talks": "talks"})
 
-  eleventyConfig.addPlugin(syntaxHighlight);
+    eleventyConfig.addPlugin(syntaxHighlight);
+
     return {
         templateFormats: ["md", "njk"],
         markdownTemplateEngine: 'njk',

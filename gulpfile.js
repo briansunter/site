@@ -17,7 +17,8 @@ const babel = require('gulp-babel');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 
-
+const markdown = require('gulp-markdown');
+const reveal = require('./gulp-reveal');
 /**
  * File paths
  */
@@ -27,15 +28,24 @@ const paths = {
         dest: 'css/'
     },
 
+  talks: {
+    source: './talks/**/*.md',
+    dest: 'reveal-talks/'
+  },
+
   cssBundle: {
     source: './resources/css/**/*.css',
     dest: 'css/'
+  },
+  vendorJs: {
+    source: './resources/js/vendor/**/*.js',
+    dest: 'javascript/vendor/'
   },
     javascript: {
         source:
             [
                 './resources/js/utilities/*.js',
-                './resources/js/local/*.js'
+              './resources/js/local/*.js',
             ],
         dest: 'javascript/'
     }
@@ -96,7 +106,37 @@ const bundleCSS = (done) => {
       message: 'Bundle CSS Complete'
     }));
   done();
-}
+};
+
+const bundleJs = (done) => {
+  return src(paths.vendorJs.source)
+    .pipe(plumber({ errorHandler: onError }))
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(uglify())
+    .pipe(dest(paths.vendorJs.dest))
+    .pipe(notify({
+      message: 'Vendor JS Complete'
+    }));
+  done();
+};
+
+const compileTalks = (done) => {
+  return src(paths.talks.source)
+    .pipe(plumber({ errorHandler: onError }))
+    .pipe(markdown())
+    .pipe(reveal())
+    .pipe(rename((path) => {
+      path.dirname += ('/' + path.basename);
+      path.basename = 'index';
+    }))
+    .pipe(dest(paths.talks.dest))
+    .pipe(notify({
+      message: 'Compile talks complete'
+    }));
+  done();
+};
 /**
  * Concatinate and compile scripts
  */
@@ -144,6 +184,7 @@ const watchFiles = (done) => {
     ], series(compileCSS));
     watch('./tailwind.config.js', series(compileCSS));
     watch('./resources/sass/**/*.scss', series(compileCSS));
+    watch('./talks/**/*.md', series(compileTalks));
     watch('./resources/css/**/*.css', series(bundleCSS));
     watch('./resources/js/**/*.js', series(compileJS));
     done();
@@ -229,8 +270,7 @@ const minifyCSSPreflight = (done) => {
  *
  * Always double check that everything is still working. If something isn't displaying correctly, it may be because you need to add it to the PurgeCSS whitelist.
  */
-exports.build = series(bundleCSS, compileCSSPreflight, minifyCSSPreflight, minifyJS);
-
+exports.build = series(compileTalks, bundleJs, bundleCSS, compileCSSPreflight, minifyCSSPreflight, minifyJS, compileTalks);
 
 /**
  * [DEFAULT] task
@@ -238,4 +278,4 @@ exports.build = series(bundleCSS, compileCSSPreflight, minifyCSSPreflight, minif
  * This will run while you're building the theme and automatically compile any changes.
  * This includes any html changes you make so that the PurgeCSS file will be updated.
  */
-exports.default = series(bundleCSS, compileCSS, compileJS, watchFiles);
+exports.default = series(bundleJs, bundleCSS, compileCSS, compileJS, watchFiles, compileTalks);

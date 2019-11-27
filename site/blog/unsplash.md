@@ -10,9 +10,9 @@ tags:
     - photography
 ---
 
-I was interested in what would happen if I uploaded some of my photos to unsplash, a creative commons stock photography site.
+I wondered what would happen if I uploaded some of my photos to unsplash, a creative commons stock photography site.
 
-I've always been interested in making useful things and I was curious if anyone would use my photos if I uploaded them to [Unsplash](https://unsplash.com/@bsunter "Unsplash"). By uploading them to Unsplash, I make the photo free for use without credit. I included the location and a few tags in the description .
+I've always been interested in making useful things and I was curious if anyone would use my photos if I uploaded them to [Unsplash](https://unsplash.com/@bsunter "Unsplash"). By uploading them to Unsplash, I make the photo free for use without credit. I included the location and a few tags in the description.
 
 This is their license:
 >All photos published on Unsplash can be used for free. You can use them for commercial and noncommercial purposes. You do not need to ask permission from or provide credit to the photographer or Unsplash, although it is appreciated when possible.
@@ -27,14 +27,14 @@ A few years later, I did a reverse Google image search and was amazed at all the
 Here are a few of my favorites:
 
 ## Menus
-It looks like I made it on to some sort of template because I was on many online ordering menus from all over the world. It looks like I was usually being advertised as chinese egg rolls.
+It looks like I made it on to some sort of template because I was on many online ordering menus from all over the world. It looks like I was usually being advertised as Chinese egg rolls.
 
 ![Menu](/images/blog/unsplash/menu.jpg "Menu")
 ![Menu Home](/images/blog/unsplash/menuhome.jpg "Menu Home")
 ![Template](/images/blog/unsplash/template.jpg "Template")
 
 ## Blogs
-I was on a number of blogs on subjects like chinese restaurant syndrome, chinese travel tips, spring rolls vs egg rolls, and on Filipino Lumpia.
+I was on a number of blogs on subjects like Chinese restaurant syndrome, Chinese travel tips, spring rolls vs egg rolls, and on Filipino Lumpia.
 ![Blog](/images/blog/unsplash/blog.jpg "Blog")
 ![China Tips](/images/blog/unsplash/chinatips.jpg "China Tips")
 ![Lumpia](/images/blog/unsplash/lumpia.jpg "Lumpia")

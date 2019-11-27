@@ -13,7 +13,7 @@
 	"author": "Joseph Dyer",
 	"license": "MIT",
 	"devDependencies": {
-		"@11ty/eleventy": "^0.8.3",
+		"@11ty/eleventy": "^0.9.0",
 		"@babel/core": "^7.5.5",
 		"@babel/preset-env": "^7.5.5",
 		"@fullhuman/postcss-purgecss": "^1.2.0",
@@ -34,6 +34,10 @@
 		"@11ty/eleventy-plugin-rss": "^1.0.7",
 		"@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
 		"eleventy-plugin-pwa": "^1.0.8",
-		"randomcolor": "^0.5.4"
+		"gulp-markdown": "^5.0.1",
+		"gulp-util": "^3.0.8",
+		"mustache": "^3.1.0",
+		"randomcolor": "^0.5.4",
+		"through2": "^3.0.1"
 	}
 }
