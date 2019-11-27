@@ -2,16 +2,15 @@
 title: Uploading Photos to Unsplash
 date: 2019-06-25
 featured_image: /images/blog/unsplash/eggrolls.jpg
-image_caption: Photo by Dylan Gillis on Unsplash
+image_caption: Spring rolls I made in a Thai cooking class
 excerpt: I was interested in what would happen if I uploaded some of my photos to Unsplash, a creative commons stock photography site.
 
 tags:
     - blog
-    - business
+    - photography
 ---
-# Uploading Photos to Unsplash
 
-> I was interested in what would happen if I uploaded some of my photos to unsplash, a creative commons stock photography site.
+I was interested in what would happen if I uploaded some of my photos to unsplash, a creative commons stock photography site.
 
 I've always been interested in making useful things and I was curious if anyone would use my photos if I uploaded them to [Unsplash](https://unsplash.com/@bsunter "Unsplash"). By uploading them to Unsplash, I make the photo free for use without credit. I included the location and a few tags in the description .
 
