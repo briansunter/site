@@ -16,24 +16,23 @@ title: Blog
 
             {% for post in collections.blog %}
 
-                <article class="article-card mb-8 mx-4 md:w-1/4 bg-white rounded-lg overflow-hidden">
+                <article class="article-card mb-8 mx-4 md:w-1/4 bg-white rounded-lg overflow-hidden flex flex-col">
 
                     {# featured post image & category #}
                     {% if post.data.featured_image %}
 
-                        <a class="featured-image-link block relative overflow-hidden h-32" href="{{ post.url }}">
+                        <a class="featured-image-link block relative overflow-hidden h-40" href="{{ post.url }}">
 
                             {# category link #}
 
                             <figure>
 
                                 <img class="featured-image" src="{{ post.data.featured_image }}" alt="{{ post.data.image_caption }}" class="block rounded-t-lg">
-
                             </figure>
 
                         </a>
                     {% else %}
-                        <div class="h-32" style="background-color:{% randomLightColor %}"></div>
+                        <div class="h-40" style="background-color:{% randomLightColor post.data.title %}"></div>
 
                     {% endif %}
 
@@ -53,25 +52,27 @@ title: Blog
 
                         </div>
 
-                            <ul class="flex flex-wrap p-0 z-10">
-
-                                {% for item in post.data.tags %}
-
-                                    {%- if item != "blog" -%}
-
-                                        <li class="m-1">
-
-                                            <span class="inline-block bg-pink-500 px-2 py-2 text-white text-xs font-bold rounded">{{ item | capitalize }}</span>
-
-                                        </li>
-
-                                    {%- endif -%}
-
-                                {% endfor %}
-
-                            </ul>
                     </div>
 
+                    <ul class="m-2 flex-grow inset-x-0 bottom-0 flex flex-wrap p-8 z-10 flex-row items-end">
+                      {% for item in post.data.tags %}
+
+                        {%- if item != "blog" -%}
+
+                          <li class="m-1 inset-x-0 bottom-0">
+
+                            <a href="/category/{{ item }}">
+                              <span class="inline-block bg-pink-500 px-2 py-2 text-white text-xs font-bold rounded">{{ item | capitalize }}</span>
+
+                            </a>
+
+                            </li>
+
+                          {%- endif -%}
+
+                        {% endfor %}
+
+                      </ul>
                 </article>
 
             {% endfor %}
