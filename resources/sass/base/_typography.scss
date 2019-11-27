@@ -9,7 +9,10 @@ h1, h2, h3, h4, h5, h6 {
 // content
 .content {
 
-    // paragraph
+    h2 {
+        font-size:2.0rem;
+    }
+
     p {
         @apply mb-8;
 
@@ -22,6 +25,7 @@ h1, h2, h3, h4, h5, h6 {
             }
         }
     }
+
     blockquote {
         background: #f9f9f9;
         border-left: 10px solid #ccc;
@@ -29,6 +33,7 @@ h1, h2, h3, h4, h5, h6 {
         padding: 0.5em 10px;
         quotes: "\201C""\201D""\2018""\2019";
     }
+
     blockquote:before {
         color: #ccc;
         content: open-quote;
@@ -37,9 +42,10 @@ h1, h2, h3, h4, h5, h6 {
         margin-right: 0.25em;
         vertical-align: -0.4em;
     }
+
     blockquote p {
         display: inline;
-}
+    }
 }
 
 .post {
@@ -48,10 +54,15 @@ h1, h2, h3, h4, h5, h6 {
         margin-bottom: calc(16px * 1.5 / 2);
         margin-left : calc(16px * 1.5 / 2);
     }
+
     .tags-post {
-        
         li {
             list-style-type: none;
         }
+    }
+
+    img {
+        padding-top: 1rem;
+        padding-bottom:1rem;
     }
 }
