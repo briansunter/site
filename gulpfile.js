@@ -30,16 +30,16 @@ const paths = {
 
   talks: {
     source: './talks/**/*.md',
-    dest: 'reveal-talks/'
+    dest: '.tmp/reveal-talks/'
   },
 
   cssBundle: {
     source: './resources/css/**/*.css',
-    dest: 'css/'
+    dest: '.tmp/css/'
   },
   vendorJs: {
     source: './resources/js/vendor/**/*.js',
-    dest: 'javascript/vendor/'
+    dest: '.tmp/javascript/vendor/'
   },
     javascript: {
         source:
@@ -47,7 +47,7 @@ const paths = {
                 './resources/js/utilities/*.js',
               './resources/js/local/*.js',
             ],
-        dest: 'javascript/'
+        dest: '.tmp/javascript/'
     }
 };
 
