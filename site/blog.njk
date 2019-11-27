@@ -26,13 +26,13 @@ title: Blog
                             {# category link #}
 
                             <figure>
-
                                 <img class="featured-image" src="{{ post.data.featured_image }}" alt="{{ post.data.image_caption }}" class="block rounded-t-lg">
                             </figure>
-
                         </a>
                     {% else %}
-                        <div class="h-40" style="background-color:{% randomLightColor post.data.title %}"></div>
+                        <a class="featured-image-link block relative overflow-hidden h-40" href="{{ post.url }}">
+                          <div class="h-40" style="background-color:{% randomLightColor post.data.title %}"></div>
+                        </a>
 
                     {% endif %}
 
