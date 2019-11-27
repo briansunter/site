@@ -24,23 +24,6 @@ title: Blog
                         <a class="featured-image-link block relative overflow-hidden h-32" href="{{ post.url }}">
 
                             {# category link #}
-                            <ul class="absolute bottom-0 left-0 flex p-8 z-10">
-
-                                {% for item in post.data.tags %}
-
-                                    {%- if item != "blog" -%}
-
-                                        <li class="mr-2">
-
-                                            <span class="inline-block bg-pink-500 px-4 py-2 text-white text-xs font-bold rounded">{{ item | capitalize }}</span>
-
-                                        </li>
-
-                                    {%- endif -%}
-
-                                {% endfor %}
-
-                            </ul>
 
                             <figure>
 
@@ -49,6 +32,8 @@ title: Blog
                             </figure>
 
                         </a>
+                    {% else %}
+                        <div class="h-32" style="background-color:{% randomLightColor %}"></div>
 
                     {% endif %}
 
@@ -68,6 +53,23 @@ title: Blog
 
                         </div>
 
+                            <ul class="flex flex-wrap p-0 z-10">
+
+                                {% for item in post.data.tags %}
+
+                                    {%- if item != "blog" -%}
+
+                                        <li class="m-1">
+
+                                            <span class="inline-block bg-pink-500 px-2 py-2 text-white text-xs font-bold rounded">{{ item | capitalize }}</span>
+
+                                        </li>
+
+                                    {%- endif -%}
+
+                                {% endfor %}
+
+                            </ul>
                     </div>
 
                 </article>

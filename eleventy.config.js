@@ -3,16 +3,22 @@ const process = require("process");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginPWA = require("eleventy-plugin-pwa");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const randomColor = require('randomcolor');
 Array.prototype.insert = function (index, item) {
   this.splice(index, 0, item);
 };
+
+const randomColors = randomColor({luminosity: 'light',seed:2, count: 9999});
+
 
 module.exports = eleventyConfig => {
   eleventyConfig.addPlugin(pluginPWA);
 
   eleventyConfig.addPlugin(pluginRss);
 
-  eleventyConfig.addShortcode("addMinCSS", function(src) {
+  eleventyConfig.addShortcode("randomLightColor", () => randomColors.pop());
+
+  eleventyConfig.addShortcode("addMinCSS", (src) => {
     let newSrc = src.split('.');
     let suffix = newSrc.pop();
     if (process.env.ELEVENTY_ENV !== 'development') {

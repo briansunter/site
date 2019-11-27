@@ -9,6 +9,9 @@ tags:
     - programming
     - functional
     - clojure
+    - talks
+    - haskell
+    - emacs
 ---
 Why not the programming language I'm already using or some other language? What makes Clojure uniquely well suited for modern software development?
 

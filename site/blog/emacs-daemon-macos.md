@@ -1,7 +1,7 @@
 ---
 title: Emacs Daemon Mode on macOS
 date: 2019-06-25
-featured_image: /images/blog/spacemacs/writeroom.png
+featured_image_: /images/blog/spacemacs/writeroom.png
 image_caption: Photo by Dylan Gillis on Unsplash
 excerpt: How to have emacs launch quickly and always be available on macos
 tags:

@@ -1,7 +1,7 @@
 ---
 title: Reagent Intro
 date: 2019-06-25
-featured_image: /images/blog/spacemacs/writeroom.png
+featured_image_: /images/blog/spacemacs/writeroom.png
 image_caption: Photo by Dylan Gillis on Unsplash
 excerpt: An introduction to Clojure with Reagent.
 tags:
