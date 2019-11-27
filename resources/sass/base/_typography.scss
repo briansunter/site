@@ -22,17 +22,19 @@ h1, h2, h3, h4, h5, h6 {
             }
         }
     }
-    .social-icons {
-        li {
-            list-style-type: none;
-        }
-    }
+
 }
 
-.rendered-post {
+.post {
     li {
         list-style-type: disc;
         margin-bottom: calc(16px * 1.5 / 2);
         margin-left : calc(16px * 1.5 / 2);
+    }
+    .tags-post {
+        
+        li {
+            list-style-type: none;
+        }
     }
 }
