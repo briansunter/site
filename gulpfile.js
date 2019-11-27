@@ -236,7 +236,7 @@ const compileCSSPreflight = (done) => {
     .pipe(rename({
         extname: '.css'
     }))
-    .pipe(dest('css/'))
+    .pipe(dest(paths.sass.dest))
     .pipe(notify({
         message: 'CSS & Tailwind [PREFLIGHT] Success'
     }));
