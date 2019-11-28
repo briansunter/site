@@ -41,7 +41,7 @@ Instead of editing your dotfiles in your home directory, I recommend creating a 
 # GNU `stow`
 GNU stow is strictly a symlink manager. It has a folder structure convention that allows you to create symlinks in the folder above it. If I run `stow` it will create symlinks in the directory above where `stow` was run.
 
-```
+``` bash
 /Users/bsunter/.dotfiles
 ├── .gitmodules
 ├── Brewfile
