@@ -14,6 +14,7 @@ A skeleton boilerplate built with Eleventy and TailwindCSS. Check out [Skelevent
 - SEO friendly pages (including open graph and twitter meta)
 - A simple blog, with categories and featured images
 
+
 ## Requirements
 
 Node `>=` v8.9.0
