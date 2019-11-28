@@ -9,10 +9,8 @@ phases:
   build:
     commands:
       - npm run build
-  upload:
-    commands:
-      - aws s3 sync --delete dist/ s3://${bucket_name} --cache-control max-age=3600
   post_build:
     commands:
+      - aws s3 sync --delete dist/ s3://${bucket_name} --cache-control max-age=3600
       - echo 'Invalidating distribution cache'
       - aws cloudfront create-invalidation --distribution-id ${distribution_id} --paths "/*"
