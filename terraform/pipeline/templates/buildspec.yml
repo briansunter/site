@@ -5,7 +5,7 @@ phases:
     runtime-versions:
       nodejs: 12
     commands:
-      - npm install
+      - npm ci
   build:
     commands:
       - npm run build
