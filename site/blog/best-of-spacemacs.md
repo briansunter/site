@@ -6,7 +6,8 @@ image_caption: Photo by Dylan Gillis on Unsplash
 excerpt: These are some of my favorite spacemacs features
 tags:
     - blog
-    - business
+    - programming
+    - emacs
 ---
 # Why Spacemacs
 

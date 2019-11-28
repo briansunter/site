@@ -14,7 +14,9 @@ code_excerpt: >
 
 tags:
     - blog
-    - business
+    - programming
+    - functional
+    - clojure
 ---
 # Transducers in Clojure
 

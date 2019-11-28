@@ -1,12 +1,14 @@
 ---
 title: App Version
 date: 2019-06-25
-featured_image_: /images/blog/spacemacs/writeroom.png
+featured_image_: /images/blog/semver.png
+code_excerpt: 1.0.0-alpha.1
+code_lang: markdown
 image_caption: Photo by Dylan Gillis on Unsplash
 excerpt: How should you version end user apps and APIs?
 tags:
     - blog
-    - business
+    - programming
 ---
 # How should you version apps and APIs?
 > We're used to using semver to manage our dependencies,

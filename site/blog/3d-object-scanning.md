@@ -6,7 +6,7 @@ image_caption: Photo by Dylan Gillis on Unsplash
 excerpt: I went in for a body scan to 3D-print a miniature model of myself. I uploaded the 3D object and ran it in the browser using three.js.
 tags:
     - blog
-    - business
+    - photography
 ---
 # 3D Selfie
 
