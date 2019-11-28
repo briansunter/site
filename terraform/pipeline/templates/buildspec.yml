@@ -1,14 +1,18 @@
 version: 0.2
 
 phases:
-  pre_build:
+  install:
+    runtime-versions:
+      nodejs: 10
     commands:
-      - echo Deploy website
+      - npm install
   build:
     commands:
-      - rm -rf .git
-      - aws s3 sync --delete . s3://${bucket_name} --cache-control max-age=3600
+      - npm run build
+  upload:
+    commands:
+      - aws s3 sync --delete dist/ s3://${bucket_name} --cache-control max-age=3600
   post_build:
     commands:
-      - echo 'Invalidating distribuition cache'
+      - echo 'Invalidating distribution cache'
       - aws cloudfront create-invalidation --distribution-id ${distribuition_id} --paths "/*"
