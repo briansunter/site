@@ -1,43 +1,41 @@
 {
-	"name": "skeleventy",
+	"name": "Brian Sunter SIte",
 	"version": "1.0.0",
-	"description": "Skeleventy - A skeleton boilerplate built with Eleventy",
+	"description": "The personal site of brian sunter",
 	"scripts": {
 		"dev": "ELEVENTY_ENV=development eleventy --config=eleventy.config.js --serve & gulp",
 		"build": "gulp build && eleventy --config=eleventy.config.js"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/josephdyer/skeleventy.git"
+		"url": "https://github.com/briansunter/site.git"
 	},
-	"author": "Joseph Dyer",
+	"author": "Brian Sunter",
 	"license": "MIT",
-	"devDependencies": {
+	"dependencies": {
 		"@11ty/eleventy": "^0.9.0",
+		"@11ty/eleventy-plugin-rss": "^1.0.7",
+		"@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
 		"@babel/core": "^7.5.5",
 		"@babel/preset-env": "^7.5.5",
 		"@fullhuman/postcss-purgecss": "^1.2.0",
+		"eleventy-plugin-pwa": "^1.0.8",
 		"gulp": "^4.0.2",
 		"gulp-babel": "^8.0.0",
 		"gulp-clean-css": "^4.2.0",
 		"gulp-concat": "^2.6.1",
+		"gulp-markdown": "^5.0.1",
 		"gulp-notify": "^3.2.0",
 		"gulp-plumber": "^1.2.1",
 		"gulp-postcss": "^8.0.0",
 		"gulp-rename": "^1.4.0",
 		"gulp-sass": "^4.0.2",
 		"gulp-uglify": "^3.0.2",
-		"html-minifier": "^4.0.0",
-		"tailwindcss": "^1.1.4"
-	},
-	"dependencies": {
-		"@11ty/eleventy-plugin-rss": "^1.0.7",
-		"@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
-		"eleventy-plugin-pwa": "^1.0.8",
-		"gulp-markdown": "^5.0.1",
 		"gulp-util": "^3.0.8",
+		"html-minifier": "^4.0.0",
 		"mustache": "^3.1.0",
 		"randomcolor": "^0.5.4",
+		"tailwindcss": "^1.1.4",
 		"through2": "^3.0.1"
 	}
 }
