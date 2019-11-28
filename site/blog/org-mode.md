@@ -4,6 +4,13 @@ date: 2019-06-25
 featured_image_: /images/blog/spacemacs/writeroom.png
 image_caption: Photo by Dylan Gillis on Unsplash
 excerpt: My workflow in org-mode and spacemacs
+code_excerpt: |
+  * TODO Learn about org mode 
+  	Org is a task management 
+  	and note taking system
+  * TODO Blog about org mode 
+  * TODO Organize my org mode 
+code_lang: markdown
 tags:
     - blog
     - business
