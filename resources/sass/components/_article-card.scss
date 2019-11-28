@@ -18,7 +18,11 @@
     }
 }
 .blog-code {
+
     pre {
         margin-top: 0;
+        overflow: hidden;
+        font-size: .8rem;
+        padding: 4rem;
     }
 }

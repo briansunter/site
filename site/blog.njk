@@ -32,7 +32,7 @@ title: Blog
                     {% else %}
                         <a class="featured-image-link block relative overflow-hidden h-40" href="{{ post.url }}">
                             {% if post.data.code_excerpt %}
-                              <div class="blog-code flex items-center justify-center object-contain mt-0" style="background-color:#21173c">
+                              <div class="blog-code flex-grow h-40 flex items-center justify-center object-contain mt-0" style="background-color:#21173c">
                             {% highlight post.data.code_lang %}
                             {{ post.data.code_excerpt | safe }}
                             {% endhighlight %}
