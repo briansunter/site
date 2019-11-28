@@ -229,7 +229,9 @@ const compileCSSPreflight = (done) => {
                 'h3',
                 'p',
                 'blockquote',
-                'intro'
+              'intro',
+              'pre',
+              'code'
             ],
         })
     ]))
