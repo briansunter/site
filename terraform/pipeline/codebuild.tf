@@ -37,6 +37,10 @@ resource "aws_codebuild_project" "prod_app_build" {
     buildspec = "${data.template_file.prod_buildspec.rendered}"
   }
 
+  cache {
+    type  = "LOCAL"
+    modes = ["LOCAL_DOCKER_LAYER_CACHE", "LOCAL_SOURCE_CACHE"]
+  }
 }
 
 resource "aws_s3_bucket" "source" {
