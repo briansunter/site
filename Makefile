@@ -1,5 +1,5 @@
 build:
 	npm run build
 
-deploy-staging-infra:
-	cd terraform; terraform apply -auto-approve -var-file="staging.tfvars"
+deploy-production-infra:
+	cd terraform; terraform apply -auto-approve -var-file="production.tfvars"

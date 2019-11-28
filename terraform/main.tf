@@ -12,7 +12,6 @@ module "site" {
   region = var.region
   domain = var.domain
   zone_id = var.zone_id
-  certificate_arn = var.certificate_arn
 }
 
 module "pipeline" {
