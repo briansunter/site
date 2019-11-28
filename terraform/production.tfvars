@@ -1,0 +1,7 @@
+region = "us-east-1"
+domain = "briansunter.com"
+zone_id = "Z26YPOHMFFRJP4"
+app_name = "personal-site"
+git_repository_owner = "briansunter"
+git_repository_name = "site"
+git_repository_branch = "master"
