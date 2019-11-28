@@ -9,7 +9,7 @@ data "template_file" "prod_buildspec" {
     app_name          = "${var.app_name}"
     stage             = "${var.git_repository_branch}"
     bucket_name       = "${var.bucket_name}"
-    distribuition_id  = "${var.cloudfront_distribution_id}"
+    distribution_id  = "${var.cloudfront_distribution_id}"
   }
 }
 
