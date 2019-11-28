@@ -4,6 +4,10 @@ date: 2019-06-25
 featured_image_: /images/blog/spacemacs/writeroom.png
 image_caption: Photo by Dylan Gillis on Unsplash
 excerpt: An introduction to Clojure with Reagent.
+code_excerpt: >
+  (defn hello [name]
+     [:p (str "Hello " name "!")])
+code_lang: clojure
 tags:
     - blog
     - business
