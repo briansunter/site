@@ -1,7 +1,6 @@
 variable "region" {}
 variable "domain" {}
 variable "zone_id" {}
-variable "certificate_arn" {}
 
 variable "app_name" {
   description = "Website project name"
