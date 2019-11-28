@@ -17,3 +17,7 @@ node_modules/
 aws-exports.js
 awsconfiguration.json
 /.tmp/
+**/.terraform/*
+# .tfstate files
+*.tfstate
+*.tfstate.*
