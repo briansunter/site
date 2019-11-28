@@ -10,7 +10,9 @@ code_excerpt: >
 code_lang: clojure
 tags:
     - blog
-    - business
+    - programming
+    - functional
+    - frontend
 ---
 # Intro to Clojurescript with Reagent
 The Javascript community has finally started rallying around the power of functional programming and immutability with React, but what would this look like in a language that supported these ideas really well?
@@ -60,9 +62,6 @@ Some functions can take any number of arguments, like `str`
 (str "this" "function" "can" "take" "many" "args")
 ```
 
-#+RESULTS:
-: thisfunctioncantakemanyargs
-
 # Keywords
 Keywords are named values commonly used in map keys. They are symbols prefixed with a `:` like `:my-keyword` or `:h1`.
 
@@ -73,6 +72,7 @@ The syntax for a vector is
 ``` clojure 
 [1 2 "three" "four"]
 ```
+
 The elements are separated by whitespace in between brackets.
 `,` is treated as whitespace.
 
@@ -80,7 +80,7 @@ The elements are separated by whitespace in between brackets.
 ## Map Syntax {}
 The syntax for a map is
 
-#+BEGIN_SRC
+``` clojure
 {:key-1 "value" :key-2 "value"}
 ```
 

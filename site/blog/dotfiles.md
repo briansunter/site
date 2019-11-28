@@ -2,14 +2,35 @@
 title: Dotfiles
 date: 2019-06-25
 featured_image_: /images/blog/spacemacs/writeroom.png
-image_caption: Photo by Dylan Gillis on Unsplash
+image_caption_: Photo by Dylan Gillis on Unsplash
 excerpt: How I manage my dotfiles on a new machine
+code_lang: bash
+code_excerpt: |
+  /Users/bsunter/.dotfiles
+  ├── .gitmodules
+  ├── Brewfile
+  ├── README.md
+  ├── emacs
+  │   ├── .emacs.d
+  │   └── .spacemacs
+  ├── git
+  │   └── .gitconfig
+  ├── iterm
+  │   └── ItermProfile.json
+  ├── macos
+  │   └── bootstrap.sh
+  ├── manage.sh
+  ├── vim
+  │   └── .vimrc
+  └── zsh
+  	├── .stow-local-ignore
+  	├── .zshrc
+  	└── lib
+
 tags:
     - blog
-    - business
+    - programming
 ---
-# Dotfiles
->How I manage my dotfiles and bootstrap a new machine
 
 # What are dotfiles?
 There are a number of important programs like your terminal, emacs, and vim which are configured by files starting with a dot (`.zshrc`) in your home directory.

@@ -10,10 +10,13 @@ code_excerpt: |
   	and note taking system
   * TODO Blog about org mode 
   * TODO Organize my org mode 
+
 code_lang: markdown
 tags:
     - blog
-    - business
+    - emacs
+    - programming
+    - productivity
 ---
 
 I constantly have a stream of events happening and it's sometimes a struggle to keep everything organized. One of the best tools I've used is org-mode in Emacs.
@@ -94,7 +97,7 @@ Press ‘N r’ (e.g. ‘0 r’) to search again: (0)-[ALL] (1)TODO (2)DONE
   notes:      TODO Read Getting things done book
 
 ```
-After you schedule the tasks, you can use ~SPC-a-o-a~ or ~org-agenda-list~ to view the weekly agenda, where you can mark tasks complete, take notes on the task, or log work time on the ask.
+After you schedule the tasks, you can use `SPC-a-o-a` or `org-agenda-list` to view the weekly agenda, where you can mark tasks complete, take notes on the task, or log work time on the ask.
 
 ``` markdown 
 Week-agenda (W42):

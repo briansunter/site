@@ -4,9 +4,16 @@ date: 2019-06-25
 featured_image_: /images/blog/spacemacs/writeroom.png
 image_caption: Photo by Dylan Gillis on Unsplash
 excerpt: Are there better alternatives for configuration languages like JSON and YAML?
+code_excerpt: |
+  uuid = "why-toml"
+  tags = ["blog", "index-page"]
+  title = "Why TOML?"
+  description = "Why TOML? What about YAML? JSON?"
+code_lang: toml
+
 tags:
     - blog
-    - business
+    - programming
 ---
 
 # TOML
