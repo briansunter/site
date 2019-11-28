@@ -24,7 +24,7 @@ resource "aws_codebuild_project" "prod_app_build" {
   }
 
   environment {
-    compute_type = "BUILD_GENERAL1_SMALL"
+    compute_type = "BUILD_GENERAL1_MEDIUM"
 
     // https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref-available.html
     image           = "aws/codebuild/nodejs:8.11.0"
