@@ -1,4 +1,4 @@
 ---
-mindmap_url: /mind-maps/test.mm
+mindmap_url: /mind-maps/app-dashboard.mm
 layout: layouts/mind-map
 ---
