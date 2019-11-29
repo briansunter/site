@@ -30,10 +30,10 @@ module.exports = eleventyConfig => {
   });
 
     // Add a readable date formatter filter to Nunjucks
-    eleventyConfig.addFilter("dateDisplay", require("./filters/dates.js"))
+    eleventyConfig.addFilter("dateDisplay", require("./filters/dates.js"));
 
     // Add a HTML timestamp formatter filter to Nunjucks
-    eleventyConfig.addFilter("htmlDateDisplay", require("./filters/timestamp.js"))
+    eleventyConfig.addFilter("htmlDateDisplay", require("./filters/timestamp.js"));
 
     // Minify our HTML
     eleventyConfig.addTransform("htmlmin", (content, outputPath) => {
@@ -46,25 +46,25 @@ module.exports = eleventyConfig => {
             return minified;
         }
         return content;
-    })
+    });
 
     // Collections
     eleventyConfig.addCollection('blog', collection => {
-        return collection.getFilteredByTag('blog').reverse()
-    })
+       return collection.getFilteredByTag('blog').reverse();
+    });
 
     // Layout aliases
-    eleventyConfig.addLayoutAlias('default', 'layouts/default.njk')
-    eleventyConfig.addLayoutAlias('post', 'layouts/post.njk')
+    eleventyConfig.addLayoutAlias('default', 'layouts/default.njk');
+    eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
 
     // Include our static assets
-  eleventyConfig.addPassthroughCopy({".tmp/css": "css"})
-  eleventyConfig.addPassthroughCopy("manifest.json")
-  eleventyConfig.addPassthroughCopy("robots.txt")
-  eleventyConfig.addPassthroughCopy({".tmp/javascript": "javascript"})
-  eleventyConfig.addPassthroughCopy("images")
-  eleventyConfig.addPassthroughCopy("site/mind-maps")
-  eleventyConfig.addPassthroughCopy({".tmp/reveal-talks": "talks"})
+  eleventyConfig.addPassthroughCopy({".tmp/css": "css"});
+  eleventyConfig.addPassthroughCopy("manifest.json");
+  eleventyConfig.addPassthroughCopy("robots.txt");
+  eleventyConfig.addPassthroughCopy({".tmp/javascript": "javascript"});
+  eleventyConfig.addPassthroughCopy("images");
+  eleventyConfig.addPassthroughCopy("site/mind-maps");
+  eleventyConfig.addPassthroughCopy({".tmp/reveal-talks": "talks"});
 
     eleventyConfig.addPlugin(syntaxHighlight);
 
@@ -80,6 +80,6 @@ module.exports = eleventyConfig => {
             includes: 'includes',
             data: 'globals'
         }
-    }
+    };
 
-}
+};
