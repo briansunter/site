@@ -9,6 +9,7 @@
     <meta name="theme-color" content="#db5945">
     <link rel="apple-touch-icon" href="{{ site.touchIcon }}"/>
 
+    {% include 'components/analytics.njk' %}
     <script async>
       if ("serviceWorker" in navigator)
         navigator.serviceWorker.register("/service-worker.js");
