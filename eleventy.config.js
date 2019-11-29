@@ -63,6 +63,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPassthroughCopy("robots.txt")
   eleventyConfig.addPassthroughCopy({".tmp/javascript": "javascript"})
   eleventyConfig.addPassthroughCopy("images")
+  eleventyConfig.addPassthroughCopy("site/mind-maps")
   eleventyConfig.addPassthroughCopy({".tmp/reveal-talks": "talks"})
 
     eleventyConfig.addPlugin(syntaxHighlight);
