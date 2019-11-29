@@ -1,11 +1,9 @@
 .DS_Store
 node_modules/
 dist/
-css/
 javascript/
 
 build/
-dist/
 node_modules/
 /.tmp/
 **/.terraform/*
