@@ -9,6 +9,7 @@ excerpt: How should you version end user apps and APIs?
 tags:
     - blog
     - programming
+    - devops
 ---
 # How should you version apps and APIs?
 > We're used to using semver to manage our dependencies,
