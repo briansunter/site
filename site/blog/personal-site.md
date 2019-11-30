@@ -107,6 +107,9 @@ You can still extract this out to css with `@apply`
 ## PurgeCSS
 PurgeCSS looks at your html files and removes all unused CSS. Tailwind is usually `58kb` minified and gziped but PurgeCSS compresses it down to the `2.9`kb subset I'm actually using on my website.
 
+## PWA
+I use the eleventry pwa plugin which has workbox support. This precaches most of the website so it's available offline.
+
 # Cloudfront, S3, and build pipeline
 I've completely specified the cloud hosting and deploy pipeline using terraform. The terraform configuration can deploy the following with a small config file with your app name, desired domain or subdomain, and github repo name:
 
