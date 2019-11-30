@@ -23,6 +23,7 @@ I've tried a number of other static site generators like Jekyll, Hugo, perun, an
 
 Eleventy works like other static sites, where you have a folder of markdown files with yaml metadata at the top and a folder of templates, and your markdown is rendered as html inside the templates.
 
+### Markdown Blog Post
 ``` markdown
 ---
 layout: blog
@@ -33,7 +34,19 @@ title: first post
 This is an example post.
 
 ```
+### Blog Post layout
+``` html
+---
+layout: layouts/base.njk
+---
+{% raw %}
+<h1>{{ title }}</h1>
+{{ content | safe }}
+<p><a href="{{ '/' | url }}">← Home</a></p>
+{% endraw %}
+```
 
+### Folder Structure
 ``` bash/1,10
 ├── blog
 │   └── firstpost.md
