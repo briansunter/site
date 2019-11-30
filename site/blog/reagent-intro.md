@@ -13,6 +13,7 @@ tags:
     - programming
     - functional
     - frontend
+    - clojure
 ---
 # Intro to Clojurescript with Reagent
 The Javascript community has finally started rallying around the power of functional programming and immutability with React, but what would this look like in a language that supported these ideas really well?
