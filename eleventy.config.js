@@ -4,12 +4,15 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginPWA = require("eleventy-plugin-pwa");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const randomColor = require('randomcolor');
+const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
+
 Array.prototype.insert = function (index, item) {
   this.splice(index, 0, item);
 };
 
 
 module.exports = eleventyConfig => {
+  eleventyConfig.addPlugin(lazyImagesPlugin);
 
   eleventyConfig.addPlugin(pluginPWA);
 
