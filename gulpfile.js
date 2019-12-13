@@ -153,7 +153,7 @@ const compileJS = (done) => {
         message: 'Javascript Compile Success'
     }));
     done();
-}
+};
 
 
 /**
