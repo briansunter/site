@@ -133,7 +133,7 @@ With this setup my site deploys and is live within 2 minutes of pushing a commit
 
 # Talks
 
-I have a custom gulp build pipeline for compiling markdown files into[RevealJS](https://github.com/hakimel/reveal.js/ "Reveal JS") talks. This allows me to write simple markdown files and get a decent slidedeck.
+I have a custom gulp build pipeline for compiling markdown files into [RevealJS](https://github.com/hakimel/reveal.js/ "Reveal JS") talks. This allows me to write simple markdown files and get a decent slidedeck.
 
 ``` js
 const compileTalks = (done) => {
