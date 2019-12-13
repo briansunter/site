@@ -4,12 +4,15 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginPWA = require("eleventy-plugin-pwa");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const randomColor = require('randomcolor');
+const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
+
 Array.prototype.insert = function (index, item) {
   this.splice(index, 0, item);
 };
 
 
 module.exports = eleventyConfig => {
+  eleventyConfig.addPlugin(lazyImagesPlugin);
 
   eleventyConfig.addPlugin(pluginPWA);
 
@@ -62,6 +65,8 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPassthroughCopy("manifest.json");
   eleventyConfig.addPassthroughCopy("robots.txt");
   eleventyConfig.addPassthroughCopy({".tmp/javascript": "javascript"});
+  eleventyConfig.addPassthroughCopy({"node_modules/simplelightbox/dist/simple-lightbox.js": "javascript/simplelightbox"});
+  eleventyConfig.addPassthroughCopy({"node_modules/simplelightbox/dist/simple-lightbox.css": "css/vendor/simplelightbox"});
   eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy("site/mind-maps");
   eleventyConfig.addPassthroughCopy({".tmp/reveal-talks": "talks"});
