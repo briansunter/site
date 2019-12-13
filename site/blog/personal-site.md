@@ -152,4 +152,4 @@ const compileTalks = (done) => {
   done();
 };
 ```
-
+![Talks Example](/images/blog/talks.png "RevealJS Talks")

@@ -15,7 +15,7 @@ const purgecss = require('@fullhuman/postcss-purgecss');
 // Scripts
 const babel = require('gulp-babel');
 const concat = require('gulp-concat');
-const uglify = require('gulp-uglify');
+const terser = require('gulp-terser');
 
 const markdown = require('gulp-markdown');
 const reveal = require('./gulp-reveal');
@@ -23,10 +23,10 @@ const reveal = require('./gulp-reveal');
  * File paths
  */
 const paths = {
-    sass: {
-        source: './resources/sass/main.scss',
-        dest: '.tmp/css/'
-    },
+  sass: {
+    source: './resources/sass/main.scss',
+    dest: '.tmp/css/'
+  },
 
   talks: {
     source: './talks/**/*.md',
@@ -47,8 +47,8 @@ const paths = {
       './resources/js/utilities/*.js',
       './resources/js/local/*.js',
     ],
-        dest: '.tmp/javascript/'
-    }
+    dest: '.tmp/javascript/'
+  }
 };
 
 
@@ -114,7 +114,7 @@ const bundleJs = (done) => {
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(uglify())
+    .pipe(terser())
     .pipe(dest(paths.vendorJs.dest))
     .pipe(notify({
       message: 'Vendor JS Complete'
@@ -161,11 +161,11 @@ const compileJS = (done) => {
  * This will be ran as part of our preflight task
  */
 const minifyJS = (done) => {
-    return src(paths.javascript.dest + 'main.js')
+    return src(paths.javascript.source)
     .pipe(rename({
         suffix: '.min'
     }))
-    .pipe(uglify())
+    .pipe(terser())
     .pipe(dest(paths.javascript.dest))
     .pipe(notify({
         message: 'Javascript Minify Success'
