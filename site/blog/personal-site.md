@@ -152,4 +152,13 @@ const compileTalks = (done) => {
   done();
 };
 ```
-![Talks Example](/images/blog/talks.png "RevealJS Talks")
+[![Talks Example](/images/blog/talks.png "RevealJS Talks")](/talks/clojure "Example")
+
+[Example](/talks/clojure "Example")
+
+# Mind Maps
+Another interesting feature is automatically compiling freemind format "[Mind Maps](http://www.inboundtom.co.uk/introduction-mind-maps/ "Mind Maps")" into nice diagrams. I use [Mind Node](https://mindnode.com/ "Mind Node") to edit the mind maps.
+
+![Mind Maps](/images/blog/mind-maps.png "Mind Maps")
+
+[App Dashboard Mind Maps](/mind-maps/app-dashboard "App Dashboard Mind Maps")
