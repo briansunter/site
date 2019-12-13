@@ -161,7 +161,7 @@ const compileJS = (done) => {
  * This will be ran as part of our preflight task
  */
 const minifyJS = (done) => {
-    return src(paths.javascript.source)
+    return src(paths.javascript.dest + 'main.js')
     .pipe(rename({
         suffix: '.min'
     }))
