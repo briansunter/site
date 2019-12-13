@@ -3,6 +3,9 @@ by Brian Sunter
 
 ---
 
+## Example Code
+thread last operator `->>`
+
 ``` clj
 (println "hello world")
 (->>
@@ -10,8 +13,6 @@ by Brian Sunter
   (map inc)
   (map dec))
 ```
-## This is a h2
-this is a test
 
 ---
 
