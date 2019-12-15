@@ -2,8 +2,8 @@
 title: Best of Spacemacs
 date: 2019-06-25
 featured_image: /images/blog/spacemacs/writeroom.png
-image_caption: Photo by Dylan Gillis on Unsplash
-excerpt: These are some of my favorite spacemacs features
+image_caption: Spacemacs Editor
+excerpt: These are some of my favorite Spacemacs features
 tags:
     - blog
     - programming
@@ -11,7 +11,7 @@ tags:
 ---
 # Why Spacemacs
 
-> Spacemacs is an opinionated emacs configuration that supports vim keybindings. It has excellent keybindings, plugins, and a declarative configuration. I use spacemacs like a keyboard only IDE.
+Spacemacs is an opinionated emacs configuration that supports vim keybindings. It has excellent keybindings, plugins, and a declarative configuration. I use spacemacs like a keyboard only IDE.
 
 # Hierarchical, searchable, discoverable, keybindings
 The most unique idea in spacemacs is the keybinding system. When you hit the spacebar, a window pops up at the bottom of the screen to show you "sub commands". These are high level categories at the top level and it shows you options such as `p project`, `w window`, `s search`, and `f files`. If you press another key, such as `w` for window, you are shown another set of commands related to window such as vertical and horizontal split. If you type these commands slowly, you can see prompts of all possible commands, but you can also type them quickly, like `SPC w v` for vertical window split. It's easy to manage a large number of keybindings without conflict with with method. You can also type `SPC SPC` to search for keybindings.
