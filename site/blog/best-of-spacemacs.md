@@ -53,6 +53,8 @@ Helm is a general purpose search and completion system that powers Spacemacs. It
 
 Treemacs is a project sidebar that shows directory structure and let's you navigate files. It is similar to the sidebars in other editors, but you can navigate it with the keyboard using vim keybindings, like any other buffer. You can pin projects anywhere on the filesystem to the sidebar which makes working with multiple projects much easier.
 
+![Treemacs](/images/blog/spacemacs/treemacs.png "Treemacs")
+
 ## Open project sidebar `SPC-f-t`
 
 ![Neotree Sidebar](/images/blog/spacemacs/neotree.png "Neotree project sidebar")
