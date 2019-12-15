@@ -67,7 +67,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPassthroughCopy({".tmp/javascript": "javascript"});
   eleventyConfig.addPassthroughCopy({"node_modules/simplelightbox/dist/simple-lightbox.js": "javascript/simplelightbox"});
   eleventyConfig.addPassthroughCopy({"node_modules/simplelightbox/dist/simple-lightbox.css": "css/vendor/simplelightbox"});
-  eleventyConfig.addPassthroughCopy("images");
+  eleventyConfig.addPassthroughCopy({".tmp/images": "images"});
   eleventyConfig.addPassthroughCopy("site/mind-maps");
   eleventyConfig.addPassthroughCopy({".tmp/reveal-talks": "talks"});
 
