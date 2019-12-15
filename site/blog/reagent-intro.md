@@ -121,29 +121,19 @@ which will be rendered as `<div key="value"></>`
 [:a {:href "https://google.com"} "Link to google"]
 ```
 
+# State Management
+For simple state management we can declare an `atom`. Whenever an atom is updated, all views referencing the atom with re-render with the latest data.
 
-``` clojure
-(defn draw-pixel! [canvas x y color]
-(let [ctx (.getContext canvas "2d")
-scale 2]
-(set! (.-fillStyle ctx) color)
-(.fillRect ctx (* scale x) (* scale y) scale scale)))
-(defn reset-canvas! [canvas]
-(let [ctx (.getContext canvas "2d")]
-(set! (.-fillStyle ctx) "white")
-(.fillRect ctx 0 0 (.-width canvas) (.-height canvas))))
-(defn draw-bw-wallpaper! [canvas a b side]
-(let [points 200]
-(dotimes [i points]
-(dotimes [j points]
-(let [x (+ a (* i (/ side points)))
-y (+ b (* j (/ side points)))
-c (int (+ (* x x) (* y y)))]
-(when (even? c)
-(draw-pixel! canvas i j "black")))))))
+```clojure
+(ns counter
+  (:require [reagent.core :as r]))
 
-(def canvas (.createElement js/document "canvas"))
-(.appendChild (.getElementById js/document "black-and-white") canvas)
-(draw-bw-wallpaper! canvas 5 5 9)
+(def click-count (r/atom 0))
+
+(defn counter-component []
+  [:div
+   "Times Clicked: " @click-count ". "
+   [:input {:type "button" :value "Click Here"
+            :on-click #(swap! click-count inc)}]])
 
 ```
