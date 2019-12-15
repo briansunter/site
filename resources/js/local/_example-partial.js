@@ -1,9 +1,11 @@
 
 // add a class of 'intro' to the first paragraph
 // do this on every page apart from the blog page
-if ( !page('blog') )
+if (!page('blog'))
 {
+  const intro = document.querySelector('.content > p');
 
-    document.querySelector('.content > p').classList.add('intro')
-
+  if (intro) {
+    intro.classList.add('intro');
+  }
 }

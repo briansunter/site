@@ -73,7 +73,7 @@ layout: layouts/base.njk
 ```
 
 ## Tailwind CSS
-[Tailwind CSS](https://tailwindcss.com/ "Tailwind CSS") is a CSS framework similar to[Bootstrap](https://getbootstrap.com "Bootstrap") but slightly lower level. For example, Tailwind CSS doesn't include premade buttons, but the buttons are easy to create by decorating the html with classes.
+[Tailwind CSS](https://tailwindcss.com/ "Tailwind CSS") is a CSS framework similar to [Bootstrap](https://getbootstrap.com "Bootstrap") but slightly lower level. For example, Tailwind CSS doesn't include premade buttons, but the buttons are easy to create by decorating the html with classes.
 
 A side effect of these css frameworks is the html can get bloated, but this isn't a big problem if you're using components and templates. You can accomplish a lot while writing very little CSS. It also makes CSS conflicts on deeply nested components less likely.
 
