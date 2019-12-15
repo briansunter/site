@@ -66,9 +66,11 @@ h1, h2, h3, h4, h5, h6 {
         padding-bottom:1rem;
     }
 }
+
 :not(pre) > code {
-padding: 3px;
-border: 1px solid #a09999;
-border-radius: 3px;
-background-color: #eef;
+    margin: 3px;
+    padding: 3px;
+    border: 1px solid #a09999;
+    border-radius: 3px;
+    background-color: #eef;
 }
