@@ -10,7 +10,6 @@ code_excerpt: >
   	(comp 
   		(filter even?) 
   		(map #(* 2 %)))) 
-  		(println "hello")
 
 tags:
     - blog
