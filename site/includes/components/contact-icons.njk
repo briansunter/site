@@ -1,14 +1,14 @@
 <div class="social-icons">
-<ul class="flex flex-wrap">
+<ul class="flex flex-wrap justify-center">
   {% for key, icon in site.contact_links %}
-    <li class="m-4 lg:w-1/5 sm:w-1/2 sm:h-32">
+    <li class="m-4 lg:w-1/5 w-1/3 sm:h-32">
       <a href="{{icon.link}}">
-        <div class="rounded overflow-hidden shadow-lg content-center">
+        <div class="rounded overflow-hidden shadow-lg content-center p-3">
           <div class="flex justify-center">
-            <img class="h-24 w-24 contact-icon" src="{{icon.icon}}">
+            <img class="contact-icon w-10 h-10" src="{{icon.icon}}">
           </div>
           <div class="m-2">
-            <div class="text-center font-bold text-m">{{icon.name}}</div>
+            <div class="text-center font-bold lg:text-lg text-sm">{{icon.name}}</div>
           </div>
         </div>
       </a>
