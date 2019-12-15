@@ -1,9 +1,7 @@
 ---
 title: Transducers in Clojure
 date: 2019-06-25
-featured_image_: /images/blog/spacemacs/writeroom.png
-image_caption: Photo by Dylan Gillis on Unsplash
-excerpt: What are transducers and why would I want to use them?
+excerpt: Transducers are composable forms of map, filter, and reduce-like operations.
 code_lang: clojure
 code_excerpt: >
   (def double-even-xforms 
@@ -17,7 +15,8 @@ tags:
     - functional
     - clojure
 ---
-# Transducers in Clojure
+
+Transducers are composable forms of `map`, `filter`, and `reduce` - like operations. It allows these operations to efficiently be combined together and used in different contexts like asynchronous channels.
 
 ## Sum a Seq of Numbers
 You may already be familiar with a function called `reduce`, which takes a seq and a "reducing function" as params. The reducing function is called with each element in the seq and with a "reduction state so far" param. A good use case for this is finding the sum of a seq of numbers.
@@ -171,15 +170,18 @@ Remember `(fog)(x) and (gof)(x)` from algebra class? That's similar to the `comp
 
 ``` clojure
 (str (+ 8 8 8))
+; => "24"
 ```
 
 
 ``` clojure
 ((comp str +) 8 8 8)
+; => "24"
 ```
 
 ``` clojure
 ((comp clojure.string/reverse str +) 8 8 8)
+; => "42"
 ```
 
 ## Transducer Data Transformation Pipeline
@@ -209,4 +211,23 @@ If we didn't care about multiple passes over the data we could pass this into `r
 We can use transduce to find it in one pass.
 ```clojure
 (transduce double-even-xforms + 0 (range 1 11))
+```
+
+## Transducers on Channels
+Transducers can also be used on asynchronous "go channels". We can define a channel with a transducer, that will transform each element as it is read out of the channel. Not only is our code more efficient, but it's more composable so it can be used in different contexts than just a synchronous reduce.
+
+``` clojure
+
+(def c (async/chan 1 double-even-xforms))
+
+(async/go
+  (async/onto-chan c [5 6 8 12 15]))
+(loop [n (async/<!! c)]
+  (when n
+    (println n)
+    (recur (async/<!! c))))
+
+; => 12
+; => 16
+; => 24
 ```
