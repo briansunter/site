@@ -3,14 +3,15 @@ title: Personal Site
 date: 2019-11-29
 featured_image: /images/blog/11ty.png
 image_caption: Eleventy static site generator
-excerpt: Eleventy
+excerpt: My personal site made with Eleventy, Tailwind CSS, Cloudfront, and Terraform. 
 tags:
     - blog
     - programming
     - frontend
+    - project
 ---
 
-I've rewritten my personal site using [Eleventy](https://www.11ty.io/ "Eleventy"), a Javascript static site generator and am hosting it on Cloudfront configured by terraform.
+I've rewritten my personal site using [Eleventy](https://www.11ty.io/ "Eleventy"), a Javascript static site generator and am hosting it on Cloudfront configured by Terraform.
 
 ## What is a Static Site Generator?
 Static sites are a way to make web pages by generating html from content files like markdown.
@@ -42,7 +43,7 @@ layout: layouts/base.njk
 {% raw %}
 <h1>{{ title }}</h1>
 {{ content | safe }}
-<p><a href="{{ '/' | url }}">← Home</a></p>
+<p><a href="{{ '/' | url }}">Home</a></p>
 {% endraw %}
 ```
 
@@ -105,12 +106,12 @@ You can still extract this out to css with `@apply`
 ```
 
 ## PurgeCSS
-PurgeCSS looks at your html files and removes all unused CSS. Tailwind is usually `58kb` minified and gziped but PurgeCSS compresses it down to the `2.9`kb subset I'm actually using on my website.
+PurgeCSS looks at your html files and removes all unused CSS. Tailwind is usually `58kb` minified and gziped but [PurgeCSS](https://github.com/FullHuman/purgecss "PurgeCSS Github Repo") compresses it down to the `2.9kb` subset I'm actually using on my website.
 
 ## PWA
-I use the eleventry pwa plugin which has workbox support. This precaches most of the website so it's available offline.
+I use the eleventry pwa plugin which has [Workbox](https://developers.google.com/web/tools/workbox "Link to workbox library") support. This precaches most of the website so it's available offline. Most of the content should be loaded before you try to visit it.
 
-# Cloudfront, S3, and build pipeline
+# Cloudfront, S3, and Build Pipeline
 I've completely specified the cloud hosting and deploy pipeline using terraform. The terraform configuration can deploy the following with a small config file with your app name, desired domain or subdomain, and github repo name:
 
 * S3 Bucket for storing assets

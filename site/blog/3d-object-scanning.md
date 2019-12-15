@@ -2,7 +2,7 @@
 title: 3D Object Scanning
 date: 2019-06-25
 featured_image: /images/blog/3d-selfie/3dme.png
-image_caption: Photo by Dylan Gillis on Unsplash
+image_caption: The scan used to print my 3d object.
 excerpt: I went in for a body scan to 3D-print a miniature model of myself. I uploaded the 3D object and ran it in the browser using three.js.
 tags:
     - blog
@@ -10,7 +10,7 @@ tags:
 ---
 # 3D Selfie
 
-> I went in for a body scan to 3D-print a miniature model of myself. I uploaded the 3D object and run it in the browser using three.js
+I went in for a body scan to 3D-print a miniature model of myself. I uploaded the 3D object and run it in the browser using three.js
 
 # [Demo](https://briansunter.github.io/3D-me/ "Demo")
 

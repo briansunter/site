@@ -57,7 +57,7 @@ Treemacs is a project sidebar that shows directory structure and let's you navig
 
 ## Open project sidebar `SPC-f-t`
 
-![Neotree Sidebar](/images/blog/spacemacs/neotree.png "Neotree project sidebar")
+![Neotree Sidebar](/images/blog/spacemacs/sidebar.png "Neotree project sidebar")
 
 # Magit
 Magit is a very comprehensive git UI that has replaced most terminal commands for me. You can stage files, view diffs, commit, rebase, push etc.

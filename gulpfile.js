@@ -204,6 +204,7 @@ const watchFiles = (done) => {
     watch('./resources/sass/**/*.scss', series(compileCSS));
     watch('./talks/**/*.md', series(compileTalks));
     watch('./resources/css/**/*.css', series(bundleCSS));
+    watch('./images/**/*', series(moveImages));
     watch('./resources/js/**/*.js', series(compileJS));
     done();
 }
