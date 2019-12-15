@@ -19,6 +19,7 @@ const terser = require('gulp-terser');
 
 const markdown = require('gulp-markdown');
 const reveal = require('./gulp-reveal');
+const imagemin = require('gulp-imagemin');
 /**
  * File paths
  */
@@ -36,6 +37,10 @@ const paths = {
   cssBundle: {
     source: './resources/css/**/*.css',
     dest: '.tmp/css/'
+  },
+  images: {
+    source: './images/**/*',
+    dest: '.tmp/images/'
   },
   vendorJs: {
     source: './resources/js/vendor/**/*.js',
@@ -74,7 +79,20 @@ class TailwindExtractor {
     }
 }
 
+const optimizeImages = (done) => {
+  return src(paths.images.source)
+    .pipe(plumber({ errorHandler: onError }))
+    .pipe(imagemin())
+    .pipe(dest(paths.images.dest));
+  done();
+};
 
+const moveImages = (done) => {
+  return src(paths.images.source)
+    .pipe(plumber({ errorHandler: onError }))
+    .pipe(dest(paths.images.dest));
+  done();
+};
 /**
  * Compile SCSS & Tailwind
  */
@@ -272,12 +290,12 @@ const minifyCSSPreflight = (done) => {
  *
  * Always double check that everything is still working. If something isn't displaying correctly, it may be because you need to add it to the PurgeCSS whitelist.
  */
-exports.build = series(compileTalks, bundleJs, compileJS, bundleCSS, compileCSSPreflight, minifyCSSPreflight, minifyJS);
+exports.build = series(optimizeImages, compileTalks, bundleJs, compileJS, bundleCSS, compileCSSPreflight, minifyCSSPreflight, minifyJS);
 
 /**
- * [DEFAULT] task
+ * [DEFAULT] development task
  * This should always be the last in the gulpfile
  * This will run while you're building the theme and automatically compile any changes.
  * This includes any html changes you make so that the PurgeCSS file will be updated.
  */
-exports.default = series(bundleJs, bundleCSS, compileCSS, compileJS, watchFiles, compileTalks);
+exports.default = series(moveImages, bundleJs, bundleCSS, compileCSS, compileJS, watchFiles, compileTalks);

@@ -40,5 +40,8 @@
 		"simplelightbox": "^1.17.3",
 		"tailwindcss": "^1.1.4",
 		"through2": "^3.0.1"
+	},
+	"devDependencies": {
+		"gulp-imagemin": "^6.2.0"
 	}
 }
