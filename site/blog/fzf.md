@@ -1,13 +1,16 @@
 ---
 title: fzf - a terminal fuzzy finder
+featured_image: /images/blog/fzf-chrome-history.gif
+image_caption: fzf terminal fuzzy finder
 date: 2019-12-19
 code_lang: bash
 code_excerpt: |
 
 tags:
   - blog
-  - emacs
-  - programming
+  - terminal
+  - bash
+  - productivity
 
 ---
 

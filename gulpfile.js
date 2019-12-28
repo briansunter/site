@@ -20,6 +20,11 @@ const terser = require('gulp-terser');
 const markdown = require('gulp-markdown');
 const reveal = require('./gulp-reveal');
 const imagemin = require('gulp-imagemin');
+var cache = require('gulp-cache');
+var imageminPngquant = require('imagemin-pngquant');
+var imageminZopfli = require('imagemin-zopfli');
+var imageminMozjpeg = require('imagemin-mozjpeg'); //need to run 'brew install libpng'
+var imageminGiflossy = require('imagemin-giflossy');
 /**
  * File paths
  */
@@ -39,7 +44,7 @@ const paths = {
     dest: '.tmp/css/'
   },
   images: {
-    source: './images/**/*',
+    source: './images/**/*.{gif,png,jpg,svg}',
     dest: '.tmp/images/'
   },
   vendorJs: {
@@ -82,7 +87,42 @@ class TailwindExtractor {
 const optimizeImages = (done) => {
   return src(paths.images.source)
     .pipe(plumber({ errorHandler: onError }))
-    .pipe(imagemin())
+    .pipe(imagemin([
+      //png
+      imageminPngquant({
+        speed: 1,
+        quality: [0.95, 1] //lossy settings
+      }),
+      imageminZopfli({
+        more: true
+        // iterations: 50 // very slow but more effective
+      }),
+      //gif
+      // imagemin.gifsicle({
+      //     interlaced: true,
+      //     optimizationLevel: 3
+      // }),
+      //gif very light lossy, use only one of gifsicle or Giflossy
+      imageminGiflossy({
+        optimizationLevel: 3,
+        optimize: 3, //keep-empty: Preserve empty transparent frames
+        lossy: 2
+      }),
+      //svg
+      imagemin.svgo({
+        plugins: [{
+          removeViewBox: false
+        }]
+      }),
+      //jpg lossless
+      imagemin.jpegtran({
+        progressive: true
+      }),
+      //jpg very light lossy, use vs jpegtran
+      imageminMozjpeg({
+        quality: 90
+      })
+    ]))
     .pipe(dest(paths.images.dest));
   done();
 };
