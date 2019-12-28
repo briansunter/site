@@ -6,7 +6,6 @@ const notify = require('gulp-notify');
 const plumber = require('gulp-plumber');
 
 // Styles
-const sass = require('gulp-sass');
 const postcss = require('gulp-postcss');
 const cleanCSS = require('gulp-clean-css');
 const tailwindcss = require('tailwindcss');
@@ -27,12 +26,18 @@ const imageminZopfli = require('imagemin-zopfli');
 const imageminMozjpeg = require('imagemin-mozjpeg');
 const imageminGiflossy = require('imagemin-giflossy');
 
+// Post CSS
+const cssvars = require('postcss-simple-vars');
+const nested = require('postcss-nested');
+const cssImport = require('postcss-import');
+const autoprefixer = require('autoprefixer');
+
 /**
  * File paths
  */
 const paths = {
-  sass: {
-    source: './resources/sass/main.scss',
+  css: {
+    source: './resources/css/styles/main.css',
     dest: '.tmp/css/'
   },
 
@@ -42,8 +47,8 @@ const paths = {
   },
 
   cssBundle: {
-    source: './resources/css/**/*.css',
-    dest: '.tmp/css/'
+    source: './resources/css/vendor/**/*.css',
+    dest: '.tmp/css/vendor/'
   },
   images: {
     source: './images/**/*.{gif,png,jpg,svg}',
@@ -96,7 +101,7 @@ const optimizeImages = (done) => {
         quality: [0.95, 1] //lossy settings
       }),
       imageminZopfli({
-        more: true
+        more: false
         // iterations: 50 // very slow but more effective
       }),
       //gif
@@ -136,19 +141,19 @@ const moveImages = (done) => {
   done();
 };
 /**
- * Compile SCSS & Tailwind
+ * Compile CSS & Tailwind
  */
+const postCSSPlugins = [
+  cssImport,
+  cssvars, nested, autoprefixer,
+  tailwindcss('./tailwind.config.js')
+];
+
 const compileCSS = (done) => {
-    return src(paths.sass.source)
+    return src(paths.css.source)
     .pipe(plumber({ errorHandler: onError }))
-    .pipe(sass())
-    .pipe(postcss([
-        tailwindcss('./tailwind.config.js')
-    ]))
-    .pipe(rename({
-        extname: '.css'
-    }))
-    .pipe(dest(paths.sass.dest))
+    .pipe(postcss(postCSSPlugins))
+    .pipe(dest(paths.css.dest))
     .pipe(notify({
         message: 'Tailwind Compile Success'
     }));
@@ -156,7 +161,7 @@ const compileCSS = (done) => {
 }
 
 /**
- * Compile SCSS & Tailwind
+ * Compile CSS & Tailwind
  */
 const bundleCSS = (done) => {
   return src(paths.cssBundle.source)
@@ -243,9 +248,9 @@ const watchFiles = (done) => {
         'site/includes/**/*.njk',
     ], series(compileCSS));
     watch('./tailwind.config.js', series(compileCSS));
-    watch('./resources/sass/**/*.scss', series(compileCSS));
+    watch('./resources/css/styles/**/*.css', series(compileCSS));
     watch('./talks/**/*.md', series(compileTalks));
-    watch('./resources/css/**/*.css', series(bundleCSS));
+    watch('./resources/css/vendor/*.css', series(bundleCSS));
     watch('./images/**/*', series(moveImages));
     watch('./resources/js/**/*.js', series(compileJS));
     done();
@@ -255,13 +260,12 @@ const watchFiles = (done) => {
 /**
  * CSS Preflight
  *
- * Compile SCSS & Tailwind [PREFLIGHT]
+ * Compile CSS & Tailwind [PREFLIGHT]
  */
 const compileCSSPreflight = (done) => {
-    return src(paths.sass.source)
-    .pipe(sass())
+    return src(paths.css.source)
     .pipe(postcss([
-        tailwindcss('./tailwind.config.js'),
+      ...postCSSPlugins,
         purgecss({
             content: [
                 'site/*.njk',
@@ -296,10 +300,7 @@ const compileCSSPreflight = (done) => {
             ],
         })
     ]))
-    .pipe(rename({
-        extname: '.css'
-    }))
-    .pipe(dest(paths.sass.dest))
+    .pipe(dest(paths.css.dest))
     .pipe(notify({
         message: 'CSS & Tailwind [PREFLIGHT] Success'
     }));

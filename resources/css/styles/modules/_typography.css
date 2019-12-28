@@ -1,12 +1,8 @@
 
-//==========  Typography ==========//
-
-// headings
 h1, h2, h3, h4, h5, h6 {
     @apply font-bold leading-tight mt-0 mb-6;
 }
 
-// content
 .content {
 
     h2 {
@@ -16,7 +12,6 @@ h1, h2, h3, h4, h5, h6 {
     p {
         @apply mb-8;
 
-        // intro paragraph
         &.intro {
             @apply border-b border-gray-200 text-2xl pb-10 mb-10 font-light text-gray-500;
 
@@ -74,3 +69,4 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 3px;
     background-color: #eef;
 }
+
