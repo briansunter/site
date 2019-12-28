@@ -143,9 +143,12 @@ const moveImages = (done) => {
 /**
  * Compile CSS & Tailwind
  */
+
 const postCSSPlugins = [
   cssImport,
-  cssvars, nested, autoprefixer,
+  cssvars,
+  nested,
+  autoprefixer,
   tailwindcss('./tailwind.config.js')
 ];
 
