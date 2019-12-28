@@ -19,12 +19,14 @@ const terser = require('gulp-terser');
 
 const markdown = require('gulp-markdown');
 const reveal = require('./gulp-reveal');
+
+// Images
 const imagemin = require('gulp-imagemin');
-var cache = require('gulp-cache');
-var imageminPngquant = require('imagemin-pngquant');
-var imageminZopfli = require('imagemin-zopfli');
-var imageminMozjpeg = require('imagemin-mozjpeg'); //need to run 'brew install libpng'
-var imageminGiflossy = require('imagemin-giflossy');
+const imageminPngquant = require('imagemin-pngquant');
+const imageminZopfli = require('imagemin-zopfli');
+const imageminMozjpeg = require('imagemin-mozjpeg');
+const imageminGiflossy = require('imagemin-giflossy');
+
 /**
  * File paths
  */
