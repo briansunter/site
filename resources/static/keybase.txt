@@ -1,0 +1,81 @@
+==================================================================
+https://keybase.io/bsunter
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://briansunter.com
+  * I am bsunter (https://keybase.io/bsunter) on keybase.
+  * I have a public key with fingerprint 1CBA EA49 D371 B0EB A536  06D5 2407 0A37 72AA 1890
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101f2a0c3b9cc1f2567169d12e65e2d18ef518558a4e8217066d405011f9a36a2d00a",
+      "fingerprint": "1cbaea49d371b0eba53606d524070a3772aa1890",
+      "host": "keybase.io",
+      "key_id": "24070a3772aa1890",
+      "kid": "0101f2a0c3b9cc1f2567169d12e65e2d18ef518558a4e8217066d405011f9a36a2d00a",
+      "uid": "67b6017b851d2070809d84c1182f9e19",
+      "username": "bsunter"
+    },
+    "merkle_root": {
+      "ctime": 1577613074,
+      "hash_meta": "832ab1f0de485f61c1030d52f6f20e43a35bf4c49692ad5623be373a348dbf33",
+      "seqno": 14000930
+    },
+    "revoke": {
+      "sig_ids": [
+        "709302d16ecb8326c2e82b43f7cdb8ce1dbf4fd9f25d86e348803827d3ded4b30f"
+      ]
+    },
+    "service": {
+      "hostname": "briansunter.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1577613075,
+  "expire_in": 157680000,
+  "prev": "4b079dc113c10c1913a02cb82ec4bf22efffc7d133fd9ac3d83acf7123fbf8cf",
+  "seqno": 56,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.3
+Comment: https://keybase.io/crypto
+
+yMKyAnicrVNdaBxFHL/02mqP2NbmoSn6ELYWEollPnZnZo9YTSEPKumDRakkdpnP
+ZLnc7mV3L/FIA4JWokerSONHSwWl+NA0IgoVbDw1NFQQC770QZBiFGoUP+iDSsXW
+2dMiiI8+7e7M7//7mp3ztxULpY7fz/fcX22t/6Dj0+VGvXDw1umuGUfEquGUZ5yK
+bj/0hNJpFlRC5ZQdAAE0iAOJhS+lffUIhcRXEGniaaQg08aDzPMYdzVDkAJClAs8
+AKHxOSYcKQC40++YMBrTSS0Jo8zSQim45q6vMIUCaME9TABRHnIBBRxTijiHzAd2
+cDxO8wlrTvBU7w5ju2Y/gra9/8D/z77rbTpCBQGQCuZBhawkA75iroSQIeNr6OfA
+VCcRr2qLFmk9ynTizPY7VZ1UJnSQxHGWdyuzMEdAj1ICMaCuzcfT8aCqM24HGUZc
+QAOUdplnCJQQYGBbMcQgoF3MsSeMK12f+IgrjyAsNKZ22WVKGIytjVRPRrFVcAEA
+PgbWQqKn4orO1dNwzNaWOuURh+abtgaipbCqRCLbgnCxoVIJJjW0fK5Rvi1OMaKt
+AAOYIaqw0soVGBjn8dlcLZkKZZs8P6eb+ZOQR391sFvGVeuqlsRZLOMJuzmeZbW0
+nHeTNWo5elqL4G+eQISRsj+KnZjSSRrGkU1ikf+uzet39BO1MNFBGLWXCbNxQa6j
+pyylKwD1lT0ebBuU0IeYA2SDIi1dYRDSxhhJFcTYRuQSK4a5NBQibIRh0vzTo0es
+Tz5mOW15Ec/qiXZmlz8aXV/oKBU2bliX36BCadPWm/fqzoO33Hj0XE9jeu+Jb4ZW
+js0v/PLdyeTiudOvLoyPDhwffRqUvs42HRnu3TZx9FqzSw6O/nzYnw8HfhI/3P7Q
+3IFguPvqpdcuPbXBn+55uHhs45bKDnFqZM/QobvYmblv65uHrnzRYMWBl8K+5m8v
+NnfduLz0Xggv+4vzjeKFmXvf7t9X3nqalSgLOlf3Hz+6+PK+k73be9648MBS65r8
+7M0H9diP9/361c7e768/srB6R3H/659cf8FPDqx9vpm+80ey0tf57t7VySsj7ycr
+X4qLp7bfvePjsO/qoWZr6exq9sqR4W1PDvYVy6113c25t7rPTuK1Logf23N458Cz
+g1sWO5fXTjz/3DMf7rqn9SeYtneZ
+=WBzV
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/bsunter
+
+==================================================================
