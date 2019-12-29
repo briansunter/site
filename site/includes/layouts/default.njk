@@ -10,10 +10,11 @@
     <link rel="apple-touch-icon" href="{{ site.touchIcon }}"/>
 
     {% include 'components/analytics.njk' %}
-    <script<!--  async> -->
-    <!--   if ("serviceWorker" in navigator) -->
-    <!--     navigator.serviceWorker.register("/service-worker.js"); -->
-    <!-- </script -->>
+
+    <script async>
+      if ("serviceWorker" in navigator)
+        navigator.serviceWorker.register("/service-worker.js");
+    </script>
 
     <link rel="manifest" href="/manifest.json">
 
