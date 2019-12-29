@@ -6,7 +6,6 @@ tags:
   - blog
   - programming
   - frontend
-  - design
   - css
 
 ---
