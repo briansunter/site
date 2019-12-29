@@ -75,3 +75,10 @@ c() {
 ```
 
 ![fzf chrome history](/images/blog/fzf-chrome-history.gif "fsf chrome history search")
+
+
+# `CTRL-t`
+
+You can initiate a fzf file search in the middle of a terminal command by pressing `CTRL-t` together on your keyboard. This search is recursive from your current directory.
+
+![fzf ctrl-t](/images/blog/fzf-ctrl-t.gif "fsf ctrl-t file search")
