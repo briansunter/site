@@ -1,7 +1,7 @@
 ---
 title: Replacing sass with PostCSS
 date: 2019-12-28
-
+layout: post
 tags:
   - blog
   - programming
@@ -53,6 +53,9 @@ There is a [plug-in](https://github.com/postcss/postcss-nested "PostCSS nested p
 The [PostCSS Imports Plug-in](https://github.com/postcss/postcss-import "PostCSS Imports Plug-in") allows for code reuse and modularization.
 
 ``` css
+@import "modules/_links.css";
+@import "modules/_typography.css";
+@import "modules/_article-card.css";
 @import "modules/_typography.css";
 ```
 
