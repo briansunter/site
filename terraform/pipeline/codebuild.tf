@@ -1,11 +1,11 @@
 data "template_file" "prod_buildspec" {
-  template = "${file("${path.module}/templates/buildspec.yml")}"
+  template = file("${path.module}/templates/buildspec.yml")
 
   vars = {
-    app_name          = "${var.app_name}"
-    stage             = "${var.git_repository_branch}"
-    bucket_name       = "${var.bucket_name}"
-    distribution_id  = "${var.cloudfront_distribution_id}"
+    app_name          = var.app_name
+    stage             = var.git_repository_branch
+    bucket_name       = var.bucket_name
+    distribution_id  = var.cloudfront_distribution_id
   }
 }
 
@@ -35,7 +35,7 @@ resource "aws_codebuild_project" "prod_app_build" {
 
   cache {
     type  = "LOCAL"
-    modes = ["LOCAL_DOCKER_LAYER_CACHE", "LOCAL_SOURCE_CACHE"]
+    modes = ["LOCAL_DOCKER_LAYER_CACHE", "LOCAL_SOURCE_CACHE", "LOCAL_CUSTOM_CACHE"]
   }
 }
 

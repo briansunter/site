@@ -16,5 +16,5 @@ phases:
       - aws cloudfront create-invalidation --distribution-id ${distribution_id} --paths "/*"
 cache:
   paths:
-    - "$HOME/.npm"
-    - ".gulp-cache"
+    - "/root/.npm/**/*"
+    - ".gulp-cache/**/*"
