@@ -71,6 +71,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPassthroughCopy({"node_modules/simplelightbox/dist/simple-lightbox.css": "css/vendor/simplelightbox"});
   eleventyConfig.addPassthroughCopy({".tmp/images": "images"});
   eleventyConfig.addPassthroughCopy("site/mind-maps");
+  eleventyConfig.addPassthroughCopy({"resources/static/keybase.txt": "keybase.txt"});
   eleventyConfig.addPassthroughCopy({".tmp/reveal-talks": "talks"});
 
   eleventyConfig.addPlugin(syntaxHighlight);
