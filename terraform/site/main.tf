@@ -1,24 +1,21 @@
 # https://github.com/sjkaliski/terraform-static-site/blob/master/main.tf
-provider "aws" {
-  region = "${var.region}"
-}
 
 resource "aws_acm_certificate" "cert" {
   domain_name       = "*.${var.domain}"
   validation_method = "DNS"
-  subject_alternative_names = ["${var.domain}"]
+  subject_alternative_names = [var.domain]
 }
 
 resource "aws_route53_record" "cert_validation" {
-  name    = "${aws_acm_certificate.cert.domain_validation_options.0.resource_record_name}"
-  type    = "${aws_acm_certificate.cert.domain_validation_options.0.resource_record_type}"
-  zone_id = "${var.zone_id}"
-  records = ["${aws_acm_certificate.cert.domain_validation_options.0.resource_record_value}"]
+  name    = aws_acm_certificate.cert.domain_validation_options.0.resource_record_name
+  type    = aws_acm_certificate.cert.domain_validation_options.0.resource_record_type
+  zone_id = var.zone_id
+  records = [aws_acm_certificate.cert.domain_validation_options.0.resource_record_value]
   ttl     = 60
 }
 
 resource "aws_s3_bucket" "root" {
-  bucket = "${var.domain}"
+  bucket = var.domain
 
   website {
     index_document = "index.html"
@@ -26,8 +23,8 @@ resource "aws_s3_bucket" "root" {
 }
 
 resource "aws_s3_bucket_policy" "root" {
-  bucket = "${aws_s3_bucket.root.id}"
-  policy = "${data.aws_iam_policy_document.root.json}"
+  bucket = aws_s3_bucket.root.id
+  policy = data.aws_iam_policy_document.root.json
 }
 
 data "aws_iam_policy_document" "root" {
@@ -58,8 +55,8 @@ resource "aws_cloudfront_distribution" "root_distribution" {
       origin_ssl_protocols   = ["TLSv1", "TLSv1.1", "TLSv1.2"]
     }
 
-    domain_name = "${aws_s3_bucket.root.website_endpoint}"
-    origin_id   = "${var.domain}"
+    domain_name = aws_s3_bucket.root.website_endpoint
+    origin_id   = var.domain
   }
 
   enabled         = true
@@ -71,7 +68,7 @@ resource "aws_cloudfront_distribution" "root_distribution" {
     compress               = true
     allowed_methods        = ["GET", "HEAD"]
     cached_methods         = ["GET", "HEAD"]
-    target_origin_id       = "${var.domain}"
+    target_origin_id       = var.domain
     min_ttl                = 0
     default_ttl            = 60
     max_ttl                = 31536000
@@ -84,7 +81,7 @@ resource "aws_cloudfront_distribution" "root_distribution" {
       }
     }
   }
-  aliases = ["${var.domain}"]
+  aliases = [var.domain]
   restrictions {
     geo_restriction {
       restriction_type = "none"
@@ -97,14 +94,14 @@ resource "aws_cloudfront_distribution" "root_distribution" {
 }
 
 resource "aws_route53_record" "root" {
-  zone_id = "${var.zone_id}"
+  zone_id = var.zone_id
 
-  name = "${var.domain}"
+  name = var.domain
   type = "A"
 
   alias  {
-    name                   = "${aws_cloudfront_distribution.root_distribution.domain_name}"
-    zone_id                = "${aws_cloudfront_distribution.root_distribution.hosted_zone_id}"
+    name                   = aws_cloudfront_distribution.root_distribution.domain_name
+    zone_id                = aws_cloudfront_distribution.root_distribution.hosted_zone_id
     evaluate_target_health = false
   }
 }
@@ -117,8 +114,8 @@ resource "aws_s3_bucket" "www" {
 }
 
 resource "aws_s3_bucket_policy" "www" {
-  bucket = "${aws_s3_bucket.www.id}"
-  policy = "${data.aws_iam_policy_document.www.json}"
+  bucket = aws_s3_bucket.www.id
+  policy = data.aws_iam_policy_document.www.json
 }
 
 data "aws_iam_policy_document" "www" {
@@ -149,7 +146,7 @@ resource "aws_cloudfront_distribution" "www_distribution" {
       origin_ssl_protocols   = ["TLSv1", "TLSv1.1", "TLSv1.2"]
     }
 
-    domain_name = "${aws_s3_bucket.www.website_endpoint}"
+    domain_name = aws_s3_bucket.www.website_endpoint
     origin_id   = "www.${var.domain}"
   }
 
@@ -189,13 +186,13 @@ resource "aws_cloudfront_distribution" "www_distribution" {
 }
 
 resource "aws_route53_record" "www" {
-  zone_id = "${var.zone_id}"
+  zone_id = var.zone_id
   name    = "www.${var.domain}"
   type    = "A"
 
   alias {
-    name                   = "${aws_cloudfront_distribution.www_distribution.domain_name}"
-    zone_id                = "${aws_cloudfront_distribution.www_distribution.hosted_zone_id}"
+    name                   = aws_cloudfront_distribution.www_distribution.domain_name
+    zone_id                = aws_cloudfront_distribution.www_distribution.hosted_zone_id
     evaluate_target_health = false
   }
 }
