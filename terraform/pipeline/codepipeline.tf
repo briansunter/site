@@ -1,9 +1,9 @@
 resource "aws_codepipeline" "prod_pipeline" {
   name     = "${var.app_name}-${var.git_repository_branch}-pipeline"
-  role_arn = "${aws_iam_role.codepipeline_role.arn}"
+  role_arn = aws_iam_role.codepipeline_role.arn
 
   artifact_store {
-    location = "${aws_s3_bucket.source.bucket}"
+    location = aws_s3_bucket.source.bucket
     type     = "S3"
   }
 
@@ -19,9 +19,9 @@ resource "aws_codepipeline" "prod_pipeline" {
       output_artifacts = ["source"]
 
       configuration = {
-        Owner  = "${var.git_repository_owner}"
-        Repo   = "${var.git_repository_name}"
-        Branch = "${var.git_repository_branch}"
+        Owner  = var.git_repository_owner
+        Repo   = var.git_repository_name
+        Branch = var.git_repository_branch
       }
     }
   }

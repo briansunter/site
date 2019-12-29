@@ -20,6 +20,7 @@ const markdown = require('gulp-markdown');
 const reveal = require('./gulp-reveal');
 
 // Images
+const cache = require('gulp-cache');
 const imagemin = require('gulp-imagemin');
 const imageminPngquant = require('imagemin-pngquant');
 const imageminZopfli = require('imagemin-zopfli');
@@ -31,6 +32,7 @@ const cssvars = require('postcss-simple-vars');
 const nested = require('postcss-nested');
 const cssImport = require('postcss-import');
 const autoprefixer = require('autoprefixer');
+const fileCache = new cache.Cache({cacheDirName: '.gulp-cache', tmpDir: __dirname});
 
 /**
  * File paths
@@ -94,7 +96,7 @@ class TailwindExtractor {
 const optimizeImages = (done) => {
   return src(paths.images.source)
     .pipe(plumber({ errorHandler: onError }))
-    .pipe(imagemin([
+    .pipe(cache(imagemin([
       //png
       imageminPngquant({
         speed: 1,
@@ -129,7 +131,7 @@ const optimizeImages = (done) => {
       imageminMozjpeg({
         quality: 90
       })
-    ]))
+    ]), { fileCache }))
     .pipe(dest(paths.images.dest));
   done();
 };
@@ -328,6 +330,8 @@ const minifyCSSPreflight = (done) => {
     }));
 }
 
+
+exports.clear = series((done) => fileCache.clear(null,done));
 
 /**
  * [BUILD] task
