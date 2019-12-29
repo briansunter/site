@@ -53,7 +53,7 @@ const paths = {
     dest: '.tmp/css/vendor/'
   },
   images: {
-    source: './images/**/*.{gif,png,jpg,svg}',
+    source: './images/**/*.{gif,png,jpg,svg,ico}',
     dest: '.tmp/images/'
   },
   vendorJs: {
