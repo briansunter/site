@@ -34,8 +34,9 @@ resource "aws_codebuild_project" "prod_app_build" {
   }
 
   cache {
-    type  = "LOCAL"
+    type  = "S3"
     modes = ["LOCAL_DOCKER_LAYER_CACHE", "LOCAL_SOURCE_CACHE", "LOCAL_CUSTOM_CACHE"]
+    location = "${aws_s3_bucket.source.id}/build-cache"
   }
 }
 
