@@ -1,4 +1,3 @@
-
 //  General
 const { gulp, src, dest, watch, series, parallel } = require('gulp');
 const rename = require('gulp-rename');
