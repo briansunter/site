@@ -15,7 +15,7 @@ I've always disked running `npm install -g create-react-app`to have a command li
 
 In my `~/.dotfiles` directory I have a `node` folder with a `package.json`. Whenever I need a tool I install it to this project.
 
-In my `~/.zshrc` I add `node_modules/.bin` to my `$PATH`.
+In my `~/.zshrc` I add `~/.dotfiles/node/node_modules/.bin` to my `$PATH`.
 
 ``` bash
 export PATH="$HOME/.dotfiles/node/node_modules/.bin:$PATH"
