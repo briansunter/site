@@ -348,4 +348,7 @@ exports.build = series(optimizeImages, compileTalks, bundleJs, compileJS, bundle
  * This will run while you're building the theme and automatically compile any changes.
  * This includes any html changes you make so that the PurgeCSS file will be updated.
  */
-exports.default = series(moveImages, bundleJs, bundleCSS, compileCSS, compileJS, watchFiles, compileTalks);
+
+exports['build:dev'] = series(moveImages, bundleJs, bundleCSS, compileCSS, compileJS,  compileTalks);
+
+exports.default = series(moveImages, bundleJs, bundleCSS, compileCSS, compileJS,  compileTalks, watchFiles);
