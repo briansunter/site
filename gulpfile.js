@@ -24,7 +24,7 @@ const imagemin = require('gulp-imagemin');
 const imageminPngquant = require('imagemin-pngquant');
 const imageminZopfli = require('imagemin-zopfli');
 const imageminMozjpeg = require('imagemin-mozjpeg');
-const imageminGiflossy = require('imagemin-giflossy');
+const imageminGifsicle = require('imagemin-gifsicle');
 
 // Post CSS
 const cssvars = require('postcss-simple-vars');
@@ -106,15 +106,9 @@ const optimizeImages = (done) => {
         // iterations: 50 // very slow but more effective
       }),
       //gif
-      // imagemin.gifsicle({
-      //     interlaced: true,
-      //     optimizationLevel: 3
-      // }),
-      //gif very light lossy, use only one of gifsicle or Giflossy
-      imageminGiflossy({
-        optimizationLevel: 3,
-        optimize: 3, //keep-empty: Preserve empty transparent frames
-        lossy: 2
+      imageminGifsicle({
+        interlaced: true,
+        optimizationLevel: 3
       }),
       //svg
       imagemin.svgo({

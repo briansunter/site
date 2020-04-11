@@ -36,7 +36,7 @@
 		"gulp-uglify": "^3.0.2",
 		"gulp-util": "^3.0.8",
 		"html-minifier": "^4.0.0",
-		"imagemin-giflossy": "^5.1.10",
+		"imagemin-gifsicle": "^7.0.0",
 		"imagemin-mozjpeg": "^8.0.0",
 		"imagemin-pngquant": "^8.0.0",
 		"imagemin-zopfli": "^6.0.0",
