@@ -9,12 +9,18 @@ phases:
   build:
     commands:
       - npm run build
+      - npm run test:lh:ci
   post_build:
     commands:
       - aws s3 sync --exclude '*.html' --delete dist/ s3://${bucket_name} --cache-control max-age=31536000
       - aws s3 sync --include '*.html' --delete dist/ s3://${bucket_name} --cache-control no-cache
       - echo 'Invalidating distribution cache'
       - aws cloudfront create-invalidation --distribution-id ${distribution_id} --paths "/*"
+reports:
+  LightHouseReports:
+    base-directory: '.lighthouseci/*'
+    files:
+      - '**/*'
 cache:
   paths:
     - "/root/.npm/**/*"
