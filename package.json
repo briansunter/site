@@ -4,6 +4,8 @@
 	"description": "The personal site of Brian Sunter",
 	"scripts": {
 		"dev": "gulp build:dev && ELEVENTY_ENV=development eleventy --config=eleventy.config.js --serve & gulp",
+    "serve": "eleventy --config=eleventy.config.js --serve --dryrun --quiet",
+    "test:lh:ci": "lhci collect --start-server-command='npm run serve' --url=http://localhost:8080 --settings.chromeFlags='--no-sandbox' --startServerReadyPattern 'Serving files from:'",
 		"build": "gulp build && eleventy --config=eleventy.config.js"
 	},
 	"repository": {
@@ -18,6 +20,7 @@
 		"@babel/core": "^7.9.0",
 		"@babel/preset-env": "^7.9.5",
 		"@fullhuman/postcss-purgecss": "^1.2.0",
+		"@lhci/cli": "^0.3.12",
 		"@mightyplow/eleventy-plugin-cache-buster": "^1.1.3",
 		"autoprefixer": "^9.7.6",
 		"eleventy-plugin-lazyimages": "^1.1.1",
