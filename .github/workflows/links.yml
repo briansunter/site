@@ -18,5 +18,5 @@ jobs:
         with:
           url: http://briansunter.com/
           pages_path: ./dist/
-          cmd_params: --buffer-size=8192 --concurrency=10 --skip-tls-verification --limit-redirections=5 --timeout=20  # muffet parameters
+          cmd_params: --buffer-size=8192 --concurrency=10 --skip-tls-verification --limit-redirections=5 --timeout=20  -e linkedin -e googletagmanager -e googleapis 
           run_timeout: 600  # maximum amount of time to run muffet (default is set to 300 seconds)
