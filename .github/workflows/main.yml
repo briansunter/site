@@ -4,12 +4,12 @@ jobs:
   static-dist-dir:
     runs-on: ubuntu-latest
     steps:
+      - run: npm install
+      - run: npm run build
       - uses: actions/checkout@v2
       - name: Run Lighthouse against a static dist dir
         uses: treosh/lighthouse-ci-action@v2
         with:
           # no urls needed, since it uses local folder to scan .html files
           configPath: './lighthouserc.json'
-      - run: npm install
-      - run: npm run build
 
