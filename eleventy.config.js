@@ -31,7 +31,7 @@ module.exports = eleventyConfig => {
     newSrc.push(suffix);
     newSrc = newSrc.join('.');
 
-    return `<link rel="stylesheet" href="${newSrc}" media="none">`;
+    return `<link rel="stylesheet" href="${newSrc}"  media="none" onload="if(media!='all')media='all'">`;
   });
 
     // Add a readable date formatter filter to Nunjucks
