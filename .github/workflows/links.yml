@@ -1,0 +1,22 @@
+name: Check Links
+on: [push, pull_request]
+jobs:
+  CI:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v1
+
+      - name: Install
+        run: npm ci
+
+      - name: build
+        run: npm run build
+
+      - name: Check
+        uses: ruzickap/action-my-broken-link-checker@v1
+        with:
+          url: https://briansunter.com/
+          pages_path: ./dist/
+          cmd_params: --buffer-size=8192 --concurrency=10 --skip-tls-verification --limit-redirections=5 --timeout=20  -e linkedin -e googletagmanager -e googleapis 
+          run_timeout: 600  # maximum amount of time to run muffet (default is set to 300 seconds)
