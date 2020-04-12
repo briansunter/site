@@ -22,7 +22,7 @@ Instead of launching a full emacs client every time you want to edit a file, it'
 
 `emacsclient -c` opens a separate GUI instance
 
-## `launchd` and macos [Launch Agents](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/Introduction.html#//apple_ref/doc/uid/10000172i-SW1-SW1 "Launch Agents")
+## `launchd` and macos [Launch Agents](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/Introduction.html "Launch Agents")
 
 If we frequently use emacs we can have the macos process manager start an emacs daemon on login and restart it if the deamon dies.
 
