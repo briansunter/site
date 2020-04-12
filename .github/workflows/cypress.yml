@@ -19,7 +19,7 @@ jobs:
           start: npm run serve
 
       - uses: actions/upload-artifact@v1
-        if: always()
+        if: failure()
         with:
           name: cypress-screenshots
           path: cypress/screenshots
