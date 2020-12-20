@@ -127,11 +127,10 @@ const optimizeImages = () => {
     .pipe(dest(paths.images.dest));
 };
 
-const moveImages = (done) => {
+const moveImages = async () => {
   return src(paths.images.source)
     .pipe(plumber({ errorHandler: onError }))
     .pipe(dest(paths.images.dest));
-  done();
 };
 /**
  * Compile CSS & Tailwind
@@ -145,7 +144,7 @@ const postCSSPlugins = [
   tailwindcss('./tailwind.config.js')
 ];
 
-const compileCSS = (done) => {
+const compileCSS = async () => {
     return src(paths.css.source)
     .pipe(plumber({ errorHandler: onError }))
     .pipe(postcss(postCSSPlugins))
@@ -153,23 +152,21 @@ const compileCSS = (done) => {
     .pipe(notify({
         message: 'Tailwind Compile Success'
     }));
-    done();
 }
 
 /**
  * Compile CSS & Tailwind
  */
-const bundleCSS = (done) => {
+const bundleCSS = async () => {
   return src(paths.cssBundle.source)
     .pipe(plumber({ errorHandler: onError }))
     .pipe(dest(paths.cssBundle.dest))
     .pipe(notify({
       message: 'Bundle CSS Complete'
     }));
-  done();
 };
 
-const bundleJs = (done) => {
+const bundleJs = async () => {
   return src(paths.vendorJs.source)
     .pipe(plumber({ errorHandler: onError }))
     .pipe(rename({
@@ -180,7 +177,6 @@ const bundleJs = (done) => {
     .pipe(notify({
       message: 'Vendor JS Complete'
     }));
-  done();
 };
 
 const compileTalks = async () => {
@@ -200,7 +196,7 @@ const compileTalks = async () => {
 /**
  * Concatinate and compile scripts
  */
-const compileJS = (done) => {
+const compileJS = async () => {
     return src(paths.javascript.source)
     .pipe(plumber({ errorHandler: onError }))
     .pipe(babel({
@@ -212,7 +208,6 @@ const compileJS = (done) => {
     .pipe(notify({
         message: 'Javascript Compile Success'
     }));
-    done();
 };
 
 
@@ -220,7 +215,7 @@ const compileJS = (done) => {
  * Minify scripts
  * This will be ran as part of our preflight task
  */
-const minifyJS = (done) => {
+const minifyJS = async () => {
     return src(paths.javascript.dest + 'main.js')
     .pipe(rename({
         suffix: '.min'
@@ -230,15 +225,14 @@ const minifyJS = (done) => {
     .pipe(notify({
         message: 'Javascript Minify Success'
     }));
-    done();
 }
 
 
 /**
  * Watch files
  */
-const watchFiles = (done) => {
-    watch([
+const watchFiles = async () => {
+    return watch([
         'site/*.njk',
         'site/includes/**/*.njk',
     ], series(compileCSS));
@@ -248,7 +242,6 @@ const watchFiles = (done) => {
     watch('./resources/css/vendor/*.css', series(bundleCSS));
     watch('./images/**/*', series(moveImages));
     watch('./resources/js/**/*.js', series(compileJS));
-    done();
 }
 
 
@@ -257,7 +250,7 @@ const watchFiles = (done) => {
  *
  * Compile CSS & Tailwind [PREFLIGHT]
  */
-const compileCSSPreflight = (done) => {
+const compileCSSPreflight = async () => {
     return src(paths.css.source)
     .pipe(postcss([
       ...postCSSPlugins,
@@ -305,7 +298,7 @@ const compileCSSPreflight = (done) => {
 /**
  * Minify CSS [PREFLIGHT]
  */
-const minifyCSSPreflight = (done) => {
+const minifyCSSPreflight = async () => {
     return src([
         '.tmp/css/**/*.css',
         '!.tmp/css/**/*.min.css'
@@ -321,7 +314,7 @@ const minifyCSSPreflight = (done) => {
 }
 
 
-exports.clear = series((done) => fileCache.clear(null,done));
+exports.clear = series(async () => fileCache.clear());
 
 /**
  * [BUILD] task
