@@ -13,10 +13,11 @@ jobs:
       - name: build
         run: npm run build
 
-      - name: Check
-        uses: ruzickap/action-my-broken-link-checker@v2
-        with:
-          url: https://briansunter.com
-          pages_path: ./dist/
-          cmd_params: --buffer-size=8192 --max-connections=10 --color=always --skip-tls-verification --limit-redirections=5 --timeout=20  # muffet parameters
-          run_timeout: 600  # maximum amount of time to run muffet (default is set to 300 seconds)
+      - name: Check links using script
+        env:
+          INPUT_URL: https://briansunter.com
+          INPUT_PAGES_PATH: ./dist/
+          INPUT_CMD_PARAMS: "--skip-tls-verification --verbose --color=always"
+          INPUT_RUN_TIMEOUT: 100
+          INPUT_DEBUG: true
+        run: wget -qO- https://raw.githubusercontent.com/ruzickap/action-my-broken-link-checker/v2/entrypoint.sh | bash
