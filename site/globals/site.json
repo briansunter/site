@@ -25,6 +25,8 @@
     "linkedin":   { "link": "https://www.linkedin.com/in/brian-sunter-9853a649/", "name": "LinkedIn", "icon":"/images/icons/linkedin.svg"},
     "facebook":   { "link": "https://www.facebook.com/bsunter", "name": "Facebook", "icon":"/images/icons/facebook.svg"},
     "twitter":   { "link": "https://www.twitter.com/bsunter", "name": "Twitter", "icon":"/images/icons/twitter.svg"},
-    "keybase":   { "link": "https://www.keybase.io/bsunter", "name": "Keybase", "icon":"/images/icons/keybase.svg"}
+    "keybase":   { "link": "https://www.keybase.io/bsunter", "name": "Keybase", "icon":"/images/icons/keybase.svg"},
+    "pubkey":   { "link": "https://briansunter.com/data/pubkey.txt", "name": "PGP Key", "icon":"/images/icons/key.svg"},
+    "bitcoin":   { "link": "https://briansunter.com/bitcoin/", "name": "Bitcoin", "icon":"/images/icons/bitcoin.svg"}
   }
 }
