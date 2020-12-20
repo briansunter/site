@@ -14,7 +14,7 @@ jobs:
         run: npm run build
 
       - name: Check
-        uses: ruzickap/action-my-broken-link-checker@v1
+        uses: ruzickap/action-my-broken-link-checker@v1.1.0
         with:
           url: https://briansunter.com/
           pages_path: ./dist/
