@@ -65,7 +65,7 @@ The [Autoprefixr Plug-in](https://github.com/postcss/autoprefixer "Autoprefixr P
 
 # Special Plug-ins - TailwindCSS
 
-The [Tailwind CSS Framework](https://tailwindcss.com/docs/using-with-preprocessors/#app "Tailwind CSS Framework") includes a PostCSS Plug-in.
+The [Tailwind CSS Framework](https://tailwindcss.com/docs/using-with-preprocessors "Tailwind CSS Framework") includes a PostCSS Plug-in.
 This plug-in adds some additional keywords like (like `@tailwind`, `@apply`, `theme()` that make theming easier. It also generates a theme based on your configuration file.
 
 ``` js
