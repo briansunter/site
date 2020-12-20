@@ -4,6 +4,15 @@ jobs:
   CI:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v1
+
+      - name: Install
+        run: npm ci
+
+      - name: build
+        run: npm run build
+
       - name: Check
         uses: ruzickap/action-my-broken-link-checker@v2
         with:
