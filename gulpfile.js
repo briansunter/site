@@ -22,6 +22,7 @@ const reveal = require('./gulp-reveal');
 const cache = require('gulp-cache');
 const imagemin = require('gulp-imagemin');
 const imageminPngquant = require('imagemin-pngquant');
+const imageminJpegtran = require('imagemin-jpegtran');
 const imageminZopfli = require('imagemin-zopfli');
 const imageminMozjpeg = require('imagemin-mozjpeg');
 const imageminGifsicle = require('imagemin-gifsicle');
@@ -90,7 +91,7 @@ const TailwindExtractor = content => {
   return content.match(/[A-Za-z0-9-_:\/]+/g) || [];
 };
 
-const optimizeImages = (done) => {
+const optimizeImages = () => {
   return src(paths.images.source)
     .pipe(plumber({ errorHandler: onError }))
     .pipe(cache(imagemin([
@@ -115,7 +116,7 @@ const optimizeImages = (done) => {
         }]
       }),
       //jpg lossless
-      imagemin.jpegtran({
+      imageminJpegtran({
         progressive: true
       }),
       //jpg very light lossy, use vs jpegtran
@@ -124,7 +125,6 @@ const optimizeImages = (done) => {
       })
     ]), { fileCache }))
     .pipe(dest(paths.images.dest));
-  done();
 };
 
 const moveImages = (done) => {
@@ -183,7 +183,7 @@ const bundleJs = (done) => {
   done();
 };
 
-const compileTalks = (done) => {
+const compileTalks = async () => {
   return src(paths.talks.source)
     .pipe(plumber({ errorHandler: onError }))
     .pipe(markdown())
@@ -196,7 +196,6 @@ const compileTalks = (done) => {
     .pipe(notify({
       message: 'Compile talks complete'
     }));
-  done();
 };
 /**
  * Concatinate and compile scripts
