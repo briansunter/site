@@ -53,6 +53,7 @@ layout: layouts/base.njk
 │   └── firstpost.md
 ├── package-lock.json
 ├── package.json
+
 ├── src
 │   ├── _data
 │   │   └── siteData.json
@@ -130,32 +131,6 @@ git_repository_branch = "master"
 ```
 ![AWS Code Pipeline](/images/blog/codepipeline.png "AWS Code Pipeline")
 With this setup my site deploys and is live within 2 minutes of pushing a commit.
-
-
-# Talks
-
-I have a custom gulp build pipeline for compiling markdown files into [RevealJS](https://github.com/hakimel/reveal.js/ "Reveal JS") talks. This allows me to write simple markdown files and get a decent slidedeck.
-
-``` js
-const compileTalks = (done) => {
-  return src(paths.talks.source)
-    .pipe(plumber({ errorHandler: onError }))
-    .pipe(markdown())
-    .pipe(reveal())
-    .pipe(rename((path) => {
-      path.dirname += ('/' + path.basename);
-      path.basename = 'index';
-    }))
-    .pipe(dest(paths.talks.dest))
-    .pipe(notify({
-      message: 'Compile talks complete'
-    }));
-  done();
-};
-```
-[![Talks Example](/images/blog/talks.png "RevealJS Talks")](/talks/clojure "Example")
-
-[Example](/talks/clojure "Example")
 
 # Mind Maps
 Another interesting feature is automatically compiling freemind format "[Mind Maps](http://www.inboundtom.co.uk/introduction-mind-maps/ "Mind Maps")" into nice diagrams. I use [Mind Node](https://mindnode.com/ "Mind Node") to edit the mind maps.
