@@ -5,7 +5,9 @@ My Personal Site made with Eleventy.js and gulp.
 
 ![Cypress](https://github.com/briansunter/site/workflows/Cypress/badge.svg)
 
-![Check Links](https://github.com/briansunter/site/workflows/Check%20Links/badge.svg)
+![Links](https://github.com/briansunter/site/workflows/Links/badge.svg)
+
+
 ## Usage
 `npm i`
 `npm run dev`
