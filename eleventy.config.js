@@ -70,7 +70,9 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPassthroughCopy({".tmp/images": "images"});
   eleventyConfig.addPassthroughCopy("site/mind-maps");
   eleventyConfig.addPassthroughCopy({"resources/static/keybase.txt": "keybase.txt"});
-  eleventyConfig.addPassthroughCopy({".tmp/reveal-talks": "talks"});
+
+  eleventyConfig.addPassthroughCopy({"resources/data/": "data/"});
+    eleventyConfig.addPassthroughCopy({".tmp/reveal-talks": "talks"});
 
   eleventyConfig.addPlugin(syntaxHighlight);
 
