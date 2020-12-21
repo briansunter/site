@@ -22,6 +22,7 @@ const reveal = require('./gulp-reveal');
 const cache = require('gulp-cache');
 const imagemin = require('gulp-imagemin');
 const imageminPngquant = require('imagemin-pngquant');
+const imageminJpegtran = require('imagemin-jpegtran');
 const imageminZopfli = require('imagemin-zopfli');
 const imageminMozjpeg = require('imagemin-mozjpeg');
 const imageminGifsicle = require('imagemin-gifsicle');
@@ -86,13 +87,11 @@ var onError = function(err) {
 /**
  * Tailwind extractor
  */
-class TailwindExtractor {
-    static extract(content) {
-        return content.match(/[A-z0-9-:\/]+/g) || [];
-    }
-}
+const TailwindExtractor = content => {
+  return content.match(/[A-Za-z0-9-_:\/]+/g) || [];
+};
 
-const optimizeImages = (done) => {
+const optimizeImages = () => {
   return src(paths.images.source)
     .pipe(plumber({ errorHandler: onError }))
     .pipe(cache(imagemin([
@@ -117,7 +116,7 @@ const optimizeImages = (done) => {
         }]
       }),
       //jpg lossless
-      imagemin.jpegtran({
+      imageminJpegtran({
         progressive: true
       }),
       //jpg very light lossy, use vs jpegtran
@@ -126,14 +125,12 @@ const optimizeImages = (done) => {
       })
     ]), { fileCache }))
     .pipe(dest(paths.images.dest));
-  done();
 };
 
-const moveImages = (done) => {
+const moveImages = () => {
   return src(paths.images.source)
     .pipe(plumber({ errorHandler: onError }))
     .pipe(dest(paths.images.dest));
-  done();
 };
 /**
  * Compile CSS & Tailwind
@@ -147,7 +144,7 @@ const postCSSPlugins = [
   tailwindcss('./tailwind.config.js')
 ];
 
-const compileCSS = (done) => {
+const compileCSS = () => {
     return src(paths.css.source)
     .pipe(plumber({ errorHandler: onError }))
     .pipe(postcss(postCSSPlugins))
@@ -155,23 +152,21 @@ const compileCSS = (done) => {
     .pipe(notify({
         message: 'Tailwind Compile Success'
     }));
-    done();
 }
 
 /**
  * Compile CSS & Tailwind
  */
-const bundleCSS = (done) => {
+const bundleCSS = () => {
   return src(paths.cssBundle.source)
     .pipe(plumber({ errorHandler: onError }))
     .pipe(dest(paths.cssBundle.dest))
     .pipe(notify({
       message: 'Bundle CSS Complete'
     }));
-  done();
 };
 
-const bundleJs = (done) => {
+const bundleJs = () => {
   return src(paths.vendorJs.source)
     .pipe(plumber({ errorHandler: onError }))
     .pipe(rename({
@@ -182,28 +177,26 @@ const bundleJs = (done) => {
     .pipe(notify({
       message: 'Vendor JS Complete'
     }));
-  done();
 };
 
-const compileTalks = (done) => {
-  return src(paths.talks.source)
-    .pipe(plumber({ errorHandler: onError }))
-    .pipe(markdown())
-    .pipe(reveal())
-    .pipe(rename((path) => {
-      path.dirname += ('/' + path.basename);
-      path.basename = 'index';
-    }))
-    .pipe(dest(paths.talks.dest))
-    .pipe(notify({
-      message: 'Compile talks complete'
-    }));
-  done();
-};
+// const compileTalks = () => {
+//   return src(paths.talks.source)
+//     .pipe(plumber({ errorHandler: onError }))
+//     .pipe(markdown())
+//     .pipe(reveal())
+//     .pipe(rename((path) => {
+//       path.dirname += ('/' + path.basename);
+//       path.basename = 'index';
+//     }))
+//     .pipe(dest(paths.talks.dest))
+//     .pipe(notify({
+//       message: 'Compile talks complete'
+//     }));
+// };
 /**
  * Concatinate and compile scripts
  */
-const compileJS = (done) => {
+const compileJS = () => {
     return src(paths.javascript.source)
     .pipe(plumber({ errorHandler: onError }))
     .pipe(babel({
@@ -215,7 +208,6 @@ const compileJS = (done) => {
     .pipe(notify({
         message: 'Javascript Compile Success'
     }));
-    done();
 };
 
 
@@ -223,7 +215,7 @@ const compileJS = (done) => {
  * Minify scripts
  * This will be ran as part of our preflight task
  */
-const minifyJS = (done) => {
+const minifyJS = () => {
     return src(paths.javascript.dest + 'main.js')
     .pipe(rename({
         suffix: '.min'
@@ -233,15 +225,14 @@ const minifyJS = (done) => {
     .pipe(notify({
         message: 'Javascript Minify Success'
     }));
-    done();
 }
 
 
 /**
  * Watch files
  */
-const watchFiles = (done) => {
-    watch([
+const watchFiles = () => {
+    return watch([
         'site/*.njk',
         'site/includes/**/*.njk',
     ], series(compileCSS));
@@ -251,7 +242,6 @@ const watchFiles = (done) => {
     watch('./resources/css/vendor/*.css', series(bundleCSS));
     watch('./images/**/*', series(moveImages));
     watch('./resources/js/**/*.js', series(compileJS));
-    done();
 }
 
 
@@ -260,7 +250,7 @@ const watchFiles = (done) => {
  *
  * Compile CSS & Tailwind [PREFLIGHT]
  */
-const compileCSSPreflight = (done) => {
+const compileCSSPreflight = () => {
     return src(paths.css.source)
     .pipe(postcss([
       ...postCSSPlugins,
@@ -308,7 +298,7 @@ const compileCSSPreflight = (done) => {
 /**
  * Minify CSS [PREFLIGHT]
  */
-const minifyCSSPreflight = (done) => {
+const minifyCSSPreflight = () => {
     return src([
         '.tmp/css/**/*.css',
         '!.tmp/css/**/*.min.css'
@@ -324,7 +314,7 @@ const minifyCSSPreflight = (done) => {
 }
 
 
-exports.clear = series((done) => fileCache.clear(null,done));
+exports.clear = series(() => fileCache.clear());
 
 /**
  * [BUILD] task
@@ -334,7 +324,7 @@ exports.clear = series((done) => fileCache.clear(null,done));
  *
  * Always double check that everything is still working. If something isn't displaying correctly, it may be because you need to add it to the PurgeCSS whitelist.
  */
-exports.build = series(optimizeImages, compileTalks, bundleJs, compileJS, bundleCSS, compileCSSPreflight, minifyCSSPreflight, minifyJS);
+exports.build = series(optimizeImages,  bundleJs, compileJS, bundleCSS, compileCSSPreflight, minifyCSSPreflight, minifyJS);
 
 /**
  * [DEFAULT] development task
@@ -343,6 +333,6 @@ exports.build = series(optimizeImages, compileTalks, bundleJs, compileJS, bundle
  * This includes any html changes you make so that the PurgeCSS file will be updated.
  */
 
-exports['build:dev'] = series(moveImages, bundleJs, bundleCSS, compileCSS, compileJS,  compileTalks);
+exports['build:dev'] = series(moveImages, bundleJs, bundleCSS, compileCSS, compileJS  );
 
-exports.default = series(moveImages, bundleJs, bundleCSS, compileCSS, compileJS,  compileTalks, watchFiles);
+exports.default = series(moveImages, bundleJs, bundleCSS, compileCSS, compileJS,   watchFiles);
