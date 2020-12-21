@@ -34,6 +34,7 @@ pre::-webkit-scrollbar-thumb {
 
 code[class*="language-"],
 pre[class*="language-"] {
+   font-size: .9rem;
   color: #ccc;
   background: rgb(40, 41, 54);
   text-shadow: none;
@@ -391,7 +392,7 @@ div.code-toolbar > .toolbar a,
 div.code-toolbar > .toolbar button,
 div.code-toolbar > .toolbar span {
   color: #ccc;
-  font-size: 0.8em;
+  font-size: 0.5em;
   padding: 0.5em;
   background: rgba(98, 114, 164, 1);
   border-radius: 0.5em;
