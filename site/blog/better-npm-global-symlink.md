@@ -7,6 +7,9 @@ tags:
   - programming
   - javascript
 
+code_excerpt: >
+    npm install -g cypress@4.3.0
+code_lang: javascript
 ---
 
 A better way to manage global npm command line tools.

@@ -7,6 +7,12 @@ tags:
   - programming
   - frontend
   - css
+code_lang: css
+code_excerpt: >
+    .foo {
+        /* red */
+        color: var(--some-color);
+    }
 
 ---
 
