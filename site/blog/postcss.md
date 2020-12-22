@@ -8,6 +8,15 @@ tags:
   - frontend
   - css
 
+code_lang: js
+code_excerpt: |
+  :root {
+      --some-color: red;
+  }
+  .foo {
+        /*red */
+        color: var(--some-color);
+  }
 ---
 
 [PostCSS](https://postcss.org/ "PostCSS Tool") has all the features I need from [sass](https://sass-lang.com/ "Sass design language") for managing CSS. At this point sass feels like [CoffeeScript](https://coffeescript.org/ "Coffee Script Language") and PostCSS feels like [Babel](https://babeljs.io/ "Babel JavaScript Compiler").

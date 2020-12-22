@@ -34,6 +34,7 @@ pre::-webkit-scrollbar-thumb {
 
 code[class*="language-"],
 pre[class*="language-"] {
+  font-size: 0.8em;
   color: #ccc;
   background: rgb(40, 41, 54);
   text-shadow: none;

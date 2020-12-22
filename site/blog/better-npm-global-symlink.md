@@ -7,6 +7,12 @@ tags:
   - programming
   - javascript
 
+code_lang: js
+code_excerpt: |
+  npm install -g cypress
+  npm install -g react-native-cli
+  npm install -g express-generator
+
 ---
 
 A better way to manage global npm command line tools.
