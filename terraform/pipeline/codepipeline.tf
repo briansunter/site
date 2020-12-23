@@ -63,7 +63,6 @@ resource "aws_codepipeline_webhook" "pr_webhook" {
   }
 }
 
-# Wire the CodePipeline webhook into a GitHub repository.
 resource "github_repository_webhook" "pr_webhook" {
   repository = var.git_repository_name
 
