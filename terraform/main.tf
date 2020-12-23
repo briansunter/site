@@ -18,6 +18,13 @@ module "site" {
   zone_id = var.zone_id
 }
 
+module "dev_site" {
+  source = "./site"
+  region = var.region
+  domain = "dev.${var.domain}"
+  zone_id = var.zone_id
+}
+
 module "pipeline" {
   source = "./pipeline"
   region = var.region

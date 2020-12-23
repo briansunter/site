@@ -43,3 +43,36 @@ resource "aws_codepipeline" "prod_pipeline" {
     }
   }
 }
+locals {
+  webhook_secret = "super-secret"
+}
+
+resource "aws_codepipeline_webhook" "pr_webhook" {
+  name            = "webhook-github-pr"
+  authentication  = "GITHUB_HMAC"
+  target_action   = "Source"
+  target_pipeline = aws_codepipeline.prod_pipeline.name
+
+  authentication_configuration {
+    secret_token = local.webhook_secret
+  }
+
+  filter {
+    json_path    = "$.ref"
+    match_equals = "refs/heads/{Branch}"
+  }
+}
+
+# Wire the CodePipeline webhook into a GitHub repository.
+resource "github_repository_webhook" "pr_webhook" {
+  repository = var.git_repository_name
+
+  configuration {
+    url          = aws_codepipeline_webhook.pr_webhook.url
+    content_type = "json"
+    insecure_ssl = true
+    secret       = local.webhook_secret
+  }
+
+  events = ["push"]
+}
