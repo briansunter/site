@@ -1,7 +1,6 @@
 module.exports = {
   purge: [
-    './**/*.njk',
-    './**/*.html'
+    'site/**/*.njk'
   ],
   prefix: '',
   important: false,
