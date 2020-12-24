@@ -1,0 +1,14 @@
+.DS_Store
+node_modules/
+dist/
+javascript/
+
+build/
+node_modules/
+**/.terraform/*
+# .tfstate files
+*.tfstate
+*.tfstate.*
+.gulp-cache/
+.lighthouseci
+cypress/videos/

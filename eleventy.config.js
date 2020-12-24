@@ -63,6 +63,10 @@ module.exports = eleventyConfig => {
     eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
 
     // Include our static assets
+  eleventyConfig.setWatchThrottleWaitTime(500); 
+  eleventyConfig.setUseGitIgnore(false);
+  eleventyConfig.addWatchTarget(".tmp");
+
   eleventyConfig.addPassthroughCopy({".tmp/css": "css"});
   eleventyConfig.addPassthroughCopy("manifest.json");
   eleventyConfig.addPassthroughCopy("robots.txt");

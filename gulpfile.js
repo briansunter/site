@@ -81,14 +81,6 @@ var onError = function(err) {
     this.emit('end');
 }
 
-
-/**
- * Tailwind extractor
- */
-const TailwindExtractor = content => {
-  return content.match(/[A-Za-z0-9-_:\/]+/g) || [];
-};
-
 const optimizeImages = () => {
   return src(paths.images.source)
     .pipe(plumber({ errorHandler: onError }))
@@ -231,14 +223,15 @@ const minifyJS = () => {
  */
 const watchFiles = () => {
     return watch([
-        'site/*.njk',
-        'site/includes/**/*.njk',
+      'site/*.njk',
+      'site/includes/**/*.njk',
+      './tailwind.config.js',
+      './resources/css/styles/**/*.css',
+      './resources/css/vendor/*.css',
+      './images/**/*',
+      './resources/js/**/*.js'
+
     ], series(compileCSS));
-    watch('./tailwind.config.js', series(compileCSS));
-    watch('./resources/css/styles/**/*.css', series(compileCSS));
-    watch('./resources/css/vendor/*.css', series(bundleCSS));
-    watch('./images/**/*', series(moveImages));
-    watch('./resources/js/**/*.js', series(compileJS));
 }
 
 
