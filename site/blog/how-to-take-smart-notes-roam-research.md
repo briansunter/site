@@ -12,7 +12,7 @@ tags:
     - roam
 ---
 
-> By focusing on what is interesting and keeping written track of your own intellectual development, topics questions and arguments will naturally emerge without force
+By focusing on what is interesting and keeping written track of your own intellectual development, topics questions and arguments will naturally emerge without force
 
 # How to Take Smart Notes Book + Roam
 [How to Take Smart Notes](https://www.amazon.com/How-Take-Smart-Notes-Nonfiction-ebook/dp/B06WVYW33Y) by Sönke Ahrens describes a strategy to improve understanding, remember what you read, and generate new ideas by taking notes.

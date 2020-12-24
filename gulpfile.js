@@ -236,7 +236,6 @@ const watchFiles = () => {
     ], series(compileCSS));
     watch('./tailwind.config.js', series(compileCSS));
     watch('./resources/css/styles/**/*.css', series(compileCSS));
-    watch('./talks/**/*.md', series(compileTalks));
     watch('./resources/css/vendor/*.css', series(bundleCSS));
     watch('./images/**/*', series(moveImages));
     watch('./resources/js/**/*.js', series(compileJS));
