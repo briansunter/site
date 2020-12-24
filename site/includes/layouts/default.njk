@@ -40,7 +40,7 @@
 
     {# social meta tags and assets like fonts, favicons etc, should be last #}
     {% include "components/social-meta.njk" %}
-    <link rel="icon" type="image/png" href="{{ site.images.favicon }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.images.favicon32 }}">
 </head>
 
 <body {% if body_class %} id="{{ body_class }}"{% endif %} class="min-h-full font-sans text-lg text-purple-darkest leading-normal">
