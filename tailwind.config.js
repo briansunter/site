@@ -1,4 +1,8 @@
 module.exports = {
+  purge: [
+    './**/*.njk',
+    './**/*.html'
+  ],
   prefix: '',
   important: false,
   separator: ':',

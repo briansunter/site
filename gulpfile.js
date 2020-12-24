@@ -252,42 +252,9 @@ const watchFiles = () => {
  */
 const compileCSSPreflight = () => {
     return src(paths.css.source)
-    .pipe(postcss([
-      ...postCSSPlugins,
-        purgecss({
-            content: [
-                'site/*.njk',
-                'site/includes/**/*.njk',
-            ],
-            extractors: [
-                {
-                    extractor: TailwindExtractor,
-                    extensions: ['html', 'njk'],
-                }
-            ],
-            /**
-             * You can whitelist selectors to stop purgecss from removing them from your CSS.
-             * see: https://www.purgecss.com/whitelisting
-             *
-             * Any selectors defined below will not be stripped from the main.min.css file.
-             * PurgeCSS will not purge the main.css file, as this is useful for development.
-             *
-             * @since 1.0.0
-             */
-            whitelist: [
-                'body',
-                'html',
-                'h1',
-                'h2',
-                'h3',
-                'p',
-                'blockquote',
-              'intro',
-              'pre',
-              'code'
-            ],
-        })
-    ]))
+    .pipe(postcss(
+      postCSSPlugins
+    ))
     .pipe(dest(paths.css.dest))
     .pipe(notify({
         message: 'CSS & Tailwind [PREFLIGHT] Success'
