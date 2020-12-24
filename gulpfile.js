@@ -8,8 +8,6 @@ const plumber = require('gulp-plumber');
 const postcss = require('gulp-postcss');
 const cleanCSS = require('gulp-clean-css');
 const tailwindcss = require('tailwindcss');
-const purgecss = require('@fullhuman/postcss-purgecss');
-
 // Scripts
 const babel = require('gulp-babel');
 const concat = require('gulp-concat');
@@ -287,7 +285,7 @@ exports.clear = series(() => fileCache.clear());
  * [BUILD] task
  * Run this once you're happy with your site and you want to prep the files for production.
  *
- * This will run the Preflight tasks to minify our CSS and scripts, as well as pass the CSS through PurgeCSS to remove any unused CSS.
+ * This will run the Preflight tasks to minify our CSS and scripts.
  *
  * Always double check that everything is still working. If something isn't displaying correctly, it may be because you need to add it to the PurgeCSS whitelist.
  */
@@ -300,6 +298,6 @@ exports.build = series(optimizeImages,  bundleJs, compileJS, bundleCSS, compileC
  * This includes any html changes you make so that the PurgeCSS file will be updated.
  */
 
-exports['build:dev'] = series(moveImages, bundleJs, bundleCSS, compileCSS, compileJS  );
+exports['build:dev'] = series(moveImages, bundleJs, bundleCSS, compileCSS, compileJS);
 
-exports.default = series(moveImages, bundleJs, bundleCSS, compileCSS, compileJS,   watchFiles);
+exports.default = series(moveImages, bundleJs, bundleCSS, compileCSS, compileJS, watchFiles);
