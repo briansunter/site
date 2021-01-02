@@ -38,7 +38,6 @@ The author's method can be used for idea generation in addition to note taking. 
 The method is based on the technique called Zettelkasten used by a 19th century German sociologist named [Niklas Luhmann](https://en.wikipedia.org/wiki/Niklas_Luhmann). He took notes on index cards with references to other notes, rather than organizing the notes purely by topic. The author spends a lot of time detailing Luhmann's method and it's a good source of inspiration, but I don't take his method too literally and try to leverage new technology to enable workflows that might not have been possible for him.
 
 # Permanent notes
-The underlying practice of the book is to always take notes while reading and treat note taking as the point of reading.
 
 > Permanent Notes are directed towards an audience who are ignorant of the thoughts behind the text and unaware of the original context only equipped with a general knowledge of the field.
 
