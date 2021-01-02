@@ -23,6 +23,8 @@ By focusing on what is interesting and keeping written track of your own intelle
 # Summary and Impressions
 The author describes a workflow to take notes on what you read, how to integrate notes into your total body of knowledge, and how to use your notes to generate new ideas. The book encourages you to take notes while reading in two phases. In the first phase you take "fleeting notes" whenever you have a passing idea and "literature notes" when reading source material. Next you transform these into "permanent notes" which are fully formed self contained ideas in 1-3 sentences.
 
+> "Work as if nothing else counts but writing. An idea kept private is as good as one you never had"
+
 I really enjoyed this book and it warmed me up to the idea of note taking. Before I thought of taking notes as busy work and unhelpful, but this book made me think of it as a form of active learning. The author emphasizes rewriting the source material in your own words, as opposed to copying and pasting, underlining, or highlighting, which are proven to be less effective.
 
 I really like the proposed workflow, especially after being frustrated by traditional folder organization systems like Evernote which made it difficult to make connections between unrelated topics.
@@ -38,12 +40,19 @@ The method is based on the technique called Zettelkasten used by a 19th century 
 # Permanent notes
 The underlying practice of the book is to always take notes while reading and treat note taking as the point of reading.
 
-> "Work as if nothing else counts but writing. An idea kept private is as good as one you never had"
+> Permanent Notes are directed towards an audience who are ignorant of the thoughts behind the text and unaware of the original context only equipped with a general knowledge of the field.
 
 The emphasis of the workflow is to generate permanent notes: useful self contained ideas in 1-3 sentences. These ideas are potentially useful in different contexts. You should think of how these notes relate to existing topics.
 
 For example:
 > Dunbar's number states that humans can maintain close social relationships with at most 150 people.
+
+> A tiny 5% improvement in some area of your life per year can mean that you are twice as good at something in 15 years.
+
+## Ideas for Permanent Notes
+The criteria for a permanent note is that it's "permanently" useful outside the context it was discovered. These permanent notes live on pages related to topics such as "AWS Networking" or a page for the book where the idea was discovered. In Roam, the location of the note isn't that important because you can embed and reference it on other pages.
+
+![Permanent Note](/images/blog/how-to-take-smart-notes-roam-research/binary.png)
 
 # Backlinks
 Backlinks are a very helpful feature to implement the smart notes notetaking workflow. Backlinks act as a tag that you can use to look up and group information as well as creating a dedicated page for that tag that can house more developed thoughts. These pages are useful for housing permanent notes.
@@ -76,13 +85,7 @@ The book encourages you to take notes on everything you read. Literature notes a
 Whenever I read source material, I make a link to the literature note page in my daily notes as a reminder of what I did that day and for organizational purposes. 
 
 ## 3. Make Permanent Notes at the end of the day
-
->  Permanent Notes are directed towards an audience who are ignorant of the thoughts behind the text and unaware of the original context only equipped with a general knowledge of the field.
-
-### Ideas for Permanent Notes
-The distinction between fleeting notes and literature notes isn't that important, compared to the distinction between permanent notes and all other notes. The criteria for a permanent note is that it's "permanently" useful outside the context it was discovered. These permanent notes live on pages related to topics such as "AWS Networking" or a page for the book where the idea was discovered. In Roam, the location of the note isn't that important because you can embed and reference it from other pages.
-
-![Permanent Note](/images/blog/how-to-take-smart-notes-roam-research/binary.png)
+ The distinction between fleeting notes and literature notes isn't that important, compared to the distinction between permanent notes and all other notes.
 
 ### Turning fleeting notes into permanent notes
 At the end of the day, I go through my daily notes. I turn them into permanent notes and put them on dedicated pages if I think they're worthwhile. If the ideas aren't worthwhile or developed enough, I just leave them on the daily notes so they can still be discovered later.
@@ -92,7 +95,7 @@ I usually take literature notes on a page dedicated to the book or article I'm r
 
 Also, I look through the literature notes I've taken recently and compare them with related pages and permanent notes. I write permanent notes on different pages in different contexts based on the literature notes and create references to them.
 
-The two pass method of taking notes, then converting them into permanent notes helps our notes be understandable outside the context they were written in. It also makes the act of writing less intimidating by breaking research and production into completely separate steps.
+The two pass method of taking notes, then converting them into permanent notes helps our notes be understandable outside the context they were written in. 
 
 ## 4. Decide on a topic to write about based on your notes
 After taking extensive notes on a topic an interesting angle or connection should start to appear. Start a page for the topic and look through your roam graph for supporting details
