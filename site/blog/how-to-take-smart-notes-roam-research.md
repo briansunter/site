@@ -46,7 +46,7 @@ The emphasis of the workflow is to generate permanent notes: useful self contain
 For example:
 > Dunbar's number states that humans can maintain close social relationships with at most 150 people.
 
-> A tiny 5% improvement in some area of your life per year can mean that you are twice as good at something in 15 years.
+> A 5% improvement in some area of your life per year can mean that you are twice as good at something in 15 years.
 
 ## Ideas for Permanent Notes
 The criteria for a permanent note is that it's "permanently" useful outside the context it was discovered. These permanent notes live on pages related to topics such as "AWS Networking" or a page for the book where the idea was discovered. In Roam, the location of the note isn't that important because you can embed and reference it on other pages.
