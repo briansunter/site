@@ -41,7 +41,7 @@ The method is based on the technique called Zettelkasten used by a 19th century 
 
 > Permanent Notes are directed towards an audience who are ignorant of the thoughts behind the text and unaware of the original context only equipped with a general knowledge of the field.
 
-The emphasis of the workflow is to generate permanent notes: useful self contained ideas in 1-3 sentences. These ideas are potentially useful in different contexts. You should think of how these notes relate to existing topics.
+The emphasis of the workflow is to generate permanent notes: useful self contained ideas in 1-3 sentences. These ideas are potentially useful in different contexts. You should think of how these notes relate to existing notes.
 
 For example:
 > Dunbar's number states that humans can maintain close social relationships with at most 150 people.
