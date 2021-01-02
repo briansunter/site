@@ -21,7 +21,7 @@ By focusing on what is interesting and keeping written track of your own intelle
 ![Roam Group](/images/blog/how-to-take-smart-notes-roam-research/roam-group.png)
 
 # Summary and Impressions
-The author describes a workflow to take notes on what you read, how to integrate notes into your total body of knowledge, and how to use your notes to generate new ideas. The book encourages you to take notes while reading in two phases. In the first phase you take "fleeting notes" whenever you have a passing idea and "literature notes" when reading source material. Next you transform these into "permanent notes" which are fully formed self contained ideas in a 1-3 sentences.
+The author describes a workflow to take notes on what you read, how to integrate notes into your total body of knowledge, and how to use your notes to generate new ideas. The book encourages you to take notes while reading in two phases. In the first phase you take "fleeting notes" whenever you have a passing idea and "literature notes" when reading source material. Next you transform these into "permanent notes" which are fully formed self contained ideas in 1-3 sentences.
 
 I really enjoyed this book and it warmed me up to the idea of note taking. Before I thought of taking notes as busy work and unhelpful, but this book made me think of it as a form of active learning. The author emphasizes rewriting the source material in your own words, as opposed to copying and pasting, underlining, or highlighting, which are proven to be less effective.
 
