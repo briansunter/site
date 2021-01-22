@@ -261,7 +261,8 @@ This does what I expect, and I don't need to know the difference between `=`, `e
 (= {:foo "bar"} {:foo "bar"})
 ```
 There is only `=` for structural equality and no assignment operator.
-The only `false` value is `nil` and everything else is `true`.
+
+The only falsy values are `nil` and `false` and everything else is truthy.
 
 ## Polymorphism without classes
 Clojure is described as having "polymorphism a la carte", which means it has the benefits of inheritance and interface without being forced to use it and without many of the downsides.
