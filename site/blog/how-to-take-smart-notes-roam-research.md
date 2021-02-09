@@ -1,10 +1,10 @@
 ---
 title: How to Take Smart Notes in Roam Research
-date: 2020-12-22
+date: 2021-02-08
 featured_image: /images/blog/how-to-take-smart-notes-roam-research/smart-notes-cover.jpg
 image_caption: How to Take Smart Notes by Sönke Ahrens using Roam
 excerpt: >
-  By focusing on what is interesting and keeping written track of your own intellectual development, topics questions and arguments will naturally emerge without force
+  By focusing on what is interesting and keeping written track of your own intellectual development, topics questions and arguments will naturally emerge without force.
 tags:
     - blog
     - productivity
@@ -12,7 +12,7 @@ tags:
     - roam
 ---
 
-By focusing on what is interesting and keeping written track of your own intellectual development, topics questions and arguments will naturally emerge without force
+By focusing on what is interesting and keeping written track of your own intellectual development, topics questions and arguments will naturally emerge without force.
 
 # How to Take Smart Notes Book + Roam
 [How to Take Smart Notes](https://www.amazon.com/How-Take-Smart-Notes-Nonfiction-ebook/dp/B06WVYW33Y) by Sönke Ahrens describes a strategy to improve understanding, remember what you read, and generate new ideas by taking notes.
@@ -35,6 +35,8 @@ I really like the proposed workflow, especially after being frustrated by tradit
 
 The author's method can be used for idea generation in addition to note taking. The book advocates letting interesting topics emerge from your broad research, rather than picking a topic and finding research that supports your points. Start with open ended research before picking a topic to write about.
 
+![Roam Graph](/images/blog/how-to-take-smart-notes-roam-research/roam-graph.png)
+
 The method is based on the technique called Zettelkasten used by a 19th century German sociologist named [Niklas Luhmann](https://en.wikipedia.org/wiki/Niklas_Luhmann). He took notes on index cards with references to other notes, rather than organizing the notes purely by topic. The author spends a lot of time detailing Luhmann's method and it's a good source of inspiration, but I don't take his method too literally and try to leverage new technology to enable workflows that might not have been possible for him.
 
 # Permanent notes
@@ -46,19 +48,25 @@ The emphasis of the workflow is to generate permanent notes: useful self contain
 For example:
 > Dunbar's number states that humans can maintain close social relationships with at most 150 people.
 
+> Roth IRA contributions are not tax-deductible, but earnings can grow tax-free, and qualified withdrawals are tax and penalty-free.
+
 > A 5% improvement in some area of your life per year can mean that you are twice as good at something in 15 years.
 
 ## Ideas for Permanent Notes
+
 The criteria for a permanent note is that it's "permanently" useful outside the context it was discovered. These permanent notes live on pages related to topics such as "AWS Networking" or a page for the book where the idea was discovered. In Roam, the location of the note isn't that important because you can embed and reference it on other pages.
 
 ![Permanent Note](/images/blog/how-to-take-smart-notes-roam-research/binary.png)
 
 # Backlinks
+
+> The archivist asks which keyword is the most fitting. The writer asks under which circumstances will I want to stumble upon this note again, even if I forget it?
+
 Backlinks are a very helpful feature to implement the smart notes notetaking workflow. Backlinks act as a tag that you can use to look up and group information as well as creating a dedicated page for that tag that can house more developed thoughts. These pages are useful for housing permanent notes.
 
 When creating backlinks, we should think of under what circumstances we would want to discover this information later, rather than the most descriptive keyword. Good keywords are usually not specifically mentioned in the source material; they should related to your existing notes and goals.
 
-> [[writing]] [[productivity]] [[how to take smart notes]] [[how to take smart notes in roam]]
+> [[writing]] [[productivity]] [[how to take smart notes]] 
 
 Roam makes it easy to discover backlinks later with the linked references view.
 
@@ -79,6 +87,10 @@ Roam automatically creates a page for the current date and I use this to record 
 ## 2. Make Literature Notes
 The book encourages you to take notes on everything you read. Literature notes are short summaries of the source material and very selective use of quotations. I create dedicated pages on Roam for the book or article I'm reading.
 
+### Notes from Designing Data Intensive Applications
+![Data Intensive Applications](/images/blog/how-to-take-smart-notes-roam-research/data-intensive-literature-notes.png)
+
+### Notes from Egoscue home therapy
 ![Egoscue](/images/blog/how-to-take-smart-notes-roam-research/egoscue.png)
 
 Whenever I read source material, I make a link to the literature note page in my daily notes as a reminder of what I did that day and for organizational purposes. 
@@ -92,12 +104,17 @@ At the end of the day, I go through my daily notes. I turn them into permanent n
 ### Turning literature notes into permanent notes
 I usually take literature notes on a page dedicated to the book or article I'm reading. Often I write permanent notes on this same page. For common talks like reading I have templates that help me fill out permanent notes. The templates prompt me to answer: "Describe the book in 3 sentences", "Impressions on the book", "How the book changed me".
 
+![Simple Path to Wealth](/images/blog/how-to-take-smart-notes-roam-research/simple-path-to-wealth.png)
+
 Also, I look through the literature notes I've taken recently and compare them with related pages and permanent notes. I write permanent notes on different pages in different contexts based on the literature notes and create references to them.
 
 The two pass method of taking notes, then converting them into permanent notes helps our notes be understandable outside the context they were written in. 
 
 ## 4. Decide on a topic to write about based on your notes
 After taking extensive notes on a topic an interesting angle or connection should start to appear. Start a page for the topic and look through your roam graph for supporting details
-Separating idea intake and note taking from the act of content creation is a really good idea because they require different mindsets and this helps you focus effectively.
+
+
+
+Separating idea intake and note taking from the act of content creation is a really good idea because they require different mindsets and this helps you focus effectively. Here's an example of the output of my permanent notes, an article that consists of notes from Roam combined with notes from the Smart Notes book.
 
 ![writing](/images/blog/how-to-take-smart-notes-roam-research/writing.png)
