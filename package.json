@@ -47,7 +47,7 @@
 		"imagemin-pngquant": "^9.0.1",
 		"imagemin-zopfli": "^7.0.0",
 		"mustache": "^4.1.0",
-		"postcss": "^8.2.1",
+		"postcss": "^8.2.10",
 		"postcss-import": "^14.0.0",
 		"postcss-nested": "^5.0.3",
 		"postcss-simple-vars": "^6.0.2",
