@@ -14,7 +14,7 @@ const concat = require('gulp-concat');
 const terser = require('gulp-terser');
 
 const markdown = require('gulp-markdown');
-const reveal = require('./gulp-reveal');
+const reveal = require('gulp-revealjs');
 
 // Images
 const cache = require('gulp-cache');
@@ -46,8 +46,8 @@ const paths = {
   },
 
   talks: {
-    source: './talks/**/*.md',
-    dest: '.staging/reveal-talks/'
+    source: './talks/**/*',
+    dest: '.staging/talks/'
   },
 
   cssBundle: {
@@ -172,21 +172,16 @@ const bundleJs = () => {
       message: 'Vendor JS Complete'
     }));
 };
+const compileTalks = () => {
+  return src(paths.talks.source)
+    .pipe(plumber({ errorHandler: onError }))
+    .pipe(reveal({revealPath: '/talks/reveal.js/',revealOptions:{transition: 'none'}}))
+    .pipe(dest(paths.talks.dest))
+    .pipe(notify({
+      message: 'Compile talks complete'
+    }));
+};
 
-// const compileTalks = () => {
-//   return src(paths.talks.source)
-//     .pipe(plumber({ errorHandler: onError }))
-//     .pipe(markdown())
-//     .pipe(reveal())
-//     .pipe(rename((path) => {
-//       path.dirname += ('/' + path.basename);
-//       path.basename = 'index';
-//     }))
-//     .pipe(dest(paths.talks.dest))
-//     .pipe(notify({
-//       message: 'Compile talks complete'
-//     }));
-// };
 /**
  * Concatinate and compile scripts
  */
@@ -229,6 +224,7 @@ const watchFiles = () => {
     return watch([
       'site/*.njk',
       'site/includes/**/*.njk',
+      'talks/**/*',
       './tailwind.config.js',
       './resources/css/styles/**/*.css',
       './resources/css/vendor/*.css',
@@ -278,7 +274,7 @@ const minifyCSSPreflight = () => {
 
 exports.clear = series(() => fileCache.clear());
 
-const compileAssets = series(optimizeImages, bundleJs, compileJS, bundleCSS, compileCSSPreflight, minifyCSSPreflight, minifyJS, moveAll);
+const compileAssets = series(compileTalks, optimizeImages, bundleJs, compileJS, bundleCSS, compileCSSPreflight, minifyCSSPreflight, minifyJS, moveAll);
 
 /**
  * [BUILD] task
