@@ -257,14 +257,15 @@ const compileCSSPreflight = () => {
  */
 const minifyCSSPreflight = () => {
     return src([
-        '.tmp/css/**/*.css',
+        '.staging/css/**/*.css',
+        '!.staging/css/**/*.min.css',
         '!.tmp/css/**/*.min.css'
     ])
     .pipe(cleanCSS())
     .pipe(rename({
         suffix: '.min'
     }))
-    .pipe(dest('.tmp/css'))
+    .pipe(dest('.staging/css'))
     .pipe(notify({
         message: 'Minify CSS [PREFLIGHT] Success'
     }));
