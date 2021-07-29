@@ -6,6 +6,7 @@ javascript/
 build/
 node_modules/
 /.tmp/
+/.staging/
 **/.terraform/*
 # .tfstate files
 *.tfstate
