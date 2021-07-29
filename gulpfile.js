@@ -36,27 +36,31 @@ const fileCache = new cache.Cache({cacheDirName: '.gulp-cache', tmpDir: __dirnam
  * File paths
  */
 const paths = {
+  staging: {
+    source: '.staging/**/*',
+    dest: '.tmp'
+  },
   css: {
     source: './resources/css/styles/main.css',
-    dest: '.tmp/css/'
+    dest: '.staging/css/'
   },
 
   talks: {
     source: './talks/**/*.md',
-    dest: '.tmp/reveal-talks/'
+    dest: '.staging/reveal-talks/'
   },
 
   cssBundle: {
     source: './resources/css/vendor/**/*.css',
-    dest: '.tmp/css/vendor/'
+    dest: '.staging/css/vendor/'
   },
   images: {
     source: './images/**/*.{gif,png,jpg,svg,ico}',
-    dest: '.tmp/images/'
+    dest: '.staging/images/'
   },
   vendorJs: {
     source: './resources/js/vendor/**/*.js',
-    dest: '.tmp/javascript/vendor/'
+    dest: '.staging/javascript/vendor/'
   },
   javascript: {
     source:
@@ -64,7 +68,7 @@ const paths = {
       './resources/js/utilities/*.js',
       './resources/js/local/*.js',
     ],
-    dest: '.tmp/javascript/'
+    dest: '.staging/javascript/'
   }
 };
 
@@ -117,10 +121,10 @@ const optimizeImages = () => {
     .pipe(dest(paths.images.dest));
 };
 
-const moveImages = () => {
-  return src(paths.images.source)
+const moveAll = () => {
+  return src(paths.staging.source)
     .pipe(plumber({ errorHandler: onError }))
-    .pipe(dest(paths.images.dest));
+    .pipe(dest(paths.staging.dest));
 };
 /**
  * Compile CSS & Tailwind
@@ -231,7 +235,7 @@ const watchFiles = () => {
       './images/**/*',
       './resources/js/**/*.js'
 
-    ], series(compileCSS));
+    ], compileAssets);
 }
 
 
@@ -274,6 +278,8 @@ const minifyCSSPreflight = () => {
 
 exports.clear = series(() => fileCache.clear());
 
+const compileAssets = series(optimizeImages, bundleJs, compileJS, bundleCSS, compileCSSPreflight, minifyCSSPreflight, minifyJS, moveAll);
+
 /**
  * [BUILD] task
  * Run this once you're happy with your site and you want to prep the files for production.
@@ -282,7 +288,7 @@ exports.clear = series(() => fileCache.clear());
  *
  * Always double check that everything is still working. If something isn't displaying correctly, it may be because you need to add it to the PurgeCSS whitelist.
  */
-exports.build = series(optimizeImages,  bundleJs, compileJS, bundleCSS, compileCSSPreflight, minifyCSSPreflight, minifyJS);
+exports.build = compileAssets;
 
 /**
  * [DEFAULT] development task
@@ -290,7 +296,4 @@ exports.build = series(optimizeImages,  bundleJs, compileJS, bundleCSS, compileC
  * This will run while you're building the theme and automatically compile any changes.
  * This includes any html changes you make so that the PurgeCSS file will be updated.
  */
-
-exports['build:dev'] = series(moveImages, bundleJs, bundleCSS, compileCSS, compileJS);
-
-exports.default = series(moveImages, bundleJs, bundleCSS, compileCSS, compileJS, watchFiles);
+exports.default  = series(compileAssets, watchFiles);
