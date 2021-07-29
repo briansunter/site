@@ -36,31 +36,27 @@ const fileCache = new cache.Cache({cacheDirName: '.gulp-cache', tmpDir: __dirnam
  * File paths
  */
 const paths = {
-  staging: {
-    source: '.staging/**/*',
-    dest: '.tmp'
-  },
   css: {
     source: './resources/css/styles/main.css',
-    dest: '.staging/css/'
+    dest: '.tmp/css/'
   },
 
   talks: {
     source: './talks/**/*.md',
-    dest: '.staging/reveal-talks/'
+    dest: '.tmp/reveal-talks/'
   },
 
   cssBundle: {
     source: './resources/css/vendor/**/*.css',
-    dest: '.staging/css/vendor/'
+    dest: '.tmp/css/vendor/'
   },
   images: {
     source: './images/**/*.{gif,png,jpg,svg,ico}',
-    dest: '.staging/images/'
+    dest: '.tmp/images/'
   },
   vendorJs: {
     source: './resources/js/vendor/**/*.js',
-    dest: '.staging/javascript/vendor/'
+    dest: '.tmp/javascript/vendor/'
   },
   javascript: {
     source:
@@ -68,7 +64,7 @@ const paths = {
       './resources/js/utilities/*.js',
       './resources/js/local/*.js',
     ],
-    dest: '.staging/javascript/'
+    dest: '.tmp/javascript/'
   }
 };
 
@@ -121,10 +117,10 @@ const optimizeImages = () => {
     .pipe(dest(paths.images.dest));
 };
 
-const moveAll = () => {
-  return src(paths.staging.source)
+const moveImages = () => {
+  return src(paths.images.source)
     .pipe(plumber({ errorHandler: onError }))
-    .pipe(dest(paths.staging.dest));
+    .pipe(dest(paths.images.dest));
 };
 /**
  * Compile CSS & Tailwind
@@ -235,7 +231,7 @@ const watchFiles = () => {
       './images/**/*',
       './resources/js/**/*.js'
 
-    ], compileAssets);
+    ], series(compileCSS));
 }
 
 
@@ -261,15 +257,14 @@ const compileCSSPreflight = () => {
  */
 const minifyCSSPreflight = () => {
     return src([
-        '.dest/css/**/*.css',
-        '!.dest/css/**/*.min.css',
+        '.tmp/css/**/*.css',
         '!.tmp/css/**/*.min.css'
     ])
     .pipe(cleanCSS())
     .pipe(rename({
         suffix: '.min'
     }))
-    .pipe(dest('.dest/css'))
+    .pipe(dest('.tmp/css'))
     .pipe(notify({
         message: 'Minify CSS [PREFLIGHT] Success'
     }));
@@ -277,8 +272,6 @@ const minifyCSSPreflight = () => {
 
 
 exports.clear = series(() => fileCache.clear());
-
-const compileAssets = series(optimizeImages, bundleJs, compileJS, bundleCSS, compileCSSPreflight, minifyCSSPreflight, minifyJS, moveAll);
 
 /**
  * [BUILD] task
@@ -288,7 +281,7 @@ const compileAssets = series(optimizeImages, bundleJs, compileJS, bundleCSS, com
  *
  * Always double check that everything is still working. If something isn't displaying correctly, it may be because you need to add it to the PurgeCSS whitelist.
  */
-exports.build = compileAssets;
+exports.build = series(optimizeImages,  bundleJs, compileJS, bundleCSS, compileCSSPreflight, minifyCSSPreflight, minifyJS);
 
 /**
  * [DEFAULT] development task
@@ -296,4 +289,7 @@ exports.build = compileAssets;
  * This will run while you're building the theme and automatically compile any changes.
  * This includes any html changes you make so that the PurgeCSS file will be updated.
  */
-exports.default  = series(compileAssets, watchFiles);
+
+exports['build:dev'] = series(moveImages, bundleJs, bundleCSS, compileCSS, compileJS);
+
+exports.default = series(moveImages, bundleJs, bundleCSS, compileCSS, compileJS, watchFiles);
