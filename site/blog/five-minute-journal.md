@@ -2,28 +2,31 @@
 title: Five Minute Journal
 date: 2021-08-01
 featured_image: /images/blog/five-minute-journal/journal.jpg
-excerpt: My daily journaling practice and the techniques I use to improve my writing skills, self awareness, productivity, and thinking.
+excerpt: My daily journaling practice and the techniques I use to improve my writing skills, productivity, self-awareness,and thinking.
 tags:
     - blog
     - writing
 ---
-I've been journaling on and off for about the past 15 years. I feel it's been very beneficial in understanding my life, improving my writing, and most importantly, becoming a better thinker.
+I've been journaling on and off for about the past 15 years. I feel it's been very beneficial in understanding my life, improving my writing, increasing my productivity, and becoming a better thinker.
 
 # Intro
-I've always struggled to journal consistently with the blank page stream of consciousness approach. My new method is inspired by the "Five Minute Journal" approach, which is to spend just five minutes writing a few bullet points in response to some prompts first thing in the morning. This simple quick habit provides a lot of benefits in just a few minutes a day and is a good anchor to build a writing habit on. The hard part is being consistent and simply opening your editor to get started writing. Some days I'll write just a few simple thoughts, but often I'll get on a roll and have a lot more to say.
+I've always struggled to journal consistently when writing a stream of consciousness starting on a blank page. My new method is inspired by the "Five Minute Journal" approach, which is to spend just five minutes writing a few bullet points in response to some prompts first thing in the morning. This simple quick habit provides a lot of benefits in just a few minutes a day and is a good anchor to build a writing habit on. The hard part is being consistent and simply opening your editor to get started writing. Some days I'll write just a few simple thoughts, but often I'll get on a roll and have a lot more to say.
 
 # Why Journal?
 
-I feel the most important benefit of journaling is improving your thinking ability. Writing helps you practice organizing coherent thoughts and articulating yourself. It's really difficult to do this by thinking alone or by talking. It's improved my self-awareness. It's important to write down our first-person account of things as they happen because our future selves will look back on events differently. Our thinking patterns evolve in subtle ways over time and our hindsight bias causes us to rewrite history. It amazes me to look back on my entries from 10+ years ago to see how differently I used to think, what used to be important to me, and the things I was worried about that never came to pass. Journaling has been helpful in achieving my goals as well. I use to create goals, track my progress, and hold myself accountable. Improving your written communication is also an important career skill, especially with the rise of remote work and messaging apps. It can be a superpower to increase the leverage of your ideas and reach more people.
+I feel the most important benefit of journaling is improving your thinking ability. Writing helps you practice organizing coherent thoughts and articulating yourself. It's really difficult to do this by thinking alone or by talking. I feel reflecting on my entries have improved my self-awareness. It's important to write down our first-person account of things as they happen because our future selves will look back on events differently. Our thinking patterns evolve in subtle ways over time and our hindsight bias causes us to rewrite history. It amazes me to look back on my entries from 10+ years ago to see how differently I used to think, what used to be important to me, and the things I was worried about that never came to pass. Journaling has been helpful in advancing my personal goals as well. I use journaling to create goals, track my progress, and hold myself accountable. Improving your written communication is also an important career skill, especially with the rise of remote work and messaging apps. It can be a superpower to increase the leverage of your ideas and reach more people.
 
 # Five Minute Journal
-The idea is simple: in the morning set a time for five minutes and write as much as possible on a few simple prompts. Here are the prompts I use:
+The idea of the five minute journal is simple: in the morning set a time for five minutes and write as much as possible on a few simple prompts. Here are the prompts I use:
+- **What am I Grateful for?**
+- **What Would Make Today Great?**
+- **What am I Worried About?**
 
 ## What am I Grateful for?
-I try to reflect on the good things happening in my life lately. There are several psychological studies that suggest this gratitude practice, in particular, helps improve mental well-being. These entries can be small things like nice weather, sleeping well, or watching a great TV show. They can also be bigger things like appreciating your family, having good health, and a stable job. For me, these are sometimes repetitive or extremely ordinary, but I find the practice of focusing on the good in my life puts me in a positive state of mind for the day. These are nice to reflect on if you're feeling down. Sometimes events in the future will change how you perceive the good times, like relationship changes, so I think it's important to write these down as they happen so you'll always be able to appreciate them, even if things become more complicated down the line
+I try to reflect on the good things happening in my life lately. There are several psychological studies that suggest that gratitude journaling, in particular, helps improve mental well-being. These entries can be small things like nice weather, sleeping well, or watching a great TV show. They can also be bigger things like appreciating your family, having good health, and a stable job. For me, these entries are sometimes repetitive or ordinary, but I find the practice of focusing on the good in my life puts me in a positive state of mind for the day. These entries are nice to reflect on if you're feeling down. Sometimes events in the future will change how you perceive the good times, like relationship changes, so I think it's important to write these down as they happen so you'll always be able to appreciate them, even if circumstances change. 
 
 ## What Would Make Today Great?
-I use this to make a mini-plan for the day. I like to define at least three "must-do" tasks as well as other reasonable goals or activities that completing would make me feel good about myself at the end of the day. Often, I was stuck in a cycle of feeling like I never am accomplishing "enough" no matter what I did, but I realized I never even defined what "enough" is. I also find it beneficial to separate planning and execution, since I'm often in a different state coming up with ideas than when I'm executing on them. I'm less productive when I'm switching between deciding what to do and acting on it. Seeing everything planned together helps me identify if I'm taking on an unrealistic amount of work. I can also start thinking about how to tackle the tasks early on and throughout the day.
+I use this to make a mini-plan for the day. I like to define at least three "must-do" tasks as well as other reasonable goals or activities where completing them would make me feel good about myself at the end of the day. Often, I was stuck in a cycle of feeling like I never am accomplishing "enough" no matter what I did, but I realized I never even defined what "enough" is. I also find it beneficial to separate planning and execution, since I'm often in a different state coming up with ideas than when I'm executing on them. I'm less productive when I'm switching between deciding what to do and acting on it. Seeing everything planned together helps me identify if I'm taking on an unrealistic amount of work. I can also start thinking about how to tackle the tasks early on and throughout the day.
 
 ## What am I Worried About?
 I have tend to worry about things, but I feel writing down what I'm concerned about or problem areas in my life helps me stop ruminating or thinking about it throughout the day. Usually the time you recognize a problem isn't the best time to solve it. Knowing I'm going to return and create an action plan prevents me from having intrusive thoughts during the day. Over time, you can look at all these entries to see if there are any common themes. Looking back on things you were worried about that turned out to not be a big deal helps you feel better.
@@ -33,6 +36,10 @@ If I can complete my five minute journal, I often add on a few additional writin
 
 # Evening Questions
 I have a similar version of my morning journal for the end of the day to reflect on how things went. These are some of my evening journaling prompts:
+- How am I Feeling?
+- What's Something Good that Happened Today?
+- What Did I Do Well?
+- What Could I Have Done Better?
 
 ## How am I Feeling?
 I've started something recently where I subjectively rate each day on a scale of 0-10 depending on how happy and productive I was.
@@ -40,7 +47,7 @@ I've started something recently where I subjectively rate each day on a scale of
 ## What's Something Good that Happened Today?
 This is an exercise to put me in a positive state of mind before bed. It's similar to my gratitude entry, but for at least one specific thing that happened during the day.
 
-## What Did I do Well?
+## What Did I Do Well?
 This is pretty self explanatory, but I like to reflect on what I did well and what I tried that was successful.
 
 ## What Could I Have Done Better?
@@ -51,7 +58,7 @@ Morning Pages is a practice from a book called "The Artist's Way" intended to im
 
 # Writing Prompts
 Another exercise I enjoy is responding to writing prompts. The undirected stream of consciousness writing is difficult, so I often enjoy writing to a specific prompt. I try to write a short paragraph response to one each day before bed. 
-Often writing prompts are focused on creative writing, but I prefer the ones in the form of questions. These are usually floating around the internet in lists called "icebreakers", "questions to ask yourself", and "journaling prompts"
+Often writing prompts are focused on creative fiction writing, but I prefer the ones in the form of questions. These are usually floating around the internet in lists called "icebreakers", "questions to ask yourself", and "journaling prompts"
 
 For example:
 
@@ -69,7 +76,7 @@ Here are some lists that I've been working through:
 - [120 Questions to Ask Yourself](https://buddingoptimist.com/questions-to-ask-yourself/)
 
 # Roam Templates
-I use Roam Research to do my daily journaling. I use these templates under the `roam/templates` page and expand the template on my daily notes page I use backlinks so I can link and reference to my other writing. Roam includes several useful built-in features like a timer and word count
+I use [Roam Research](https://roamresearch.com) to do my daily journaling. I use these templates under the `roam/templates` page and expand the template on my daily notes page. I use backlinks so I can link and reference to my other writing. Roam includes several useful built-in features like a timer and word count
 ```
     - # Morning Questions
         - [[Morning Questions]] #daily
