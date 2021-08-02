@@ -1,5 +1,5 @@
 ---
-title: Five Minute Journal
+title: Five Minute Journal - Daily Journal Techniques and Tips
 date: 2021-08-01
 featured_image: /images/blog/five-minute-journal/journal.jpg
 excerpt: My daily journaling practice and the techniques I use to improve my writing skills, productivity, self-awareness,and thinking.
