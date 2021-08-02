@@ -76,7 +76,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPassthroughCopy({"resources/static/keybase.txt": "keybase.txt"});
 
   eleventyConfig.addPassthroughCopy({"resources/data/": "data/"});
-    eleventyConfig.addPassthroughCopy({".tmp/reveal-talks": "talks"});
+  eleventyConfig.addPassthroughCopy({".tmp/talks": "talks"});
 
   eleventyConfig.addPlugin(syntaxHighlight);
 

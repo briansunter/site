@@ -37,6 +37,7 @@
 		"gulp-plumber": "^1.2.1",
 		"gulp-postcss": "^9.0.0",
 		"gulp-rename": "^2.0.0",
+		"gulp-revealjs": "0.0.3",
 		"gulp-terser": "^2.0.0",
 		"gulp-util": "^3.0.8",
 		"html-minifier": "^4.0.0",
