@@ -18,9 +18,9 @@ I feel the most important benefit of journaling is improving your thinking abili
 
 # Five Minute Journal
 The idea of the five minute journal is simple: in the morning set a time for five minutes and write as much as possible on a few simple prompts. Here are the prompts I use:
-- **What am I Grateful for?**
-- **What Would Make Today Great?**
-- **What am I Worried About?**
+- What am I Grateful for?
+- What Would Make Today Great?
+- What am I Worried About?
 
 ## What am I Grateful for?
 I try to reflect on the good things happening in my life lately. There are several psychological studies that suggest that gratitude journaling, in particular, helps improve mental well-being. These entries can be small things like nice weather, sleeping well, or watching a great TV show. They can also be bigger things like appreciating your family, having good health, and a stable job. For me, these entries are sometimes repetitive or ordinary, but I find the practice of focusing on the good in my life puts me in a positive state of mind for the day. These entries are nice to reflect on if you're feeling down. Sometimes events in the future will change how you perceive the good times, like relationship changes, so I think it's important to write these down as they happen so you'll always be able to appreciate them, even if circumstances change. 
