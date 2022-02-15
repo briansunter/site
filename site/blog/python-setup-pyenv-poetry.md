@@ -1,7 +1,7 @@
 ---
-title: Python Setup 2022
+title: How to set up Python in 2022
 date: 2022-02-13
-featured_image: ''
+featured_image: /images/blog/python.png
 image_caption: 'How to set up Python'
 excerpt: The best way to set up a new Python project in 2022.
 tags:
