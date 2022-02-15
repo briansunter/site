@@ -1,5 +1,5 @@
 ---
-title: How to Set Up Python in 2022
+title: Getting Started with Python in 2022
 date: 2022-02-13
 featured_image: /images/blog/python.png
 image_caption: 'How to set up Python with the latest tools and best practices'
@@ -23,13 +23,14 @@ There are three main things to think about when managing a Python project:
 
 # Tools Overview
 
-- **Homebrew** installs development tools on macOS. Follow the instructions here to set it up if you haven't already https://brew.sh/
+- **Homebrew** installs development tools on macOS. Follow the instructions here to set it up if you haven't already [https://brew.sh/](https://brew.sh/). 
 
-- **Python** is a programming language, but there's also a command line tool called `python` on your computer that runs Python code. The Python language and tool are continually being updated with new features and versions. Projects usually need a specific version of Python installed to work correctly. There's probably a version of Python already installed on your local computer, but it's unlikely to be the exact version you want.
+- **Python** is a programming language, but there's also a command line tool called `python` on your computer that runs Python code. The Python language and tool are continually updated with new features and versions. Projects usually need a specific version of Python installed to work correctly. There's probably a version of Python already installed on your local computer called your “System Python”, but it's unlikely to be the exact version you want and you should avoid using it. 
 
-- **pyenv** lets you easily install the exact Python version you want and switch between different Python versions for different projects.
+- **[pyenv](https://github.com/pyenv/pyenv)** lets you easily install the exact Python version you want and switch between different Python versions for different projects.
+  
 
-- **poetry** helps us download Python dependencies and has tools to help Python project administration, such as publishing packages.
+- **[poetry](https://python-poetry.org/)** helps us download Python dependencies and has tools to help Python project administration, such as project initialization and publishing packages.
 
 # Initial Setup 
 
@@ -49,6 +50,7 @@ First, let's set up `pyenv` and set our terminal's default Python version to 3.9
 Now we will be using Python 3.9 in our terminal by default. If we work with a project that needs a different version of Python, `pyenv` can be configured to use a different version for that project.
 
 ## Install poetry
+Install the poetry tool using home brew. 
 - `brew install poetry`
 
 # Django Project Setup Example
@@ -104,7 +106,7 @@ Django = "^4.0.2"
 
 ## poetry.lock
 
-Poetry adds the [semver](https://semver.org) `^` syntax in the dependency version in `pyproject.toml`. This allows for "loose" versions, meaning  `^4.0.2` allows for any version greater or equal to `4.0.2` but less than `5.0.0`. According to the semver syntax `MAJOR.MINOR.PATCH`, anything besides `MAJOR` version dependency upgrades should be backward compatible. This allows for easy upgrades to the latest version of the dependency to get backward compatible improvements.
+Poetry adds the [semver](https://semver.org) `^` syntax in the dependency version in `pyproject.toml`. This allows for "loose" versions, meaning this `^4.0.2` syntax allows for any version greater or equal to `4.0.2` but less than `5.0.0`. According to the semver syntax `MAJOR.MINOR.PATCH`, anything besides `MAJOR` version dependency upgrades should be backward compatible. This allows for easy upgrades to the latest version of the dependency to get backward compatible improvements.
 
 In addition to loose versions, we need to specify "exact" dependencies to ensure we have "reproducible builds". We want `poetry install` to install the exact same dependencies every time. Otherwise, the version you deploy might be different than the one you tested locally.
 
@@ -146,10 +148,10 @@ pip is a dependency management tool included with Python 3.4 and later, though i
 ## setup.py
 `pyproject.toml` is the future standard for declaring Python project metadata and dependencies. You may encounter a `setup.py` file to declare project metadata, but this is no longer needed with `pyproject.toml`.
 
-## Pipenv
+## [Pipenv](https://github.com/pypa/pipenv)
 Pipenv solves many of the same problems as Poetry but uses its own file format for listing dependencies called a `Pipfile`. This `Pipfile` is very similar to `pyproject.toml`, but is nonstandard, so I prefer Poetry. 
 
-There's seem to have been some stalls in Pipenv's development in its history.  See this Github issue https://github.com/pypa/pipenv/issues/4058
+There seem to have been some stalls in Pipenv's development during its history.  See this Github issue [https://github.com/pypa/pipenv/issues/4058](https://github.com/pypa/pipenv/issues/4058)
 
 > As of writing, it's been 381 days and 669 commits since a release. Please consider the impact of the project maintainers' silence regarding the lack of a release 
 
