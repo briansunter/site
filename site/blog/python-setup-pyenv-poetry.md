@@ -11,23 +11,7 @@ tags:
     - devops
     - django
 ---
-
-- [Tools Overview](#tools-overview)
-- [Initial Setup](#initial-setup)
-  - [Set up pyenv](#set-up-pyenv)
-  - [Install poetry](#install-poetry)
-- [Django Project Setup Example](#django-project-setup-example)
-  - [pyproject.toml](#pyprojecttoml)
-  - [Add a dependency](#add-a-dependency)
-  - [poetry.lock](#poetrylock)
-  - [Virtualenv](#virtualenv)
-- [Initialize Django project](#initialize-django-project)
-- [Other Tools](#other-tools)
-  - [Pip](#pip)
-  - [setup.py](#setuppy)
-  - [Pipenv](#pipenv)
-  - [Conda / Anaconda](#conda--anaconda)
-- [Conclusion](#conclusion)
+# Managing Python projects in 2022
 
 There are many different options for managing Python projects and their dependencies.
 Overall, I recommend using `pyenv` + `poetry`. I will describe why we need these tools, how they work, and which tools they replace.
