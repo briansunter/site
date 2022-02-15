@@ -1,9 +1,9 @@
 ---
-title: How to set up Python in 2022
+title: How to Set Up Python in 2022
 date: 2022-02-13
 featured_image: /images/blog/python.png
-image_caption: 'How to set up Python'
-excerpt: The best way to set up a new Python project in 2022.
+image_caption: 'How to set up Python with the latest tools and best practices'
+excerpt: The best way to set up a new Python project.
 tags:
     - blog
     - programming
@@ -13,7 +13,7 @@ tags:
 ---
 # Managing Python projects in 2022
 
-There are many different options for managing Python projects and their dependencies in 2022.
+There are many different options for managing Python projects and their dependencies.
 Overall, I recommend using `pyenv` + `poetry`. I will describe why we need these tools, how they work, and which tools they replace.
 
 There are three main things to think about when managing a Python project:
@@ -25,7 +25,7 @@ There are three main things to think about when managing a Python project:
 
 - **Homebrew** installs development tools on macOS. Follow the instructions here to set it up if you haven't already https://brew.sh/
 
-- **Python** is a programming language, but there's also a command line tool called `python` on your computer that runs Python code. The Python language and tool are continually being updated with new features and versions. Projects usually need a specific version of Python installed to work correctly. There's probably a version of Python already installed on your local computer, but it's unlikely to be the version you want, and there may be file permission issues if you use it.
+- **Python** is a programming language, but there's also a command line tool called `python` on your computer that runs Python code. The Python language and tool are continually being updated with new features and versions. Projects usually need a specific version of Python installed to work correctly. There's probably a version of Python already installed on your local computer, but it's unlikely to be the exact version you want.
 
 - **pyenv** lets you easily install the exact Python version you want and switch between different Python versions for different projects.
 
@@ -60,14 +60,14 @@ Let's start by setting up a new Django project using poetry
 
      `cd example`
 
-- Now lets initialize the Python project using poetry. Keep hitting enter until the prompt finishes to use the default project settings.
+- Now lets initialize the Python project using Poetry. Keep hitting the enter key until the prompt finishes to use the default project settings.
 
 
   `poetry init`
 
 
 ## pyproject.toml
-Poetry should create a file called pyproject.toml which is used to configure our project and define our dependencies.
+Poetry should create a file called `pyproject.toml` which is used to configure our project and define our dependencies.
 
 ``` yaml
 [tool.poetry]
@@ -112,16 +112,16 @@ When you install or update dependencies, poetry creates a `poetry.lock` file, wh
 
 When we want to upgrade dependencies, we can run `poetry update` to fetch the latest compatible versions of all dependencies or run `poetry update django` to only update Django. This will update the exact versions in `poetry.lock` file to the latest compatible version. Although these updates are backward compatible in theory, I'm still careful to test things still work correctly. 
 
-## virtualenv
-Behind the scenes, poetry uses a tool built into Python called `virtualenv` which isolates dependencies to the project you're working on. Poetry enables `virtualenv` by default and handles it automatically, whereas other tools do not. `virtualenv` makes it easier to work on multiple different Python projects on the same computer.
+## Virtualenv
+Behind the scenes, Poetry uses a tool built into Python called virtualenv which isolates dependencies to the project you're working on. Poetry enables virtualenv by default and handles it automatically, whereas other tools do not. virtualenv makes it easier to work on multiple different Python projects on the same computer.
 
-`virtualenv` makes poetry save dependencies to a `.venv` folder inside your project directory. If you disabled `virtualenv`, dependencies would be saved to a global system folder shared by all projects. Since this folder is shared by all projects, you can only have one version of a dependency installed. This makes it very difficult to work on multiple projects.
+virtualenv makes poetry save dependencies to a `.venv` folder inside your project directory. If you disabled virtualenv, dependencies would be saved to a global system folder shared by all projects. Since this folder is shared by all projects, you can only have one version of a dependency installed. This makes it very difficult to work on multiple projects.
 
-We want the option to work on multiple projects locally, so we'll use poetry with its default settings and let it manage `virtualenv` for us automatically.
+We want the option to work on multiple projects locally, so we'll use poetry with its default settings and let it manage virtualenv for us automatically.
 
 # Initialize Django project
 Django includes some command line tools for generating projects like `django-admin`. You'll see these if you follow any Django tutorials.
-You'll use `poetry shell` instead of any manual `virtualenv` commands you may see like `source env/bin/activate`
+You'll use `poetry shell` instead of any manual virtualenv commands you may see like `source env/bin/activate`
 
 Since we've installed Django at the project level using poetry, we need to open a poetry shell to have access to these commands.
 
@@ -140,21 +140,21 @@ Since we've installed Django at the project level using poetry, we need to open 
 # Other Tools
 You will probably encounter many different tools and options, but you shouldn't need many of them.
 
-## pip
-pip is a dependency management tool included with Python 3.4 and later, though it's pretty simplistic. It has the option of installing dependencies from a `requirements.txt` file, but it doesn't have a concept like `poetry.lock` and doesn't handle `virtualenv` for you.
+## Pip
+pip is a dependency management tool included with Python 3.4 and later, though it's pretty simplistic. It has the option of installing dependencies from a `requirements.txt` file, but it doesn't have a concept like `poetry.lock` and doesn't handle virtualenv for you.
 
 ## setup.py
 `pyproject.toml` is the future standard for declaring Python project metadata and dependencies. You may encounter a `setup.py` file to declare project metadata, but this is no longer needed with `pyproject.toml`.
 
-## pipenv
-`pipenv` solves many of the same problems as `poetry` but uses its own file format for listing dependencies called a `Pipfile`. This `Pipfile` is very similar to `pyproject.toml`, but is nonstandard, so I prefer `poetry`. 
+## Pipenv
+Pipenv solves many of the same problems as Poetry but uses its own file format for listing dependencies called a `Pipfile`. This `Pipfile` is very similar to `pyproject.toml`, but is nonstandard, so I prefer Poetry. 
 
-There's seem to have been some stalls in `pipenvs` development.  See this Github issue https://github.com/pypa/pipenv/issues/4058
+There's seem to have been some stalls in Pipenv's development in its history.  See this Github issue https://github.com/pypa/pipenv/issues/4058
 
 > As of writing, it's been 381 days and 669 commits since a release. Please consider the impact of the project maintainers' silence regarding the lack of a release 
 
-## Anaconda 
-Anaconda is commonly used in data science projects to manage dependencies. It includes tools like conda and miniconda. Not only does it have its own dependency file format and lockfile, but it also uses a different package repository than any of the other tools. Once again, I would avoid using nonstandard build specification formats like the `conda` and `pipenv` formats.
+## Conda / Anaconda 
+Anaconda is commonly used in data science projects to manage dependencies. It includes tools like conda and miniconda. Not only does it have its own dependency file format and lockfile, but it also uses a different package repository than any of the other tools. Once again, I would avoid using nonstandard build specification formats like the conda and Pipenv formats.
 
 # Conclusion
 
