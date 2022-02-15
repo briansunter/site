@@ -1,5 +1,5 @@
 ---
-title: Getting Started with Python in 2022
+title: Managing Python Projects and Dependencies in 2022
 date: 2022-02-13
 featured_image: /images/blog/python.png
 image_caption: 'How to set up Python with the latest tools and best practices'
