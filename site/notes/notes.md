@@ -8,4 +8,3 @@ These are snippets of thoughts organized tied together by backlinks. At the bott
 ## Index
 
 ### [[cooking]]
-
