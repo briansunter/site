@@ -1,0 +1,6 @@
+---
+title: python
+---
+programming
+
+[[notes]]

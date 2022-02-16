@@ -14,6 +14,38 @@ Array.prototype.insert = function (index, item) {
 
 module.exports = eleventyConfig => {
 
+  const markdownIt = require('markdown-it');
+  const markdownItOptions = {
+      html: true,
+      linkify: true
+  };
+  
+  const md = markdownIt(markdownItOptions)
+  .use(require('markdown-it-footnote'))
+  .use(require('markdown-it-attrs'))
+  .use(function(md) {
+      // Recognize Mediawiki links ([[text]])
+      md.linkify.add("[[", {
+          validate: /^\s?([^\[\]\|\n\r]+)(\|[^\[\]\|\n\r]+)?\s?\]\]/,
+          normalize: match => {
+              const parts = match.raw.slice(2,-2).split("|");
+              parts[0] = parts[0].replace(/.(md|markdown)\s?$/i, "");
+              match.text = (parts[1] || parts[0]).trim();
+              if (parts[0].trim()==="notes"){
+                match.url = '/notes/'
+              } else {
+              match.url = `/notes/${parts[0].trim()}/`;
+              }
+          }
+      })
+  })
+  
+  eleventyConfig.addFilter("markdownify", string => {
+      return md.render(string)
+  })
+
+  eleventyConfig.setLibrary('md', md);
+
   eleventyConfig.addPlugin(lazyImagesPlugin);
 
   eleventyConfig.addPlugin(pluginPWA);
@@ -57,11 +89,14 @@ module.exports = eleventyConfig => {
     eleventyConfig.addCollection('blog', collection => {
        return collection.getFilteredByTag('blog').reverse();
     });
-
+  eleventyConfig.addCollection("notes", function (collection) {
+        return collection.getFilteredByGlob(["site/notes/**/*.md", "notes.md"]);
+    });
     // Layout aliases
     eleventyConfig.addLayoutAlias('default', 'layouts/default.njk');
     eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
 
+    eleventyConfig.addLayoutAlias('note', 'layouts/note.njk');
     // Include our static assets
   eleventyConfig.setWatchThrottleWaitTime(500); 
   eleventyConfig.setUseGitIgnore(false);
