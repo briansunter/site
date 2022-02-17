@@ -133,7 +133,7 @@ git_repository_branch = "master"
 With this setup my site deploys and is live within 2 minutes of pushing a commit.
 
 # Mind Maps
-Another interesting feature is automatically compiling freemind format "[Mind Maps](http://www.inboundtom.co.uk/introduction-mind-maps/ "Mind Maps")" into nice diagrams. I use [Mind Node](https://mindnode.com/ "Mind Node") to edit the mind maps.
+Another interesting feature is automatically compiling freemind format "[Mind Maps](http://www.inboundtom.co.uk/introduction-mind-maps/ "Mind Maps")" into nice diagrams. I use [Mind Node](https://mindnode.com/) to edit the mind maps.
 
 ![Mind Maps](/images/blog/mind-maps.png "Mind Maps")
 
