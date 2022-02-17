@@ -17,7 +17,7 @@ module.exports = eleventyConfig => {
   const markdownIt = require('markdown-it');
   const markdownItOptions = {
       html: true,
-      linkify: true
+      linkify: false
   };
   
   const md = markdownIt(markdownItOptions)
