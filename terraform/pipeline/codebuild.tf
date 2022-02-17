@@ -42,6 +42,5 @@ resource "aws_codebuild_project" "prod_app_build" {
 
 resource "aws_s3_bucket" "source" {
   bucket        = "${var.app_name}-${var.git_repository_branch}-pipeline"
-  acl           = "private"
   force_destroy = true
 }
