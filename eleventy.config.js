@@ -17,7 +17,7 @@ module.exports = eleventyConfig => {
   const markdownIt = require('markdown-it');
   const markdownItOptions = {
       html: true,
-      linkify: false
+      linkify: true
   };
   
   const md = markdownIt(markdownItOptions)
@@ -40,6 +40,8 @@ module.exports = eleventyConfig => {
           }
       })
   })
+  
+  md.linkify.set({ fuzzyLink: false });
   
   eleventyConfig.addFilter("markdownify", string => {
       return md.render(string)
