@@ -34,7 +34,8 @@ module.exports = eleventyConfig => {
               if (parts[0].trim()==="notes"){
                 match.url = '/notes/'
               } else {
-              match.url = `/notes/${parts[0].trim()}/`;
+              const linkName = parts[0].trim().replace(/ /g , '-');
+              match.url = `/notes/${linkName}/`;
               }
           }
       })

@@ -11,10 +11,13 @@ module.exports = {
     layout: "note",
     type: "note",
     eleventyComputed: {
-        title: data => titleCase(data.title || data.page.fileSlug),
+        title: data => titleCase(data.title || data.page.fileSlug.replace(/-/g , ' ')),
         backlinks: (data) => {
             const notes = data.collections.notes;
             const currentFileSlug = data.page.filePathStem.replace('/notes/', '');
+
+            const hasHyphen = currentFileSlug.includes("-");
+            const currentFileSlugSpaces = currentFileSlug.replace(/-/g , ' ')
 
             let backlinks = [];
 
@@ -33,16 +36,23 @@ module.exports = {
                     ));
 
                 // If the other note links here, return related info
-                if(outboundLinks.some(link => caselessCompare(link, currentFileSlug))) {
+                if (
+                  outboundLinks.some((link) =>
+                    caselessCompare(link, currentFileSlug)
+                  ) ||
+                  (hasHyphen &&
+                    outboundLinks.some((link) =>
+                      caselessCompare(link, currentFileSlugSpaces)
+                    ))
+                ) {
+                  // Construct preview for hovercards
+                  let preview = noteContent.slice(0, 240);
 
-                    // Construct preview for hovercards
-                    let preview = noteContent.slice(0, 240);
-
-                    backlinks.push({
-                        url: otherNote.url,
-                        title: otherNote.data.title,
-                        preview
-                    })
+                  backlinks.push({
+                    url: otherNote.url,
+                    title: otherNote.data.title,
+                    preview,
+                  });
                 }
             }
 
