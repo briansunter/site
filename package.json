@@ -1,6 +1,6 @@
 {
 	"name": "personal-site",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "The personal site of Brian Sunter",
 	"scripts": {
 		"dev": "gulp & ELEVENTY_ENV=development eleventy --config=eleventy.config.js --serve ",
