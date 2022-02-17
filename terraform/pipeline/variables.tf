@@ -18,8 +18,15 @@ variable "cloudfront_distribution_id" {
   description = "id of your cloudfront distribution"
 }
 
+variable "cloudfront_distribution_dev_id" {
+  description = "id of your cloudfront distribution"
+}
+
 variable "bucket_name" {
   description = "Name of your deploy bucket"
 }
 
+variable "bucket_dev_name" {
+  description = "Name of your deploy bucket"
+}
 variable "region" {}
