@@ -28,12 +28,37 @@ Output: [0,1]
 -109 <= target <= 109
 Only one valid answer exists.
 ```
-# Mermaid
+
+# Solution
+``` js
+var twoSum = function(nums, target) {
+    let m = {};
+for (let i = 0; i< nums.length; i++){
+    m[nums[i]]=i;
+}    
+    for (let i = 0; i < nums.length; i++){
+     let l = target - nums[i];
+        if (m[l] && m[l] != i){
+            return [i, m[l]]
+        }
+    }
+};
+```
+# Flow Chart
 
 ```mermaid 
 graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+    subgraph "create map of val to index";
+    A["Input(nums,target)"] --> B{For every number x in nums};
+    B --> H["map.add(x,xIndex)"];
+    H --> B;
+    end;
+    subgraph "check if (target - x) exists in map";
+    B --> C{For every number x in nums};
+    C --> E["(target - x)  exists in map?"];
+    E --> |else| C;
+    E -->  F["value from map different from self?"];
+    F --> |else| C;
+    F --> G["return [ xIndex, map[(target - x)]]"];
+    end;
 ```
