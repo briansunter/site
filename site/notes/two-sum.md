@@ -44,23 +44,37 @@ for (let i = 0; i< nums.length; i++){
             return [i, m[l]]
         }
     }
-};
+}
 ```
 # Flow Chart
 
 ```mermaid 
-graph TD;
-    subgraph "create map of val to index";
-    A["Input(nums,target)"] --> B{For every number x in nums};
-    B --> H["map.add(x,xIndex)"];
-    H --> B;
-    end;
-    subgraph "check if (target - x) exists in map";
-    B --> C{For every number x in nums};
-    C --> E["(target - x)  exists in map?"];
-    E --> |else| C;
-    E -->  F["index value from map different from current index?"];
-    F --> |else| C;
-    F --> G["return [ xIndex, map[(target - x)]]"];
-    end;
+stateDiagram-v2
+    Input --> First
+    First --> Second
+    Input: Input(nums, target);
+    First: Collect nums into map of nums[i] to i;
+    Second: Check map for index of complement (target - x);
+    state First {
+        fir: for each number;
+        [*] --> fir
+        fir --> fir2
+        fir2: map.add(nums[i],i);
+        fir2 --> fir
+    } 
+
+    state Second {
+        [*] --> iterate
+        iterate: for each number x;
+        isInMap: map.get(nums[target-x]);
+        iterate --> isInMap
+        isInMap --> iterate: not found;
+        isInMap --> notOwnIndex : found index;
+
+        notOwnIndex: index != x;
+        True2: return [x, nums[x]];
+
+        notOwnIndex --> True2 : index from map is not current index;
+        notOwnIndex --> iterate:  found own index, keep checking;
+    }
 ```
