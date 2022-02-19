@@ -59,7 +59,7 @@ graph TD;
     B --> C{For every number x in nums};
     C --> E["(target - x)  exists in map?"];
     E --> |else| C;
-    E -->  F["value from map different from self?"];
+    E -->  F["index value from map different from current index?"];
     F --> |else| C;
     F --> G["return [ xIndex, map[(target - x)]]"];
     end;
