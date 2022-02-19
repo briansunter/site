@@ -17,7 +17,6 @@ h1, h2, h3, h4, h5, h6 {
 
     h1 {
         @apply text-5xl;
-
     }
 
     h2 {
@@ -62,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
     li {
         list-style-type: disc;
         margin-bottom: calc(16px * 1.5 / 2);
-        margin-left : calc(16px * 1.5 / 2);
+        margin-left : calc(40px * 1.5 / 2);
     }
 
     .tags-post {
