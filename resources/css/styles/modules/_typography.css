@@ -92,3 +92,9 @@ h1, h2, h3, h4, h5, h6 {
 table {
     @apply table-auto;
 }
+
+tr:nth-child(even) {background-color: #eceaea;}
+
+th, td {
+    border-bottom: 1px solid rgb(180, 179, 179);
+  }
