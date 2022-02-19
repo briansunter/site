@@ -19,10 +19,10 @@ module.exports = eleventyConfig => {
       html: true,
       linkify: true
   };
-  
   const md = markdownIt(markdownItOptions)
   .use(require('markdown-it-footnote'))
   .use(require('markdown-it-attrs'))
+  .use(require('markdown-it-textual-uml'))
   .use(function(md) {
       // Recognize Mediawiki links ([[text]])
       md.linkify.add("[[", {

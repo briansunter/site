@@ -143,9 +143,9 @@ const compileCSS = () => {
     .pipe(plumber({ errorHandler: onError }))
     .pipe(postcss(postCSSPlugins))
     .pipe(dest(paths.css.dest))
-    .pipe(notify({
-        message: 'Tailwind Compile Success'
-    }));
+    // .pipe(notify({
+    //     message: 'Tailwind Compile Success'
+    // }));
 }
 
 /**
@@ -155,9 +155,9 @@ const bundleCSS = () => {
   return src(paths.cssBundle.source)
     .pipe(plumber({ errorHandler: onError }))
     .pipe(dest(paths.cssBundle.dest))
-    .pipe(notify({
-      message: 'Bundle CSS Complete'
-    }));
+    // .pipe(notify({
+    //   message: 'Bundle CSS Complete'
+    // }));
 };
 
 const bundleJs = () => {
@@ -168,18 +168,18 @@ const bundleJs = () => {
     }))
     .pipe(terser())
     .pipe(dest(paths.vendorJs.dest))
-    .pipe(notify({
-      message: 'Vendor JS Complete'
-    }));
+    // .pipe(notify({
+    //   message: 'Vendor JS Complete'
+    // }));
 };
 const compileTalks = () => {
   return src(paths.talks.source)
     .pipe(plumber({ errorHandler: onError }))
     .pipe(reveal({revealPath: '/talks/reveal.js/',revealOptions:{transition: 'none'}}))
     .pipe(dest(paths.talks.dest))
-    .pipe(notify({
-      message: 'Compile talks complete'
-    }));
+    // .pipe(notify({
+    //   message: 'Compile talks complete'
+    // }));
 };
 
 /**
@@ -194,9 +194,9 @@ const compileJS = () => {
     }))
     .pipe(concat('main.js'))
     .pipe(dest(paths.javascript.dest))
-    .pipe(notify({
-        message: 'Javascript Compile Success'
-    }));
+    // .pipe(notify({
+    //     message: 'Javascript Compile Success'
+    // }));
 };
 
 
@@ -211,9 +211,9 @@ const minifyJS = () => {
     }))
     .pipe(terser())
     .pipe(dest(paths.javascript.dest))
-    .pipe(notify({
-        message: 'Javascript Minify Success'
-    }));
+    // .pipe(notify({
+    //     message: 'Javascript Minify Success'
+    // }));
 }
 
 
@@ -246,9 +246,9 @@ const compileCSSPreflight = () => {
       postCSSPlugins
     ))
     .pipe(dest(paths.css.dest))
-    .pipe(notify({
-        message: 'CSS & Tailwind [PREFLIGHT] Success'
-    }));
+    // .pipe(notify({
+    //     message: 'CSS & Tailwind [PREFLIGHT] Success'
+    // }));
 }
 
 
@@ -266,9 +266,9 @@ const minifyCSSPreflight = () => {
         suffix: '.min'
     }))
     .pipe(dest('.staging/css'))
-    .pipe(notify({
-        message: 'Minify CSS [PREFLIGHT] Success'
-    }));
+    // .pipe(notify({
+    //     message: 'Minify CSS [PREFLIGHT] Success'
+    // }));
 }
 
 
