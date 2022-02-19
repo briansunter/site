@@ -6,6 +6,8 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const randomColor = require('randomcolor');
 const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 const cacheBuster = require('@mightyplow/eleventy-plugin-cache-buster');
+const anchor = require('markdown-it-anchor')
+const markdownIt = require('markdown-it');
 
 Array.prototype.insert = function (index, item) {
   this.splice(index, 0, item);
@@ -14,13 +16,15 @@ Array.prototype.insert = function (index, item) {
 
 module.exports = eleventyConfig => {
 
-  const markdownIt = require('markdown-it');
   const markdownItOptions = {
       html: true,
       linkify: true
   };
   const md = markdownIt(markdownItOptions)
   .use(require('markdown-it-footnote'))
+  .use(require('markdown-it-anchor'), { 
+    permalink: anchor.permalink.headerLink()
+})
   .use(require('markdown-it-attrs'))
   .use(require('markdown-it-textual-uml'))
   .use(function(md) {
