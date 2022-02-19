@@ -99,7 +99,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addCollection("notes", function (collection) {
         return collection.getFilteredByGlob(["site/notes/**/*.md", "notes.md"]);
     });
-    // Layout aliases
+    // Layout aliases 
     eleventyConfig.addLayoutAlias('default', 'layouts/default.njk');
     eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
 
