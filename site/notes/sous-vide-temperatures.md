@@ -1,4 +1,4 @@
-# Sous Vide Temperature
+Temperatures to cook various sous vide foods at.
 
 ## Strip, Ribeye, Porterhouse/T-Bone
 
