@@ -8,7 +8,7 @@ const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 const cacheBuster = require('@mightyplow/eleventy-plugin-cache-buster');
 const anchor = require('markdown-it-anchor')
 const markdownIt = require('markdown-it');
-
+const cooklang = require('cooklang');
 Array.prototype.insert = function (index, item) {
   this.splice(index, 0, item);
 };
@@ -20,6 +20,7 @@ module.exports = eleventyConfig => {
       html: true,
       linkify: true
   };
+
   const md = markdownIt(markdownItOptions)
   .use(require('markdown-it-footnote'))
   .use(require('markdown-it-anchor'), { 
@@ -122,10 +123,45 @@ module.exports = eleventyConfig => {
 
   eleventyConfig.addPlugin(syntaxHighlight);
 
+ eleventyConfig.addDataExtension("cook", contents => {
+   const recipe = new cooklang.Recipe(contents)
+   const response = {};
+   response.ingredients = recipe.ingredients.map(({quantity,units,name}) => `${quantity} ${units} ${name}`);
+   response.steps = [];
+   console.log(JSON.stringify(recipe));
+   for (let i = 0; i <recipe.steps.length; i++){
+     const step = recipe.steps[i];
+     let lineStr = ''
+     for (let j = 0; j < step.line.length;j++ ){
+       line = step.line[j];
+      if (typeof line === 'string'){
+        lineStr += line;
+      } else {
+        lineStr += `${line.quantity ? line.quantity + " " : ""}${line.units? line.units + " " : ""}${line.name}`
+      }
+     }
+     response.steps.push(lineStr);
+   }
+
+   for (let i = 0; i < recipe.metadata.length; i++){
+     const meta = recipe.metadata[i];
+     response[meta.key]=meta.value;
+   }
+   return response;
+  });
+
   eleventyConfig.addPlugin(cacheBuster({outputDirectory: 'dist/'}));
 
+  eleventyConfig.addExtension("cook", {
+    compile: async (inputContent) => {
+      return async () => {
+        return inputContent;
+      };
+    }
+  });
+
     return {
-        templateFormats: ["md", "njk"],
+        templateFormats: ["cook", "md", "njk"],
         markdownTemplateEngine: 'njk',
         htmlTemplateEngine: 'njk',
         passthroughFileCopy: true,
