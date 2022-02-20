@@ -61,13 +61,18 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-.post {
-    li {
-        list-style-type: disc;
-        margin-bottom: calc(16px * 1.5 / 2);
-        margin-left : calc(40px * 1.5 / 2);
-    }
 
+.post, .recipe {
+    ul {
+      li {
+        list-style-type: disc;
+         }
+}
+
+li {
+    margin-bottom: calc(16px * 1.5 / 2);
+    margin-left : calc(40px * 1.5 / 2);
+}
     .tags-post {
         li {
             list-style-type: none;
@@ -96,14 +101,6 @@ table {
 th, td {
     border-bottom: 1px solid rgb(180, 179, 179);
   }
-
-.recipe {
-    li {
-        list-style-type: decimal;
-        margin-bottom: calc(16px * 1.5 / 2);
-        margin-left : calc(40px * 1.5 / 2);
-    }
-} 
 
 ol {
   list-style-type: decimal;
