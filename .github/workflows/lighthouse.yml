@@ -6,6 +6,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v1
+      - uses: actions/setup-node@v2
+        with:
+          node-version-file: '.nvmrc'
 
       - name: Install
         run: npm ci
@@ -14,9 +17,12 @@ jobs:
         run: npm run build
 
       - name: Run Lighthouse CI
-        uses: treosh/lighthouse-ci-action@v2
+      - uses: treosh/lighthouse-ci-action@v2
         with:
           configPath: "./lighthouserc.json"
           temporaryPublicStorage: true
           uploadArtifacts: true
+      - uses: actions/setup-node@v2
+        with:
+          node-version-file: '.nvmrc'
 
