@@ -96,3 +96,7 @@ table {
 th, td {
     border-bottom: 1px solid rgb(180, 179, 179);
   }
+  
+ol {
+  list-style-type: decimal;
+} 
