@@ -153,8 +153,11 @@ module.exports = eleventyConfig => {
        response.tags = tags;
      } else {
        response[meta.key]=meta.value;
-
      }
+
+   }
+   if (!response.tags){
+     response.tags = ['recipe'];
    }
    return response;
   });
