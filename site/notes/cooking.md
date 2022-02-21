@@ -1,5 +1,9 @@
-Cooking is one of the most useful hobbies, and I think it's pretty fun
+Cooking is a really great hobby for saving money, improving your health, and making tasty food.
 
 ## [[recipe]]
 [[sous vide steak]]
-## [[meal plan]]
+[pesto](recipes/pesto/)
+[Hokkaido Milk Break](recipes/milk bread/)
+
+## Cooking Techniques
+[[sous vide temperatures]]
