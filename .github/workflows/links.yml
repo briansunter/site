@@ -21,7 +21,7 @@ jobs:
         env:
           INPUT_URL: https://briansunter.com
           INPUT_PAGES_PATH: ./dist/
-          INPUT_CMD_PARAMS: '-t=60 --skip-tls-verification --header="User-Agent:Mozilla/5.0(Macintosh;IntelMacOSX0_15_7)" --verbose --color=always -e="(google|linkedin|apple|roam|#|brew.sh|mindnode)" -b=12000'
+          INPUT_CMD_PARAMS: '-t=60 --skip-tls-verification --header="User-Agent:Mozilla/5.0(Macintosh;IntelMacOSX0_15_7)" --verbose --color=always -e="(google|linkedin|apple|roam|#|brew.sh|mindnode|tailwindcss.com)" -b=12000'
           INPUT_RUN_TIMEOUT: 100
           INPUT_DEBUG: true
         run: wget -qO- https://raw.githubusercontent.com/ruzickap/action-my-broken-link-checker/v2/entrypoint.sh | bash
