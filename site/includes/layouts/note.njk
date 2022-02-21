@@ -2,31 +2,44 @@
 layout: default
 ---
 <script type="text/javascript" src="/javascript/vendor/mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad:true});</script>
+<script>
+    mermaid.initialize({startOnLoad: true});
+</script>
+
+<script src="/javascript/vendor/jquery.min.js"></script>
+<link href="/css/vendor/image_preview_for_links.min.css" rel="stylesheet">
+<script type="text/javascript">
+    $(function () {
+        $('.note a').miniPreview({prefetch: 'parenthover'});
+    });
+</script>
+<script src="/javascript/vendor/image_preview_for_links.min.js"></script>
 
 <main id="main" class="main flex flex-1 flex-col md:flex-row py-10 px-4 lg:px-0 lg:py-20">
 
     <section id="container-centre" class="flex-1 container ml-auto mr-auto lg:px-32">
 
         <div class="content note">
-            <h1 class="text-5xl"> {{title}} </h1>
+            <h1 class="text-5xl">
+                {{title}}
+            </h1>
             {{ content | safe }}
 
         </div>
         <hr class="mt-2">
         <div class = "my-2">
-        <h4 class ="mb-1">Related Pages</h4>
-        {% if backlinks.length > 0%}
-            <ul class="backlinks-container">
-                {% for link in backlinks %}
-                    <li class="backlink">
-                        <a href="{{link.url}}" class="backlink__link">{{link.title}}</a>
-                    </li>
-                {% endfor %}
-            </ul>
-        {% else %}
-            <p class="backlinks-default">No related pages found.</p>
-        {% endif %}
+            <h4 class ="mb-1">Related Pages</h4>
+            {% if backlinks.length > 0%}
+                <ul class="backlinks-container">
+                    {% for link in backlinks %}
+                        <li class="backlink">
+                            <a href="{{link.url}}" class="backlink__link">{{link.title}}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p class="backlinks-default">No related pages found.</p>
+            {% endif %}
         </div>
 
     </section>

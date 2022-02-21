@@ -1,9 +1,10 @@
 ---
 title: notes
 ---
-## Welcome to my notes
 
 Snippets of thoughts on various interests and hobbies.
+
+### Welcome to my notes
 
 This is my digital garden project where I post notes on topics I've been interested in. These are short highly interlinked pages on a wide range of topics. They are different from [blog posts](/blog/), which are long form essays. It's like my own Wikipedia of condensed information that I've found useful, and hopefully others will too.
 
