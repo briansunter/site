@@ -147,7 +147,14 @@ module.exports = eleventyConfig => {
 
    for (let i = 0; i < recipe.metadata.length; i++){
      const meta = recipe.metadata[i];
-     response[meta.key]=meta.value;
+     if (meta.key === 'tags'){
+       const tags = meta.value.split(',').filter(x => x !== "");
+       tags.push('recipe');
+       response.tags = tags;
+     } else {
+       response[meta.key]=meta.value;
+
+     }
    }
    return response;
   });
@@ -162,6 +169,29 @@ module.exports = eleventyConfig => {
     }
   });
 
+    eleventyConfig.addCollection('recipes', collection => {
+      const recipeMap = {};
+      const recipes = collection.getFilteredByTag('recipe');
+
+      for (const recipe of recipes){
+        
+        for (const tag of recipe.data.tags){
+          const r = {data:recipe.data, url: recipe.url};
+          if (recipeMap[tag]){
+            recipeMap[tag].add(r);
+          } else {
+            recipeMap[tag] = new Set([r]);
+          }
+        }
+      }
+      delete recipeMap['recipe'];
+
+      for (const k of Object.keys(recipeMap)){
+        recipeMap[k] = Array.from(recipeMap[k]);
+      }
+      const recipeTypes = Object.keys(recipeMap);
+      return {recipeTypes, recipeMap};
+    });
     return {
         templateFormats: ["cook", "md", "njk"],
         markdownTemplateEngine: 'njk',
