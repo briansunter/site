@@ -148,7 +148,7 @@ module.exports = eleventyConfig => {
    for (let i = 0; i < recipe.metadata.length; i++){
      const meta = recipe.metadata[i];
      if (meta.key === 'tags'){
-       const tags = meta.value.split(',').filter(x => x !== "");
+       const tags = meta.value.split(',').map(x => x.trim()).filter(x => x !== "");
        tags.push('recipe');
        response.tags = tags;
      } else {
