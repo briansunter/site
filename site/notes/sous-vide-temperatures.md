@@ -1,5 +1,7 @@
 Temperatures to cook various sous vide foods at.
 
+Useful for [[cooking]] [[sous vide steak]].
+
 ## Strip, Ribeye, Porterhouse/T-Bone
 
 | Doneness          | Temperature Range            | Timing Range                                       |
