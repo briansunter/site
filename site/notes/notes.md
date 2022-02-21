@@ -10,7 +10,7 @@ This is my digital garden project where I post notes on topics I've been interes
 Internal links to other notes will be surrounded with square braces. At the bottom of each page is a section called "Related Pages". This Related Pages section is a list of other pages that link to the current page. This should help you find related topics.
 
 ## Index
-These are some of my main areas of interest. 
+These are some of my main areas of interest. From here, you should be able to find all other topics.
 
 ### [[programming]]
 Topics related to coding, projects, algorithms, interviewing.
