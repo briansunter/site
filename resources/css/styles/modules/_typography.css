@@ -136,15 +136,8 @@ li {
           font-size: 1.3em;
         }
         
-        table thead {
-          border: none;
-          clip: rect(0 0 0 0);
-          height: 1px;
-          margin: -1px;
-          overflow: hidden;
-          padding: 0;
-          position: absolute;
-          width: 1px;
+        table, thead, td, th {
+          display:block;
         }
         
         table tr {
@@ -157,7 +150,7 @@ li {
           border-bottom: 1px solid #ddd;
           display: block;
           font-size: .8em;
-          text-align: right;
+          text-align: center;
         }
         
         table td::before {
@@ -166,7 +159,7 @@ li {
           content: attr(aria-label);
           */
           content: attr(data-label);
-          float: left;
+          float: center;
           font-weight: bold;
           text-transform: uppercase;
         }
