@@ -1,7 +1,7 @@
 const htmlmin = require("html-minifier");
 const process = require("process");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const pluginPWA = require("eleventy-plugin-pwa");
+const pluginPWA = require("@piraces/eleventy-plugin-pwa");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const randomColor = require('randomcolor');
 const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
@@ -56,7 +56,10 @@ module.exports = eleventyConfig => {
 
   eleventyConfig.addPlugin(lazyImagesPlugin);
 
-  eleventyConfig.addPlugin(pluginPWA);
+  eleventyConfig.addPlugin(pluginPWA, {
+    swDest: "./dist/service-worker.js",
+    globDirectory: "./dist"
+  });
 
   eleventyConfig.addPlugin(pluginRss);
 
@@ -128,7 +131,6 @@ module.exports = eleventyConfig => {
    const response = {};
    response.ingredients = recipe.ingredients.map(({quantity,units,name}) => `${quantity} ${units} ${name}`);
    response.steps = [];
-   console.log(JSON.stringify(recipe));
    for (let i = 0; i <recipe.steps.length; i++){
      const step = recipe.steps[i];
      let lineStr = ''
