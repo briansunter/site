@@ -1,7 +1,7 @@
 const htmlmin = require("html-minifier");
 const process = require("process");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const pluginPWA = require("eleventy-plugin-pwa");
+const pluginPWA = require("@piraces/eleventy-plugin-pwa");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const randomColor = require('randomcolor');
 const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
@@ -56,7 +56,10 @@ module.exports = eleventyConfig => {
 
   eleventyConfig.addPlugin(lazyImagesPlugin);
 
-  eleventyConfig.addPlugin(pluginPWA);
+  eleventyConfig.addPlugin(pluginPWA, {
+    swDest: "./dist/service-worker.js",
+    globDirectory: "./dist"
+  });
 
   eleventyConfig.addPlugin(pluginRss);
 
@@ -128,7 +131,6 @@ module.exports = eleventyConfig => {
    const response = {};
    response.ingredients = recipe.ingredients.map(({quantity,units,name}) => `${quantity} ${units} ${name}`);
    response.steps = [];
-   console.log(JSON.stringify(recipe));
    for (let i = 0; i <recipe.steps.length; i++){
      const step = recipe.steps[i];
      let lineStr = ''
@@ -145,7 +147,17 @@ module.exports = eleventyConfig => {
 
    for (let i = 0; i < recipe.metadata.length; i++){
      const meta = recipe.metadata[i];
-     response[meta.key]=meta.value;
+     if (meta.key === 'tags'){
+       const tags = meta.value.split(',').map(x => x.trim()).filter(x => x !== "");
+       tags.push('recipe');
+       response.tags = tags;
+     } else {
+       response[meta.key]=meta.value;
+     }
+
+   }
+   if (!response.tags){
+     response.tags = ['recipe'];
    }
    return response;
   });
@@ -160,6 +172,29 @@ module.exports = eleventyConfig => {
     }
   });
 
+    eleventyConfig.addCollection('recipes', collection => {
+      const recipeMap = {};
+      const recipes = collection.getFilteredByTag('recipe');
+
+      for (const recipe of recipes){
+        
+        for (const tag of recipe.data.tags){
+          const r = {data:recipe.data, url: recipe.url};
+          if (recipeMap[tag]){
+            recipeMap[tag].add(r);
+          } else {
+            recipeMap[tag] = new Set([r]);
+          }
+        }
+      }
+      delete recipeMap['recipe'];
+
+      for (const k of Object.keys(recipeMap)){
+        recipeMap[k] = Array.from(recipeMap[k]);
+      }
+      const recipeTypes = Object.keys(recipeMap);
+      return {recipeTypes, recipeMap};
+    });
     return {
         templateFormats: ["cook", "md", "njk"],
         markdownTemplateEngine: 'njk',

@@ -4,6 +4,15 @@ title: recipe
 
 Ingredients and steps for [[cooking]]
 
-## Favorites
+## Main
 
-### [[sous vide steak]]
+[Sous Vide Steak](/recipes/sous-vide-steak/)
+
+
+## Side
+
+[Hokkaido Milk Bread](/recipes/milk-bread/)
+
+## Sauce
+
+[Pesto](/recipes/pesto/)
