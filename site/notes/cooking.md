@@ -1,7 +1,7 @@
 Cooking is a really great hobby for saving money, improving your health, and making tasty food.
 
 ## [[recipe]]
-[[sous vide steak]]
+[sous vide steak](/recipes/sous-vide-steak/)
 
 [pesto](/recipes/pesto/)
 
