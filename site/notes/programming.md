@@ -1,8 +1,6 @@
-
+Everything related to coding, tech industry, and software projects.
 
 ## Languages
-Programming and markup languages.
-
 [[cooklang]]
 
 ## Leetcode Questions

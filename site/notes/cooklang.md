@@ -1,5 +1,3 @@
-# cooklang
-
 Cooklang is like markdown for recipes. It lets you write recipes in a human readable format, that a computer can parse to get the ingredient list, steps, etc.
 
 Recipe sites have gotten so bloated that you need to read someones entire life story to get the recipe. I'm a big fan of storing information in plain text in git, as well as [[cooking]], so I was happy to discover [CookLang](https://cooklang.org/).
@@ -40,7 +38,7 @@ Although the text is human readable, this is what the special syntax means.
 ### Ingredients
 `@ingredient{quantity%unit}` for example `@butter{30%g}`
 Simple ingredients can be specified like @salt.
-Ingredients with spaces can use curly braces `@ground pepper{}
+Ingredients with spaces can use curly braces `@ground pepper{}`
 
 ### Time
 

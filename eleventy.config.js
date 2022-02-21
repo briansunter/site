@@ -42,6 +42,7 @@ module.exports = eleventyConfig => {
               const linkName = parts[0].trim().replace(/ /g , '-');
               match.url = `/notes/${linkName}/`;
               }
+              match.text = `[[${match.text}]]`;
           }
       })
   })
