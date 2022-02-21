@@ -1,11 +1,11 @@
 Cooking is a really great hobby for saving money, improving your health, and making tasty food.
 
 ## [[recipe]]
-[sous vide steak](/recipes/sous-vide-steak/)
+[Sous Vide Steak](/recipes/sous-vide-steak/)
 
-[pesto](/recipes/pesto/)
+[Pesto](/recipes/pesto/)
 
-[Hokkaido Milk Break](/recipes/milk-bread/)
+[Hokkaido Milk Bread](/recipes/milk-bread/)
 
 ## Cooking Techniques
 [[sous vide temperatures]]
