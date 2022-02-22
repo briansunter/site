@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<script type="text/javascript" src="/javascript/vendor/mermaid.min.js"></script>
+<script>
+    mermaid.initialize({startOnLoad: true});
+</script>
+
+<main id="main" class="main flex flex-1 flex-col md:flex-row py-10 px-4 lg:px-0 lg:py-20">
+    <section id="container-centre" class="flex-1 container ml-auto mr-auto lg:px-32">
+
+        <div class="content recipe">
+            <h1 class="text-5xl">
+                {{title}}
+            </h1>
+            <p>{{description}}</p>
+            <h2> Ingredients </h2>
+            <ul>
+                {% for ingredient in ingredients %}
+                    <li>
+                        {{ingredient}}
+                    </li>
+
+                {% endfor %}
+            </ul>
+            <h2>Instructions</h2>
+
+            <ol>
+                {% for step in steps%}
+                    <li>
+                        {{step}}
+                    </li>
+
+                {% endfor %}
+            </ol>
+
+            <p>From: <a href="{{source}}">{{source}}</a></p>
+        </div>
+    </section>
+
+</main>

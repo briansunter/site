@@ -23,7 +23,7 @@ resource "aws_codebuild_project" "prod_app_build2" {
     compute_type = "BUILD_GENERAL1_LARGE"
 
     // https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref-available.html
-    image           = "aws/codebuild/amazonlinux2-x86_64-standard:2.0"
+    image           = "aws/codebuild/standard:5.0"
     type            = "LINUX_CONTAINER"
     privileged_mode = true
   }

@@ -1,12 +1,14 @@
 const htmlmin = require("html-minifier");
 const process = require("process");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const pluginPWA = require("eleventy-plugin-pwa");
+const pluginPWA = require("@piraces/eleventy-plugin-pwa");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const randomColor = require('randomcolor');
 const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 const cacheBuster = require('@mightyplow/eleventy-plugin-cache-buster');
-
+const anchor = require('markdown-it-anchor')
+const markdownIt = require('markdown-it');
+const cooklang = require('cooklang');
 Array.prototype.insert = function (index, item) {
   this.splice(index, 0, item);
 };
@@ -14,9 +16,51 @@ Array.prototype.insert = function (index, item) {
 
 module.exports = eleventyConfig => {
 
+  const markdownItOptions = {
+      html: true,
+      linkify: true
+  };
+
+  const md = markdownIt(markdownItOptions)
+  .use(require('markdown-it-footnote'))
+  .use(require('markdown-it-anchor'), { 
+    permalink: anchor.permalink.headerLink()
+})
+  .use(require('markdown-it-attrs'))
+  .use(require('markdown-it-textual-uml'))
+  .use(function(md) {
+      // Recognize Mediawiki links ([[text]])
+      md.linkify.add("[[", {
+          validate: /^\s?([^\[\]\|\n\r]+)(\|[^\[\]\|\n\r]+)?\s?\]\]/,
+          normalize: match => {
+              const parts = match.raw.slice(2,-2).split("|");
+              parts[0] = parts[0].replace(/.(md|markdown)\s?$/i, "");
+              match.text = (parts[1] || parts[0]).trim();
+              if (parts[0].trim()==="notes"){
+                match.url = '/notes/'
+              } else {
+              const linkName = parts[0].trim().replace(/ /g , '-');
+              match.url = `/notes/${linkName}/`;
+              }
+              match.text = `[[${match.text}]]`;
+          }
+      })
+  })
+  
+  md.linkify.set({ fuzzyLink: false });
+  
+  eleventyConfig.addFilter("markdownify", string => {
+      return md.render(string)
+  })
+
+  eleventyConfig.setLibrary('md', md);
+
   eleventyConfig.addPlugin(lazyImagesPlugin);
 
-  eleventyConfig.addPlugin(pluginPWA);
+  eleventyConfig.addPlugin(pluginPWA, {
+    swDest: "./dist/service-worker.js",
+    globDirectory: "./dist"
+  });
 
   eleventyConfig.addPlugin(pluginRss);
 
@@ -57,11 +101,14 @@ module.exports = eleventyConfig => {
     eleventyConfig.addCollection('blog', collection => {
        return collection.getFilteredByTag('blog').reverse();
     });
-
-    // Layout aliases
+  eleventyConfig.addCollection("notes", function (collection) {
+        return collection.getFilteredByGlob(["site/notes/**/*.md", "notes.md"]);
+    });
+    // Layout aliases 
     eleventyConfig.addLayoutAlias('default', 'layouts/default.njk');
     eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
 
+    eleventyConfig.addLayoutAlias('note', 'layouts/note.njk');
     // Include our static assets
   eleventyConfig.setWatchThrottleWaitTime(500); 
   eleventyConfig.setUseGitIgnore(false);
@@ -80,10 +127,77 @@ module.exports = eleventyConfig => {
 
   eleventyConfig.addPlugin(syntaxHighlight);
 
+ eleventyConfig.addDataExtension("cook", contents => {
+   const recipe = new cooklang.Recipe(contents)
+   const response = {};
+   response.ingredients = recipe.ingredients.map(({quantity,units,name}) => `${quantity} ${units} ${name}`);
+   response.steps = [];
+   for (let i = 0; i <recipe.steps.length; i++){
+     const step = recipe.steps[i];
+     let lineStr = ''
+     for (let j = 0; j < step.line.length;j++ ){
+       line = step.line[j];
+      if (typeof line === 'string'){
+        lineStr += line;
+      } else {
+        lineStr += `${line.quantity ? line.quantity + " " : ""}${line.units? line.units + " " : ""}${line.name}`
+      }
+     }
+     response.steps.push(lineStr);
+   }
+
+   for (let i = 0; i < recipe.metadata.length; i++){
+     const meta = recipe.metadata[i];
+     if (meta.key === 'tags'){
+       const tags = meta.value.split(',').map(x => x.trim()).filter(x => x !== "");
+       tags.push('recipe');
+       response.tags = tags;
+     } else {
+       response[meta.key]=meta.value;
+     }
+
+   }
+   if (!response.tags){
+     response.tags = ['recipe'];
+   }
+   return response;
+  });
+
   eleventyConfig.addPlugin(cacheBuster({outputDirectory: 'dist/'}));
 
+  eleventyConfig.addExtension("cook", {
+    compile: async (inputContent) => {
+      return async () => {
+        return inputContent;
+      };
+    }
+  });
+
+    eleventyConfig.addCollection('recipes', collection => {
+      const recipeMap = {};
+      const recipes = collection.getFilteredByTag('recipe');
+
+      for (const recipe of recipes){
+        
+        for (const tag of recipe.data.tags){
+          const r = {data:recipe.data, url: recipe.url};
+          if (recipeMap[tag]){
+            recipeMap[tag].add(r);
+          } else {
+            recipeMap[tag] = new Set([r]);
+          }
+        }
+      }
+      delete recipeMap['recipe'];
+
+      for (const k of Object.keys(recipeMap)){
+        recipeMap[k] = Array.from(recipeMap[k]);
+      }
+      const recipeTypes = Object.keys(recipeMap);
+      return {recipeTypes, recipeMap};
+    });
     return {
-        templateFormats: ["md", "njk"],
+        templateFormats: ["cook", "md", "njk"],
         markdownTemplateEngine: 'njk',
         htmlTemplateEngine: 'njk',
         passthroughFileCopy: true,

@@ -10,25 +10,28 @@ samp {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    @apply font-bold leading-tight mt-0 mb-6;
+    @apply font-bold leading-tight mt-3 mb-4;
 }
 
-.about-me, .post {
+.header-anchor {
+    color: currentColor;
+}
+
+.about-me, .post, .recipe, .note {
 
     h1 {
-        @apply text-4xl;
-
+        @apply text-5xl;
     }
 
     h2 {
-        @apply text-2xl;
+        @apply text-4xl;
     }
 
     p {
-        @apply mb-8;
+        @apply mb-4;
 
         &.intro {
-            @apply border-0 border-gray-200 text-2xl pb-10 mb-10 font-light text-gray-500;
+            @apply border-0 border-gray-200 text-2xl pb-10 mb-6 font-light text-gray-500;
 
             @screen md {
                 @apply text-3xl;
@@ -58,13 +61,18 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-.post {
-    li {
-        list-style-type: disc;
-        margin-bottom: calc(16px * 1.5 / 2);
-        margin-left : calc(16px * 1.5 / 2);
-    }
 
+.note, .post, .recipe {
+    ul {
+      li {
+        list-style-type: disc;
+         }
+}
+
+li {
+    margin-bottom: calc(16px * 1.5 / 2);
+    margin-left : calc(40px * 1.5 / 2);
+}
     .tags-post {
         li {
             list-style-type: none;
@@ -78,10 +86,90 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 :not(pre) > code {
-    margin: 3px;
-    padding: 1px;
+    font-size: 1.1rem;
+    margin: 0px;
+    padding: 4px;
     border: 1px solid #a09999;
     border-radius: 3px;
     background-color: #eef;
 }
 
+.note {
+    table {
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        table-layout: fixed;
+      }
+      
+      table caption {
+        font-size: 1.5em;
+        margin: .5em 0 .75em;
+      }
+      
+      table tr {
+        background-color: #f8f8f8;
+        border: 1px solid #ddd;
+        padding: .35em;
+      }
+      
+      table th,
+      table td {
+        padding: .625em;
+        text-align: center;
+      }
+      
+      table th {
+        font-size: .85em;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+      }
+      
+      @media screen and (max-width: 600px) {
+        table {
+          border: 0;
+        }
+      
+        table caption {
+          font-size: 1.3em;
+        }
+        
+        table, thead, td, th {
+          display:block;
+        }
+        
+        table tr {
+          border-bottom: 3px solid #ddd;
+          display: block;
+          margin-bottom: .625em;
+        }
+        
+        table td {
+          border-bottom: 1px solid #ddd;
+          display: block;
+          font-size: .8em;
+          text-align: center;
+        }
+        
+        table td::before {
+          /*
+          * aria-label has no advantage, it won't be read inside a table
+          content: attr(aria-label);
+          */
+          content: attr(data-label);
+          float: center;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+        
+        table td:last-child {
+          border-bottom: 0;
+        }
+      }
+}
+
+ol {
+  list-style-type: decimal;
+} 
