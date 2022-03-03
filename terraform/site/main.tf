@@ -34,6 +34,9 @@ resource "aws_s3_bucket_website_configuration" "root_website" {
     suffix = "index.html"
   }
 
+  error_document {
+    key = "404.html"
+  }
 }
 
 resource "aws_s3_bucket_policy" "root" {
