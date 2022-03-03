@@ -97,7 +97,7 @@ resource "aws_cloudfront_distribution" "root_distribution" {
   }
 
   ordered_cache_behavior {
-    path_pattern     = "index.html"
+    path_pattern     = "*.html"
     allowed_methods  = ["GET", "HEAD", "OPTIONS"]
     cached_methods   = ["GET", "HEAD", "OPTIONS"]
     target_origin_id = var.domain
@@ -112,8 +112,8 @@ resource "aws_cloudfront_distribution" "root_distribution" {
     }
 
     min_ttl                = 0
-    default_ttl            = 0
-    max_ttl                = 0
+    default_ttl            = 120
+    max_ttl                = 300
     compress               = true
     viewer_protocol_policy = "redirect-to-https"
   }
