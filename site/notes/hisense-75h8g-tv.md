@@ -14,6 +14,7 @@ Eventually I found this [thread](https://www.reddit.com/r/Hisense/comments/ivxzf
 
 I contacted customer support and talked to multiple people. One person told me I was out of warranty and out of luck, even when I asked for the firmware update specifically. However, another customer service rep sent me an email with the file and instructions on how to update the TV. I just put the file on the USB drive, plugged it into my computer, and it worked perfectly. Now I keep the TV disconnected from the network and disable all "smart" features. Hopefully this will help someone else out.
 
+## Hisense TV USB Firmware Update Steps
 Thank you for contacting Hisense. You will find a link to the FW Update Download below. Please follow the below instructions to update your TV�s Firmware.
 FW Upgrade Download: https://hisensemanaged.sharepoint.com/:u:/s/SupportKB/EZ1JVKfJYQZOvdsEiowlIV4BtP6jyDNdMWgYVjq3CLRH4w?e=eTLFAj
 Instructions:
@@ -33,6 +34,6 @@ c. Please DO NOT turn OFF the TV during this process.
 9. When the update is complete, the Software updating Screen will disappear and the TV will come up as it normally does.
 10. Remove the USB from the back of the TV.
 And now your TV is updated!
-            If you have any questions or concerns in the meantime, please feel free to reply to this email or give me a call at 1-888-935-8880 and please reference your First and Last Name or Telephone Number. Thank you again and have a great day!
+If you have any questions or concerns in the meantime, please feel free to reply to this email or give me a call at 1-888-935-8880 and please reference your First and Last Name or Telephone Number. Thank you again and have a great day!
 
 

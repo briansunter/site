@@ -1,7 +1,8 @@
-In a full [[binary tree]] Every node either has two or no children. You can't have a node with a single child.  It's different than [[complete binary tree]] because lower right must be filled out.
+In a full [[binary tree]], every node either has two or no children. You can't have a node with a single child.  It's different than [[complete binary tree]] because the lower right must be filled out.
 
 ## Full Binary Tree Example
 This is a full binary tree because every node as zero or two children.
+
 ```mermaid
 graph TB;
     A((8))-->B((3));
@@ -21,7 +22,8 @@ graph TB;
 ```
 
 ## Non Full Binary Tree Example
-This is not a full binary tree because it is missing an element on the lower right.
+This is not a full binary tree because it is missing an element in the lower right.
+
 ```mermaid
 graph TB;
     A((8))-->B((3));
@@ -42,10 +44,10 @@ graph TB;
     classDef missing opacity:0,stroke-dasharray:5,stroke-width:2px,font-size:.8rem;
     class G red;
     class GG missing;
-
-
 ```
+
 This one isn't full either because it has an extra element `20`.
+
 ```mermaid
 graph TB;
     A((8))-->B((3));

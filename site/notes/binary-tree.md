@@ -1,6 +1,6 @@
-A type of [[tree]] with two child nodes. Don't assume it's sorted unless it's a [[binary search tree]].
+A type of [[tree]] with two child nodes. Don't assume it's sorted unless you know it's a [[binary search tree]].
 
-## Binary Tree Javascript Implementation
+## Binary Tree Javascript Class Implementation
 ``` js
 class TreeNode {
     constructor(data) {
@@ -10,12 +10,13 @@ class TreeNode {
   }
 }
 ```
-## Binary Tree Operations
-### Breadth First Search
+## Breadth First Search
  Breadth first search starts at the tree root and explores all nodes at the present depth prior to moving on to the nodes at the next depth level.
-#### Animation
+
+### Animation
 ![Breadth First Search Algorithm Animation](/images/notes/bfs-tree-algorithm.gif)
-#### Implementation
+
+### Implementation
 ```js
 function breadthFirstSearch() {
   const visited = [],
@@ -34,22 +35,22 @@ function breadthFirstSearch() {
     return visited;
 }
 ```
-### Depth First Search
+## Depth First Search
 Depth first search starts at the root node and explores as far as possible along each branch before backtracking. 
 
-There are three types of depth first search: preorder traversal, inorder traversal, and postorder traversal. For each type of depth first search, there are both iterative and recursive algorithms.
+There are three types of depth first search: **preorder traversal**, **inorder traversal**, and **postorder traversal**. For each type of depth first search, there are both iterative and recursive algorithms.
 
-#### Animation
+### Animation
 ![Depth First Search Algorithm Animation](/images/notes/dfs-tree-algorithm.gif)
 
-### Preorder Traversal
+## Preorder Traversal
 1. Visit the root.
-2. Traverse the left subtree, preorder(node.left)
-3. Traverse the right subtree, preorder(node.right)
-#### Animation
+2. Traverse the left subtree - preorder(node.left)
+3. Traverse the right subtree - preorder(node.right)
+### Animation
 
 ![Preorder Traversal Depth First Search Tree Algorithm Animation](/images/notes/preorder-traversal.gif)
-#### Recursive Implementation
+### Recursive Implementation
 ```js
 function preOrderRecursive(node) { 
   console.log(node.val) 
@@ -57,7 +58,7 @@ function preOrderRecursive(node) {
   node.right && this.preOrder(node.right) 
 } 
 ```
-#### Iterative Implementation
+### Iterative Implementation
 ```js
 function preOrderIterative(root) {
     const stack = [];
@@ -68,7 +69,7 @@ function preOrderIterative(root) {
     const res = [];
     while(stack.length){
         const node = stack.pop();
-		console.log(node.val);	
+     		console.log(node.val);	
         res.push(node.val);
         if(node.right){
             stack.push(node.right);
@@ -81,8 +82,12 @@ function preOrderIterative(root) {
 };
 ```
 
-### Inorder Traversal
-#### Inorder Traversal Animation
+## Inorder Traversal
+1. Traverse the left subtree - preorder(node.left)
+2. Visit the root.
+3. Traverse the right subtree - preorder(node.right)
+
+### Inorder Traversal Animation
 ![Inorder Traversal Depth First Search Tree Algorithm Animation](/images/notes/inorder-traversal.gif)
 #### Recursive Implementation
 ```js
@@ -92,7 +97,7 @@ function inOrderRecursive(root) {
    root.right && inOrder(root.right) 
 } 
 ```
-#### Iterative Implementation
+### Iterative Implementation
 ```js
 function inOrderIterative(root){
   const stack = []
@@ -111,12 +116,15 @@ function inOrderIterative(root){
 }
 ```
 
-### Post Order Traversal
+## Post Order Traversal
+1. Traverse the left subtree - preorder(node.left)
+2. Traverse the right subtree - preorder(node.right)
+3. Visit the root.
 
-#### Animation
+### Animation
 ![Postorder Traversal Depth First Search Tree Algorithm Animation](/images/notes/postorder-traversal.gif)
 
-#### Recursive Implementation
+### Recursive Implementation
 ```js
 function postOrderRecursive(node) { 
   node.left && this.postOrder(node.left) 
@@ -124,7 +132,7 @@ function postOrderRecursive(node) {
   console.log(node.val); 
 }
 ```
-#### Iterative Implementation
+### Iterative Implementation
 ```js
 function postOrder(node){
   const s = [];
@@ -146,8 +154,32 @@ function postOrder(node){
     }
 }
 ```
-## Types of binary trees
-* [[binary search tree]]
+
+## Depth of Binary Tree
+```js
+function maxDepth(root) {
+    return doTreeDepth(root,1)
+}
+
+function doTreeDepth(root, height){
+    if(!root){
+        return 0;
+    }
+    //is leaf node
+    if (!root.right && !root.left){
+        return height; 
+    }
+
+    const left = doTreeDepth(root.left,height+1);
+    const right = doTreeDepth(root.right,height+1);
+
+    return Math.max(left,right); 
+}
+```
+
+## Types of Binary Trees
+* [[binary search tree]] 
+* [[balanced binary tree]]
 * [[perfect binary tree]]
 * [[complete binary tree]]
 * [[full binary tree]]

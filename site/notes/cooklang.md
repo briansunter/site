@@ -1,8 +1,8 @@
 Cooklang is like markdown for recipes. It lets you write recipes in a human readable format, that a computer can parse to get the ingredient list, steps, etc.
 
-Recipe sites have gotten so bloated that you need to read someones entire life story to get the recipe. I'm a big fan of storing information in plain text in git, as well as [[cooking]], so I was happy to discover [CookLang](https://cooklang.org/).
+Recipe sites have gotten so bloated that you need to read someones entire life story to get the ingredients and steps. I'm a big fan of storing information in plain text in git, as well as [[cooking]], so I was happy to discover [CookLang](https://cooklang.org/).
 
-I don't want to write my recipes in plain text or markdown, because then I can't do interesting things like list the ingredients, generate shopping lists, convert units, get required cookware, etc. I also don't want to write them in a highly structured format like JSON because it would be to difficult to maintain.
+I don't want to write my recipes in completely unstructured text, because then I can't do interesting things like list the ingredients, generate shopping lists, convert units, get required cookware, etc. I also don't want to write them in a highly structured format like JSON because it would be to difficult to maintain.
 
 I like cooklang because you can read it like a recipe if you want. I also like that you can list the ingredients throughout the steps and it automatically builds a ingredients list. This way you don't have to maintain a dedicated ingredients list and it's easier to update.
 
@@ -36,12 +36,14 @@ Serve steak immediately
 Although the text is human readable, this is what the special syntax means.
 
 ### Ingredients
+
 `@ingredient{quantity%unit}` for example `@butter{30%g}`
-Simple ingredients can be specified like @salt.
+
+Simple ingredients can be specified like `@salt.`
+
 Ingredients with spaces can use curly braces `@ground pepper{}`
 
 ### Time
-
 Time can be specified with `~{quantity%units}` like `~{30%seconds}`
 
 ### Metadata
