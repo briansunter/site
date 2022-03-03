@@ -47,19 +47,18 @@ module.exports = eleventyConfig => {
       })
   })
   
-  md.linkify.set({ fuzzyLink: false });
-  
-  eleventyConfig.addFilter("markdownify", string => {
+  md.linkify.set({ fuzzyLink: false }); eleventyConfig.addFilter("markdownify", string => {
       return md.render(string)
   })
 
   eleventyConfig.setLibrary('md', md);
 
-  eleventyConfig.addPlugin(lazyImagesPlugin);
+  eleventyConfig.addPlugin(lazyImagesPlugin,{scriptSrc: '/javascript/vendor/lazysizes-5.3.2.min.js'});
 
   eleventyConfig.addPlugin(pluginPWA, {
     swDest: "./dist/service-worker.js",
-    globDirectory: "./dist"
+    globDirectory: "./dist",
+    globIgnores: ["**/*.jpg","**/*.png","**/*.gif"]
   });
 
   eleventyConfig.addPlugin(pluginRss);
