@@ -1,4 +1,4 @@
-A tree is a set of connected nodes that does not form a cycle.
+A tree is a set of connected nodes that do not form a cycle.
 
 ## Tree Diagram
 ```mermaid
@@ -44,7 +44,6 @@ A [[complete binary tree]] is a [[binary tree]] where every level is full except
 In a [[full binary tree]] every node either has two or no children. You can't have a node with a single child.
 
 ### Perfect Binary Tree
-
 A [[perfect binary tree]] is where all nodes have zero or two children and all leaf nodes are on the same level.
 
 
