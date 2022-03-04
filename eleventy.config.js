@@ -58,6 +58,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPlugin(pluginPWA, {
     swDest: "./dist/service-worker.js",
     globDirectory: "./dist",
+    maximumFileSizeToCacheInBytes: 10000000, 
     globIgnores: ["**/*.jpg","**/*.png","**/*.gif"]
   });
 
