@@ -13,7 +13,7 @@ phases:
   post_build:
     commands:
       - aws s3 sync --exclude '*.html' --exclude 'service-worker.js' --delete dist/ s3://${bucket_name} --cache-control max-age=31536000
-      - aws s3 sync --include '*.html' include 'service-worker.js' --delete dist/ s3://${bucket_name} --cache-control max-age=120
+      - aws s3 sync --include '*.html' --include 'service-worker.js' --delete dist/ s3://${bucket_name} --cache-control max-age=120
 cache:
   paths:
     - "/root/.npm/**/*"
