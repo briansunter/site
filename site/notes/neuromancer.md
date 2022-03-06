@@ -18,7 +18,7 @@ A hacker is recruited into a mysterious group to pull off a series of heists.
 
 The book is based in a apocalyptic futuristic world controlled by corporations. Humans are cybernetically enhanced but the quality of life is really bad for everyone. They eat gruel and sleep in tiny 4 foot tall hotel rooms called "coffins". 
 
-A hacker named Case has hit rock bottom after his former employer destroyed his nervous system so he could no longer Jack into the virtual reality system called The Matrix. 
+A hacker named Case has hit rock bottom after his former employer destroyed his nervous system so he could no longer connect into the virtual reality system called The Matrix. 
 
 A mysterious man called Armitage approaches him and offers to cure him if he helps him in a series of jobs. After being cured he's told they also put poison sacs inside him which will kill him unless he follows through with the job as an insurance policy. 
 
