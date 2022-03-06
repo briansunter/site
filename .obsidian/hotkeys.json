@@ -1,10 +1,1 @@
-{
-  "templater-obsidian:jump-to-next-cursor-location": [
-    {
-      "modifiers": [
-        "Shift"
-      ],
-      "key": "Enter"
-    }
-  ]
-}
+{}

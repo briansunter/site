@@ -4,10 +4,10 @@ author: William Gibson
 date-finished: 2022-03-03
 rating: 8
 tags:
-	- reading
-	- scifi
-	- cyberpunk
-	- fiction
+ - reading
+ - scifi
+ - cyberpunk
+ - fiction
 ---
 
 ## What’s it About

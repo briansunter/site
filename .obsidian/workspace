@@ -1,16 +1,16 @@
 {
   "main": {
-    "id": "546e4a9918ad1a7b",
+    "id": "c91027b9e0e657e4",
     "type": "split",
     "children": [
       {
-        "id": "9bc509e3b40c59c6",
+        "id": "31cf71ecfaee45b6",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "recipes/milk-bread.md",
-            "mode": "preview",
+            "file": "site/notes/nueromancer.md",
+            "mode": "source",
             "source": false
           }
         }
@@ -19,11 +19,11 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "9cc0f94bad41aa34",
+    "id": "d078d0fa34bc7259",
     "type": "mobile-drawer",
     "children": [
       {
-        "id": "c38f0dea13d680b5",
+        "id": "56ffe6d920051abe",
         "type": "leaf",
         "state": {
           "type": "file-explorer",
@@ -31,12 +31,12 @@
         }
       },
       {
-        "id": "9605a1e0edf4062b",
+        "id": "f59bc91e04d156fc",
         "type": "leaf",
         "state": {
           "type": "search",
           "state": {
-            "query": "tag:#productivity",
+            "query": "",
             "matchingCase": false,
             "explainSearch": false,
             "collapseAll": false,
@@ -44,40 +44,21 @@
             "sortOrder": "alphabetical"
           }
         }
-      },
-      {
-        "id": "139c9ab27c3f94dc",
-        "type": "leaf",
-        "state": {
-          "type": "tag",
-          "state": {
-            "sortOrder": "frequency",
-            "useHierarchy": true
-          }
-        }
-      },
-      {
-        "id": "5aeaac5020a0b643",
-        "type": "leaf",
-        "state": {
-          "type": "starred",
-          "state": {}
-        }
       }
     ],
     "currentTab": 0
   },
   "right": {
-    "id": "3d73c5af5651fce4",
+    "id": "410e98445933feb4",
     "type": "mobile-drawer",
     "children": [
       {
-        "id": "e727bc3d751242e2",
+        "id": "d59e0c2d42ce19e9",
         "type": "leaf",
         "state": {
           "type": "backlink",
           "state": {
-            "file": "recipes/milk-bread.md",
+            "file": "site/notes/nueromancer.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -87,50 +68,13 @@
             "unlinkedCollapsed": true
           }
         }
-      },
-      {
-        "id": "4584cf9b6ed80402",
-        "type": "leaf",
-        "state": {
-          "type": "outgoing-link",
-          "state": {
-            "file": "recipes/milk-bread.md",
-            "linksCollapsed": false,
-            "unlinkedCollapsed": true
-          }
-        }
-      },
-      {
-        "id": "059b790eb39a6397",
-        "type": "leaf",
-        "state": {
-          "type": "outline",
-          "state": {
-            "file": "recipes/milk-bread.md"
-          }
-        }
-      },
-      {
-        "id": "f1b0939c9b7562bb",
-        "type": "leaf",
-        "state": {
-          "type": "advanced-tables-toolbar",
-          "state": {}
-        }
       }
-    ]
+    ],
+    "currentTab": 0
   },
-  "active": "9bc509e3b40c59c6",
+  "active": "31cf71ecfaee45b6",
   "lastOpenFiles": [
-    "recipes/milk-bread.md",
-    "site/blog/python-setup-pyenv-poetry.md",
-    "site/blog/org-mode.md",
     "site/notes/nueromancer.md",
-    "templates/book.md",
-    "site/blog/best-of-spacemacs.md",
-    "Excalidraw/Drawing 2022-03-04 00.50.51.excalidraw.md",
-    "site/notes/binary-search-tree.md",
-    "talks/clojure.md",
-    "site/notes/how to take smart notes.md"
+    "site/blog/3d-object-scanning.md"
   ]
 }
