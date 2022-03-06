@@ -1,7 +1,7 @@
 Cooking is a really great hobby for saving money, improving your health, and making tasty food.
 
 ## All Recipes
-My collection of recipes in [[cooklang]] format.
+My collection of recipes in cooklang format.
 
 [Full Recipe List by Category](/recipes/)
 
