@@ -7,20 +7,25 @@
   "outgoing-link",
   "tag-pane",
   "page-preview",
+
   "daily-notes",
   "templates",
   "note-composer",
   "command-palette",
   "slash-command",
   "editor-status",
+
   "starred",
   "markdown-importer",
   "random-note",
   "outline",
   "word-count",
   "slides",
+  "open-with-default-app",
+  "file-recovery",
+  "sync"
   "audio-recorder",
   "open-with-default-app",
   "workspaces",
   "file-recovery"
-]
+ ]

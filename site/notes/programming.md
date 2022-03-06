@@ -1,9 +1,7 @@
 Everything related to coding, tech industry, and software projects.
 
+## Data Structures and Algorithms
+[[tree]]
+
 ## Languages
 [[cooklang]]
-
-## Leetcode Questions
-Solutions to algorithm and data structure interview questions on leetcode.
-
-[[two sum]]
