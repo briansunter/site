@@ -14,7 +14,7 @@ tags:
 ## What’s it About
 A hacker is recruited into a mysterious group to pull off a series of heists. 
 
-[Amazon Link]({{amazon-link}})
+[Amazon Link]({{ amazon-link }})
 
 The book is based in a apocalyptic futuristic world controlled by corporations. Humans are cybernetically enhanced but the quality of life is really bad for everyone. They eat gruel and sleep in tiny 4 foot tall hotel rooms called "coffins". 
 
