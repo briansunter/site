@@ -1,4 +1,4 @@
- A balanced [[binary tree]] is [[tree]] in which no leaf nodes are ‘too far’ from the root. For example, one definition of balanced could require that all leaf nodes have a depth that differ by at most 1.
+ A balanced [[binary-tree|binary tree]] is [[tree]] in which no leaf nodes are ‘too far’ from the root. For example, one definition of balanced could require that all leaf nodes have a depth that differ by at most 1.
 
 ## Balanced Example
 This tree is balanced. `12` is only different by a depth of 1.

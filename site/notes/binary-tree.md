@@ -181,5 +181,5 @@ function doTreeDepth(root, height){
 * [[binary search tree]] 
 * [[balanced binary tree]]
 * [[perfect binary tree]]
-* [[complete binary tree]]
+* [[complete-binary-tree]]
 * [[full binary tree]]
