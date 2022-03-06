@@ -184,10 +184,3 @@ function doTreeDepth(root, height){
 * [[complete-binary-tree]]
 * [[full binary tree]]
 
-
- ## Binary Tree Operation Time Complexity
-| Tree Type                                                        | Find (Average) | Find (Worst Case) | Insert (Average) | Insert (Worst) | Delete (Average) | Delete (Worst Case) |
-|:---------------------------------------------------------------- |:-------------- |:----------------- |:---------------- |:-------------- |:---------------- |:------------------- |
-| [[binary-tree\|Binary Tree]]                                     | Θ(n)           | Θ(n)              | Θ(log(n))        | Θ(n)           | Θ(log(n))        | Θ(n)                |
-| [[binary-search-tree\|Binary Search Tree]]                       | Θ(log(n))      | Θ(n)              | Θ(log(n))        | Θ(n)           | Θ(log(n))        | Θ(n)                |
-| [[balanced-binary-tree\| Balanced Binary Tree]] (Red Black Tree) | Θ(log(n))      | Θ(log(n))         | Θ(log(n))        | Θ(log(n))      | Θ(log(n))        | Θ(log(n))           |

@@ -47,5 +47,12 @@ In a [[full binary tree]] every node either has two or no children. You can't ha
 A [[perfect binary tree]] is where all nodes have zero or two children and all leaf nodes are on the same level.
 
 
+ ##  Tree Operation Time Complexity
+| Tree Type                                                        | Find (Average) | Find (Worst Case) | Insert (Average) | Insert (Worst) | Delete (Average) | Delete (Worst Case) |
+|:---------------------------------------------------------------- |:-------------- |:----------------- |:---------------- |:-------------- |:---------------- |:------------------- |
+| [[binary-tree\|Binary Tree]]                                     | Θ(n)           | Θ(n)              | Θ(log(n))        | Θ(n)           | Θ(log(n))        | Θ(n)                |
+| [[binary-search-tree\|Binary Search Tree]]                       | Θ(log(n))      | Θ(n)              | Θ(log(n))        | Θ(n)           | Θ(log(n))        | Θ(n)                |
+| [[balanced-binary-tree\| Balanced Binary Tree]] (Red Black Tree) | Θ(log(n))      | Θ(log(n))         | Θ(log(n))        | Θ(log(n))      | Θ(log(n))        | Θ(log(n))           |
+
 
 

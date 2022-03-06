@@ -92,3 +92,50 @@ The find operation has an average time complexity of `O(log(n))` and a worst cas
   }
 
 ```
+## Delete Operation
+The delete operation has an average time complexity of `O(log(n))` and a worst case of `O(n)` unless the tree is a [[balanced-binary-tree|balanced binary tree]], which has a worst case of `O(log(n))`
+```js
+function deleteNode(root, key) {
+
+    /* Base Case: If the tree is empty */
+    if (root == null)
+        return root;
+
+    /* Otherwise, recur down the tree */
+    if (key < root.data){
+        root.left = deleteNode(root.left, key);
+	} else if (key > root.data){
+	    root.right = deleteNode(root.right, key);
+	}
+
+    // if key is same as root's
+    // key, then This is the
+    // node to be deleted
+    else {
+        // node with only one child or no child
+        if (root.left == null){
+		   return root.right;
+		}
+        else if (root.right == null){
+		   return root.left;
+		}
+
+        // node with two children: Get the inorder
+        // successor (smallest in the right subtree)
+        root.data = minValue(root.right);
+
+        // Delete the inorder successor
+        root.right = deleteNode(root.right, root.data);
+    }
+
+    return root;
+}
+
+function minValue(root) {
+    let min = root.data;
+    while (root.left != null) {
+        min = root.left.data;
+        root = root.left;
+    }
+    return min;
+}
