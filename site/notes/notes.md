@@ -15,6 +15,9 @@ These are some of my main areas of interest. From here, you should be able to fi
 ### [[programming]]
 Topics related to coding, projects, algorithms, interviewing.
 
+### [[reading]]
+Reviews, notes, and summaries of fiction and nonfiction books I've read. 
+
 ### [[cooking]]
 Recipes, cooking techniques, and useful information.
 

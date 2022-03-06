@@ -1,5 +1,5 @@
 ---
-title: Nueromancer
+title: Neuromancer
 author: William Gibson
 date-finished: 2022-03-03
 rating: 8

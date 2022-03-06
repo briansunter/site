@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "site/notes/nueromancer.md",
+            "file": "site/notes/reading.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "site/notes/nueromancer.md",
+            "file": "site/notes/reading.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "site/notes/nueromancer.md",
+            "file": "site/notes/reading.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -106,7 +106,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "site/notes/nueromancer.md"
+            "file": "site/notes/reading.md"
           }
         }
       },
@@ -118,19 +118,20 @@
           "state": {}
         }
       }
-    ]
+    ],
+    "currentTab": 3
   },
   "active": "9bc509e3b40c59c6",
   "lastOpenFiles": [
-    "site/notes/nueromancer.md",
+    "site/notes/reading.md",
+    "site/notes/neuromancer.md",
+    "site/notes/notes.md",
+    "reading.md",
+    "site/notes/product.md",
     "site/recipes/pesto.cook",
     "site/recipes/sous-vide-steak.cook",
     "site/recipes/szechwan-sauce.cook",
     "recipes/milk-bread.md",
-    "site/blog/better-npm-global-symlink.md",
-    "site/blog/python-setup-pyenv-poetry.md",
-    "site/blog/org-mode.md",
-    "templates/book.md",
-    "site/blog/best-of-spacemacs.md"
+    "site/blog/better-npm-global-symlink.md"
   ]
 }
