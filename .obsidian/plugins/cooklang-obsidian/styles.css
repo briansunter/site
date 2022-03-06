@@ -1,0 +1,102 @@
+.workspace-leaf-content[data-type=cook] .view-content {
+  font-family: inherit;
+}
+.workspace-leaf-content[data-type=cook] .cook-preview-view,
+.workspace-leaf-content[data-type=cook] .cook-source-view {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.workspace-leaf-content[data-type=cook] .main-image {
+  width: 100vw;
+  aspect-ratio: 1.618;
+  object-fit: cover;
+}
+.workspace-leaf-content[data-type=cook] .method-image {
+  display: block;
+  margin-top: 1em;
+  max-width: 100%;
+  max-height: 16vw;
+}
+.workspace-leaf-content[data-type=cook] ul.ingredients,
+.workspace-leaf-content[data-type=cook] ul.cookware {
+  column-count: 2;
+}
+.workspace-leaf-content[data-type=cook] ol.method {
+  margin-left: 0;
+  padding-right: 0;
+  list-style-type: none;
+  padding: 0;
+}
+.workspace-leaf-content[data-type=cook] ol.method > li {
+  counter-increment: step-counter;
+}
+.workspace-leaf-content[data-type=cook] ol.method > li::before {
+  content: "Step " counter(step-counter);
+  font-weight: 600;
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.workspace-leaf-content[data-type=cook] span.time,
+.workspace-leaf-content[data-type=cook] span.ingredient,
+.workspace-leaf-content[data-type=cook] span.cookware {
+  font-weight: 600;
+}
+.workspace-leaf-content[data-type=cook] .cm-ingredient,
+.workspace-leaf-content[data-type=cook] .cm-cookware {
+  color: var(--text-accent);
+  font-weight: 600;
+}
+.workspace-leaf-content[data-type=cook] .cm-formatting {
+  color: var(--text-faint);
+}
+.workspace-leaf-content[data-type=cook] .cm-measurement,
+.workspace-leaf-content[data-type=cook] .cm-timer,
+.workspace-leaf-content[data-type=cook] .cm-unit {
+  color: var(--text-muted);
+}
+.workspace-leaf-content[data-type=cook] .cm-metadata,
+.workspace-leaf-content[data-type=cook] .cm-metadata-key {
+  font-family: var(--font-monospace);
+}
+.workspace-leaf-content[data-type=cook] .cm-metadata-key {
+  font-weight: 600;
+}
+.workspace-leaf-content[data-type=cook] .countdown {
+  margin-left: 12px;
+}
+.workspace-leaf-content[data-type=cook] .countdown .resume-button + button + span {
+  color: var(--text-faint);
+}
+.workspace-leaf-content[data-type=cook] .countdown .pause-button,
+.workspace-leaf-content[data-type=cook] .countdown .resume-button,
+.workspace-leaf-content[data-type=cook] .countdown .stop-button {
+  font-size: 0;
+  padding: 6px;
+}
+.workspace-leaf-content[data-type=cook] .countdown .pause-button::before {
+  --svg:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M0 0h24v24H0z' fill='none'/><path d='M6 19h4V5H6v14zm8-14v14h4V5h-4z'/></svg>");
+}
+.workspace-leaf-content[data-type=cook] .countdown .resume-button::before {
+  --svg:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M0 0h24v24H0z' fill='none'/><path d='M8 5v14l11-7z'/></svg>");
+}
+.workspace-leaf-content[data-type=cook] .countdown .stop-button::before {
+  --svg:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M0 0h24v24H0z' fill='none'/><path d='M6 6h12v12H6z'/></svg>");
+}
+.workspace-leaf-content[data-type=cook] .countdown .pause-button::before,
+.workspace-leaf-content[data-type=cook] .countdown .resume-button::before,
+.workspace-leaf-content[data-type=cook] .countdown .stop-button::before {
+  content: "";
+  background-color: var(--text-normal);
+  -webkit-mask: var(--svg);
+  mask: var(--svg);
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+}

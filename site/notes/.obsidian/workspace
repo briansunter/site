@@ -1,0 +1,104 @@
+{
+  "main": {
+    "id": "70af5af99e743716",
+    "type": "split",
+    "children": [
+      {
+        "id": "7e26cef8c371db09",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "693f77498c4f22b2",
+    "type": "split",
+    "children": [
+      {
+        "id": "b639a88d5491f5f2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b8fdba74f3b0f62f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "b01caa8dfd2844ad",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "16105314bf098163",
+    "type": "split",
+    "children": [
+      {
+        "id": "c76a012d0e7ca9dc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3f4d1c1daf2f5500",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "46e27fbff652f84d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "7e26cef8c371db09",
+  "lastOpenFiles": [
+    "images/notes/bfs-tree-algorithm.gif.md",
+    "binary-tree.md",
+    "binary-search-tree.md",
+    "balanced-binary-tree.md",
+    "binary tree.md",
+    "how-to-take-smart-notes.md",
+    "full-binary-tree.md",
+    "complete-binary-tree.md"
+  ]
+}

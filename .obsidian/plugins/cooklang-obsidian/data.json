@@ -1,0 +1,11 @@
+{
+  "showImages": true,
+  "showIngredientList": true,
+  "showCookwareList": true,
+  "showTimersList": false,
+  "showTotalTime": true,
+  "showTimersInline": true,
+  "showQuantitiesInline": true,
+  "timersTick": true,
+  "timersRing": true
+}
