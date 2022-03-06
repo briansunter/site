@@ -94,81 +94,100 @@ li {
     background-color: #eef;
 }
 
-.note {
-    table {
-        border: 1px solid #ccc;
-        border-collapse: collapse;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        table-layout: fixed;
-      }
-      
-      table caption {
-        font-size: 1.5em;
-        margin: .5em 0 .75em;
-      }
-      
-      table tr {
-        background-color: #f8f8f8;
-        border: 1px solid #ddd;
-        padding: .35em;
-      }
-      
-      table th,
-      table td {
-        padding: .625em;
-        text-align: center;
-      }
-      
-      table th {
-        font-size: .85em;
-        letter-spacing: .1em;
-        text-transform: uppercase;
-      }
-      
-      @media screen and (max-width: 600px) {
-        table {
-          border: 0;
-        }
-      
-        table caption {
-          font-size: 1.3em;
-        }
-        
-        table, thead, td, th {
-          display:block;
-        }
-        
-        table tr {
-          border-bottom: 3px solid #ddd;
-          display: block;
-          margin-bottom: .625em;
-        }
-        
-        table td {
-          border-bottom: 1px solid #ddd;
-          display: block;
-          font-size: .8em;
-          text-align: center;
-        }
-        
-        table td::before {
-          /*
-          * aria-label has no advantage, it won't be read inside a table
-          content: attr(aria-label);
-          */
-          content: attr(data-label);
-          float: center;
-          font-weight: bold;
-          text-transform: uppercase;
-        }
-        
-        table td:last-child {
-          border-bottom: 0;
-        }
-      }
+  
+table {
+
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+  
+  overflow-x: auto;
+  
+  white-space: nowrap;
+
+  border-collapse: collapse;
+  border-spacing: 0;
 }
+
+table, tbody {
+  -webkit-overflow-scrolling: touch;
+  
+  background: radial-gradient(left, ellipse, rgba(0,0,0, .2) 0%, rgba(0,0,0, 0) 75%) 0 center,
+              radial-gradient(right, ellipse, rgba(0,0,0, .2) 0%, rgba(0,0,0, 0) 75%) 100% center;
+  background-size: 10px 100%, 10px 100%;
+  background-attachment: scroll, scroll;
+  background-repeat: no-repeat;
+}
+
+td:first-child,
+ tbody tr:first-child {
+  background-image: linear-gradient(to right, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%);
+  background-repeat: no-repeat;
+  background-size: 20px 100%;
+}
+
+td:last-child,
+ tbody tr:last-child {
+  background-image: linear-gradient(to left, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: 20px 100%;
+}
+
+ th {
+  font-size: 11px;
+  text-align: left;
+  text-transform: uppercase;
+  background: #f2f0e6;
+}
+
+ th,
+ td {
+  padding: 6px 12px;
+  border: 1px solid #d9d7ce;
+}
+
+.rtable--flip {
+  display: flex;
+  overflow: hidden;
+  background: none;
+}
+
+.rtable--flip thead {
+  display: flex;
+  flex-shrink: 0;
+  min-width: min-content;
+}
+
+.rtable--flip tbody {
+  display: flex;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.rtable--flip tr {
+  display: flex;
+  flex-direction: column;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+
+.rtable--flip td,
+.rtable--flip th {
+  display: block;
+}
+
+.rtable--flip td {
+  background-image: none !important;
+  border-left: 0;
+}
+
+.rtable--flip th:not(:last-child),
+.rtable--flip td:not(:last-child) {
+  border-bottom: 0;
+}
+
 
 ol {
   list-style-type: decimal;
