@@ -1,6 +1,7 @@
 ---
 title: Neuromancer
 author: William Gibson
+amazon-link: https://www.amazon.com/Neuromancer-William-Gibson/dp/0441569595?&_encoding=UTF8&tag=bsunter-20&linkCode=ur2&linkId=da9b75b030cab68eb335a9b8b0e7ce3b&camp=1789&creative=9325
 date-finished: 2022-03-03
 rating: 8
 tags:
@@ -13,17 +14,19 @@ tags:
 ## What’s it About
 A hacker is recruited into a mysterious group to pull off a series of heists. 
 
-It's based in a apocalyptic futuristic world controlled by corporations. Humans are cybernetically enhanced but the quality of life is really bad for everyone. They eat grule and sleep in tiny 4 foot tall hotel rooms called "coffins". 
+[Amazon Link]({{amazon-link}})
+
+The book is based in a apocalyptic futuristic world controlled by corporations. Humans are cybernetically enhanced but the quality of life is really bad for everyone. They eat gruel and sleep in tiny 4 foot tall hotel rooms called "coffins". 
 
 A hacker named Case has hit rock bottom after his former employer destroyed his nervous system so he could no longer Jack into the virtual reality system called The Matrix. 
 
 A mysterious man called Armitage approaches him and offers to cure him if he helps him in a series of jobs. After being cured he's told they also put poison sacs inside him which will kill him unless he follows through with the job as an insurance policy. 
 
-He works with a hitman called Molly to steal a powerful computer virus and a digital copy of the consciousness of a famous hacker who was killed. 
+He works with a hitman called Molly to steal a powerful computer virus and the digital copy of the consciousness of a famous hacker who was killed during a heist. 
 
-They recruit a man called Diego Riviera who can project holograms to those around them. They use him to attract the heir of a powerful corporation to invite them into their space station mansion headquarters. 
+They recruit a man called Diego Riviera who can project holograms to those around him. They use him to attract the heir of a powerful corporation to invite them into their space station mansion headquarters. 
 
-While there they learn their true employer and their intentions. 
+After reaching the headquarters, they learn their true employer and their intentions. 
 
 ## How I Discovered It
 I became intrigued in cyberpunk after playing Cyberpunk 2077. It's generally recommend to read this book before snow crash, trans metropolitan, and cryptonomicon which I want to read next. 
@@ -58,9 +61,9 @@ I became intrigued in cyberpunk after playing Cyberpunk 2077. It's generally rec
 
 > I call up the dead. But no, my friend,” and the boy did a little dance, brown feet printing the sand, “I am the dead, and their land.” He laughed. A gull cried. “Stay. If your woman is a ghost, she doesn’t know it. Neither will you.”
 
-> The Villa Straylight is a body grown in upon itself, a [Gothic](https://en-academic.com/dic.nsf/enwiki/7517) folly. Each space in Straylight is in some way secret, this endless series of chambers linked by passages, by stairwells vaulted like intestines, where the eye is trapped in narrow curves, carried past ornate screens, empty alcoves. The architects of Freeside went to great pains to conceal the fact that the interior of the spindle is arranged with the banal precision of furniture in a hotel room. In Straylight, the hull's inner surface is overgrown with a desperate proliferation of structures, forms flowing, interlocking, rising toward a solid core of microcircuitry, our clan's corporate heart, a cylinder of silicon wormholed with narrow maintenance tunnels, some no wider than a man's hand. The bright crabs burrow there, the drones, alert for micromechanical decay or sabotage.
- We have sealed ourselves away behind our money, growing inward, generating a seamless universe of self. The Villa Straylight knows no sky, recorded or otherwise. At the Villa's silicon core is a small room, the only rectilinear chamber in the complex. Here, on a plain pedestal of glass, rests an ornate bust, platinum and cloisonne, studded with lapis and pearl. The bright marbles of its eyes were cut from the synthetic ruby viewport of the ship that brought the first Tessier up the well, and returned for the first Ashpool…
+> The Villa Straylight is a body grown in upon itself, a Gothic folly. Each space in Straylight is in some way secret, this endless series of chambers linked by passages, by stairwells vaulted like intestines, where the eye is trapped in narrow curves, carried past ornate screens, empty alcoves. The architects of Freeside went to great pains to conceal the fact that the interior of the spindle is arranged with the banal precision of furniture in a hotel room. In Straylight, the hull's inner surface is overgrown with a desperate proliferation of structures, forms flowing, interlocking, rising toward a solid core of microcircuitry, our clan's corporate heart, a cylinder of silicon wormholed with narrow maintenance tunnels, some no wider than a man's hand. The bright crabs burrow there, the drones, alert for micromechanical decay or sabotage.
+We have sealed ourselves away behind our money, growing inward, generating a seamless universe of self. The Villa Straylight knows no sky, recorded or otherwise. At the Villa's silicon core is a small room, the only rectilinear chamber in the complex. Here, on a plain pedestal of glass, rests an ornate bust, platinum and cloisonne, studded with lapis and pearl. The bright marbles of its eyes were cut from the synthetic ruby viewport of the ship that brought the first Tessier up the well, and returned for the first Ashpool…
 
 ## Notes
 - Winner of the Hugo, Nebula, and Philip K. Dick Awards
-- William Gibson popularised the term ‘cyberspace’
+- William Gibson popularized the term ‘cyberspace’
