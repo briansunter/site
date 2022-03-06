@@ -1,5 +1,5 @@
 {
   "alwaysUpdateLinks": true,
   "promptDelete": false,
-  "vimMode": true
+  "attachmentFolderPath": "images/notes"
 }
