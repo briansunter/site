@@ -1,9 +1,7 @@
 [
-  "drawio-obsidian",
-  "obsidian-map-view",
-  "cooklang-obsidian",
   "table-editor-obsidian",
   "better-word-count",
   "nldates-obsidian",
-  "templater-obsidian"
+  "templater-obsidian",
+  "cooklang-obsidian"
 ]

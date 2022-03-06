@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "talks/clojure.md",
+            "file": "site/notes/nueromancer.md",
             "mode": "source",
             "source": false
           }
@@ -36,7 +36,7 @@
         "state": {
           "type": "search",
           "state": {
-            "query": "",
+            "query": "tag:#productivity",
             "matchingCase": false,
             "explainSearch": false,
             "collapseAll": false,
@@ -77,7 +77,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "talks/clojure.md",
+            "file": "site/notes/nueromancer.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -94,6 +94,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
+            "file": "site/notes/nueromancer.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -104,15 +105,32 @@
         "type": "leaf",
         "state": {
           "type": "outline",
+          "state": {
+            "file": "site/notes/nueromancer.md"
+          }
+        }
+      },
+      {
+        "id": "f1b0939c9b7562bb",
+        "type": "leaf",
+        "state": {
+          "type": "advanced-tables-toolbar",
           "state": {}
         }
       }
-    ],
-    "currentTab": 0
+    ]
   },
   "active": "9bc509e3b40c59c6",
   "lastOpenFiles": [
-    "talks/clojure.md",
-    "site/blog/transducers-clojure.md"
+    "site/notes/nueromancer.md",
+    "site/recipes/pesto.cook",
+    "site/recipes/sous-vide-steak.cook",
+    "site/recipes/szechwan-sauce.cook",
+    "recipes/milk-bread.md",
+    "site/blog/better-npm-global-symlink.md",
+    "site/blog/python-setup-pyenv-poetry.md",
+    "site/blog/org-mode.md",
+    "templates/book.md",
+    "site/blog/best-of-spacemacs.md"
   ]
 }

@@ -11,21 +11,39 @@ tags:
 ---
 
 ## What’s it About
-A hacker is recruited 
+A hacker is recruited into a mysterious group to pull off a series of heists. 
+
+It's based in a apocalyptic futuristic world controlled by corporations. Humans are cybernetically enhanced but the quality of life is really bad for everyone. They eat grule and sleep in tiny 4 foot tall hotel rooms called "coffins". 
+
+A hacker named Case has hit rock bottom after his former employer destroyed his nervous system so he could no longer Jack into the virtual reality system called The Matrix. 
+
+A mysterious man called Armitage approaches him and offers to cure him if he helps him in a series of jobs. After being cured he's told they also put poison sacs inside him which will kill him unless he follows through with the job as an insurance policy. 
+
+He works with a hitman called Molly to steal a powerful computer virus and a digital copy of the consciousness of a famous hacker who was killed. 
+
+They recruit a man called Diego Riviera who can project holograms to those around them. They use him to attract the heir of a powerful corporation to invite them into their space station mansion headquarters. 
+
+While there they learn their true employer and their intentions. 
 
 ## How I Discovered It
-Cyberpunk 2022
-## What I liked
+I became intrigued in cyberpunk after playing Cyberpunk 2077. It's generally recommend to read this book before snow crash, trans metropolitan, and cryptonomicon which I want to read next. 
 
+## What I liked
+- Setting was really interesting
+- Ideas like virtual reality, cyberspace, and the matrix were way ahead of their time in 1984. 
+- The plot was interesting and kept me intrigued until the end
+- Lots of unexpected twists and I like the theme of human unpredictability. 
+- The corporations are so creepy and twisted inside
 ## What I Disliked
+- Characters motivations sometimes weren't clear enough
+- Really didn't understand the Molly character
+- Could have given a bit more of an epilogue. 
 # Quotes
 > The sky above the port was the color of a television tuned to a dead channel
 
 > He’d operated on an almost permanent adrenaline high, a byproduct of youth and proficiency, jacking into a custom cyberspace deck that projected his disembodied consciousness into the consensual hallucination that was the matrix.
 
-> Night City was like a deranged experiment in social Dar-   
-winism, designed by a bored researcher who kept one thumb   
-permanently on the fast-forward button.
+> Night City was like a deranged experiment in social Darwinism, designed by a bored researcher who kept one thumb permanently on the fast-forward button.
 
 
 > “For ... years men dreamed of pacts with demons. Only now are such things possible.”
@@ -44,3 +62,5 @@ permanently on the fast-forward button.
  We have sealed ourselves away behind our money, growing inward, generating a seamless universe of self. The Villa Straylight knows no sky, recorded or otherwise. At the Villa's silicon core is a small room, the only rectilinear chamber in the complex. Here, on a plain pedestal of glass, rests an ornate bust, platinum and cloisonne, studded with lapis and pearl. The bright marbles of its eyes were cut from the synthetic ruby viewport of the ship that brought the first Tessier up the well, and returned for the first Ashpool…
 
 ## Notes
+- Winner of the Hugo, Nebula, and Philip K. Dick Awards
+- William Gibson popularised the term ‘cyberspace’
