@@ -1,5 +1,5 @@
 ---
-title: Cooklang - Manging Recipes in Git
+title: Cooklang - Managing Recipes in Git
 date: 2022-03-06
 excerpt: Cooklang is like markdown for recipes.
 tags:
