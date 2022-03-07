@@ -1,7 +1,6 @@
 ---
 title: Neuromancer
 author: William Gibson
-amazon-link: https://www.amazon.com/Neuromancer-William-Gibson/dp/0441569595?&_encoding=UTF8&tag=bsunter-20&linkCode=ur2&linkId=da9b75b030cab68eb335a9b8b0e7ce3b&camp=1789&creative=9325
 date-finished: 2022-03-03
 rating: 8
 tags:
@@ -14,7 +13,7 @@ tags:
 ## What’s it About
 A hacker is recruited into a mysterious group to pull off a series of heists. 
 
-[Amazon Link]({{ amazon-link }})
+[Amazon Link](https://www.amazon.com/Neuromancer-William-Gibson/dp/0441569595?&_encoding=UTF8&tag=bsunter-20&linkCode=ur2&linkId=da9b75b030cab68eb335a9b8b0e7ce3b&camp=1789&creative=9325)
 
 The book is based in a apocalyptic futuristic world controlled by corporations. Humans are cybernetically enhanced but the quality of life is really bad for everyone. They eat gruel and sleep in tiny 4 foot tall hotel rooms called "coffins". 
 
