@@ -38,7 +38,9 @@ Place in @sous vide bags{} along with @thyme{4%sprigs}, @rosemary{4%sprigs}, @ga
 
 Seal bags and place in water bath for desired time according to charts.
 
-Turn on your vents and open your windows. Add one tablespoon of ghee, vegetable, canola, or rice bran oil to a heavy #cast iron{} or stainless steel skillet set over the hottest burner you have, and preheat the skillet until it reaches 450 degrees.
+Turn on your vents and open your windows. Add one tablespoon of ghee, vegetable, 
+canola, or rice bran oil to a heavy #cast iron{} or stainless steel skillet 
+and preheat the skillet until it reaches 450 degrees.
 
 Gently lay steak in skillet, using your fingers or a set of tongs. 
 
