@@ -4,13 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4fe07f5bcd479643",
+        "id": "89eb436481d513a7",
         "type": "leaf",
         "state": {
-          "type": "cook",
-          "state": {
-            "file": "site/recipes/sukang-sawsawan–filipino-vinegar-dipping-sauce.cook"
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -38,7 +36,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "lemon",
+                "query": "cane",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -47,11 +45,13 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "c68c8e16929f7b18",
@@ -67,7 +67,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "site/recipes/sukang-sawsawan–filipino-vinegar-dipping-sauce.cook",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +84,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "4fe07f5bcd479643",
+  "active": "89eb436481d513a7",
   "lastOpenFiles": [
     "site/recipes/sukang-sawsawan–filipino-vinegar-dipping-sauce.cook",
     "site/recipes/lechon-kawali-sisig.cook",
