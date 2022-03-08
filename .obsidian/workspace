@@ -7,8 +7,10 @@
         "id": "4fe07f5bcd479643",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "cook",
+          "state": {
+            "file": "site/recipes/sukang-sawsawan–filipino-vinegar-dipping-sauce.cook"
+          }
         }
       }
     ],
@@ -36,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "lemon",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,6 +67,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "site/recipes/sukang-sawsawan–filipino-vinegar-dipping-sauce.cook",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,15 +87,15 @@
   },
   "active": "4fe07f5bcd479643",
   "lastOpenFiles": [
+    "site/recipes/sukang-sawsawan–filipino-vinegar-dipping-sauce.cook",
     "site/recipes/lechon-kawali-sisig.cook",
-    "site/recipes/sukang-sawsawan–vinegar-dipping-Sauce.cook",
     "site/recipes/english-muffin.cook",
+    "site/recipes/sukang-sawsawan–vinegar-dipping-Sauce.cook",
     "site/recipes/fluffy-buttermilk-biscuits.cook",
     "site/recipes/pancake.cook",
     "site/notes/reading.md",
     "site/notes/neuromancer.md",
     "site/notes/notes.md",
-    "reading.md",
-    "site/notes/product.md"
+    "reading.md"
   ]
 }
