@@ -15,29 +15,30 @@ A hacker is recruited into a mysterious group to pull off a series of heists.
 
 [Amazon Link](https://www.amazon.com/Neuromancer-William-Gibson/dp/0441569595?&_encoding=UTF8&tag=bsunter-20&linkCode=ur2&linkId=da9b75b030cab68eb335a9b8b0e7ce3b&camp=1789&creative=9325)
 
-The book is based in a apocalyptic futuristic world controlled by corporations. Humans are cybernetically enhanced but the quality of life is really bad for everyone. They eat gruel and sleep in tiny 4 foot tall hotel rooms called "coffins". 
+The book is based in a apocalyptic futuristic world controlled by corporations. Humans are cybernetically enhanced but the quality of life is terrible for everyone. They eat gruel and sleep in tiny 4 foot tall hotel rooms called "coffins". 
 
 A hacker named Case has hit rock bottom after his former employer destroyed his nervous system so he could no longer connect into the virtual reality system called The Matrix. 
 
-A mysterious man called Armitage approaches him and offers to cure him if he helps him in a series of jobs. After being cured he's told they also put poison sacs inside him which will kill him unless he follows through with the job as an insurance policy. 
+A mysterious man called Armitage approaches Case and offers to cure him if Case helps him in a series of jobs. After being cured, Armitage tells Case they also put poison sacs inside him which will kill him unless he follows through with the job as an insurance policy. 
 
-He works with a hitman called Molly to steal a powerful computer virus and the digital copy of the consciousness of a famous hacker who was killed during a heist. 
+Case works with a hitman called Molly to steal a powerful computer virus as well as  the digital copy of the consciousness of a famous hacker who was killed during a heist. 
 
-They recruit a man called Diego Riviera who can project holograms to those around him. They use him to attract the heir of a powerful corporation to invite them into their space station mansion headquarters. 
+They recruit a man called Diego Riviera who can project holograms to those around him. The group uses him to attract the heir of a powerful corporation to invite them into their space station mansion headquarters. 
 
 After reaching the headquarters, they learn their true employer and their intentions. 
 
 ## How I Discovered It
-I became intrigued in cyberpunk after playing Cyberpunk 2077. It's generally recommend to read this book before snow crash, trans metropolitan, and cryptonomicon which I want to read next. 
+I became intrigued in cyberpunk after playing the game Cyberpunk 2077.  The Matrix is one of my favorite movies and I like learning about the books that influenced it. It's at the top of many best cyberpunk book lists and it's generally recommend to read this book before snow crash, transmetropolitan, and cryptonomicon which I want to read next. 
 
 ## What I liked
-- Setting was really interesting
+- The cyberpunk setting was really creative and well done. 
 - Ideas like virtual reality, cyberspace, and the matrix were way ahead of their time in 1984. 
-- The plot was interesting and kept me intrigued until the end
-- Lots of unexpected twists and I like the theme of human unpredictability. 
-- The corporations are so creepy and twisted inside
+- The plot was interesting and kept me intrigued until the end. 
+- Some unexpected twists 
+-  I like the theme of human unpredictability. 
+- The corporations are so creepy and twisted inside. 
 ## What I Disliked
-- Characters motivations sometimes weren't clear enough
+- The characters motivations sometimes weren't clear enough
 - Really didn't understand the Molly character
 - Could have given a bit more of an epilogue. 
 # Quotes

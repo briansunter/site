@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "site/notes/reading.md",
+            "file": "site/notes/neuromancer.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "site/notes/reading.md",
+            "file": "site/notes/neuromancer.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -123,8 +123,8 @@
   },
   "active": "9bc509e3b40c59c6",
   "lastOpenFiles": [
-    "site/notes/reading.md",
     "site/notes/neuromancer.md",
+    "site/notes/reading.md",
     "site/notes/notes.md",
     "reading.md",
     "site/notes/product.md",
