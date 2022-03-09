@@ -7,8 +7,22 @@
         "id": "89eb436481d513a7",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "site/blog/digital-garden.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "77eec4f1ee37318e",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "site/blog/digital-garden.md",
+            "mode": "preview"
+          }
         }
       }
     ],
@@ -45,13 +59,11 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "c68c8e16929f7b18",
@@ -67,6 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "site/blog/digital-garden.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,15 +99,15 @@
   },
   "active": "89eb436481d513a7",
   "lastOpenFiles": [
-    "site/recipes/sukang-sawsawan–filipino-vinegar-dipping-sauce.cook",
+    "site/blog/digital-garden.md",
     "site/recipes/lechon-kawali-sisig.cook",
+    "site/recipes/sukang-sawsawan–filipino-vinegar-dipping-sauce.cook",
     "site/recipes/english-muffin.cook",
     "site/recipes/sukang-sawsawan–vinegar-dipping-Sauce.cook",
     "site/recipes/fluffy-buttermilk-biscuits.cook",
     "site/recipes/pancake.cook",
     "site/notes/reading.md",
     "site/notes/neuromancer.md",
-    "site/notes/notes.md",
-    "reading.md"
+    "site/notes/notes.md"
   ]
 }
