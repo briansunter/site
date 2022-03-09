@@ -4,97 +4,134 @@
     "type": "split",
     "children": [
       {
-        "id": "89eb436481d513a7",
+        "id": "9bc509e3b40c59c6",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "site/notes/neuromancer.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "56b044b9547fde6e",
-    "type": "split",
+    "id": "9cc0f94bad41aa34",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "7e256cbd73cfa5a6",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "a2204d7e2cc74c39",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {}
-            }
-          },
-          {
-            "id": "88c5c64364487d78",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "cane",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              }
-            }
+        "id": "c38f0dea13d680b5",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {}
+        }
+      },
+      {
+        "id": "9605a1e0edf4062b",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "tag:#productivity",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
           }
-        ],
-        "currentTab": 1
+        }
+      },
+      {
+        "id": "139c9ab27c3f94dc",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "5aeaac5020a0b643",
+        "type": "leaf",
+        "state": {
+          "type": "starred",
+          "state": {}
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "currentTab": 0
   },
   "right": {
-    "id": "c68c8e16929f7b18",
-    "type": "split",
+    "id": "3d73c5af5651fce4",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "88183c5f6fa523c9",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "05959dacfa32e070",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
+        "id": "e727bc3d751242e2",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "site/notes/neuromancer.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
           }
-        ]
+        }
+      },
+      {
+        "id": "4584cf9b6ed80402",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "site/notes/reading.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "059b790eb39a6397",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "site/notes/reading.md"
+          }
+        }
+      },
+      {
+        "id": "f1b0939c9b7562bb",
+        "type": "leaf",
+        "state": {
+          "type": "advanced-tables-toolbar",
+          "state": {}
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "currentTab": 3
   },
-  "active": "89eb436481d513a7",
+  "active": "9bc509e3b40c59c6",
   "lastOpenFiles": [
-    "site/recipes/sukang-sawsawan–filipino-vinegar-dipping-sauce.cook",
-    "site/recipes/lechon-kawali-sisig.cook",
-    "site/recipes/english-muffin.cook",
-    "site/recipes/sukang-sawsawan–vinegar-dipping-Sauce.cook",
-    "site/recipes/fluffy-buttermilk-biscuits.cook",
-    "site/recipes/pancake.cook",
-    "site/notes/reading.md",
     "site/notes/neuromancer.md",
+    "site/notes/reading.md",
     "site/notes/notes.md",
-    "reading.md"
+    "reading.md",
+    "site/notes/product.md",
+    "site/recipes/pesto.cook",
+    "site/recipes/sous-vide-steak.cook",
+    "site/recipes/szechwan-sauce.cook",
+    "recipes/milk-bread.md",
+    "site/blog/better-npm-global-symlink.md"
   ]
 }
