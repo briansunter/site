@@ -20,7 +20,6 @@ layout: default
                 </time>
 
                 {% if tags %}
-                <h2>Tags</h2>
 
                     {# this will create a comma for multiple category links #}
                     {% set comma = joiner() %}
@@ -71,6 +70,8 @@ layout: default
             {# category links list #}
             {% if tags %}
             <hr>
+            <h2>Related Topics</h2>
+
 
                 <ul class="tags-post flex flex-wrap pt-8 border-t border-gray-100">
 
