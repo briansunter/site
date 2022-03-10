@@ -78,7 +78,7 @@ resource "aws_cloudfront_distribution" "root_distribution" {
 
   enabled         = true
   is_ipv6_enabled = true
-  price_class     = "PriceClass_100"
+  price_class     = "PriceClass_All"
 
   default_cache_behavior {
     viewer_protocol_policy = "redirect-to-https"
@@ -197,7 +197,7 @@ resource "aws_cloudfront_distribution" "www_distribution" {
 
   enabled         = true
   is_ipv6_enabled = true
-  price_class     = "PriceClass_100"
+  price_class     = "PriceClass_All"
 
   default_cache_behavior {
     viewer_protocol_policy = "redirect-to-https"
