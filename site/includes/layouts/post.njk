@@ -20,7 +20,6 @@ layout: default
                 </time>
 
                 {% if tags %}
-                <h2>Tags</h2>
 
                     {# this will create a comma for multiple category links #}
                     {% set comma = joiner() %}
@@ -70,7 +69,6 @@ layout: default
 
             {# category links list #}
             {% if tags %}
-            <hr>
 
                 <ul class="tags-post flex flex-wrap pt-8 border-t border-gray-100">
 
@@ -79,7 +77,7 @@ layout: default
                         {%- if item != "blog" -%}
 
                             <li class="mr-2">
-                                <a class="inline-block bg-pink-500 px-4 py-2 text-white text-xs font-semibold rounded hover:text-white hover:bg-pink-500 hover:border-pink-500" href="/category/{{ item }}">{{ item | capitalize }}</a>
+                                <a class="inline-block border border-pink-300 px-4 py-2 text-pink-500 text-xs font-semibold rounded hover:text-white hover:bg-pink-500 hover:border-pink-500" href="/category/{{ item }}">{{ item | capitalize }}</a>
                             </li>
 
                         {%- endif -%}
@@ -90,7 +88,6 @@ layout: default
 
             {% endif %}
 
-            {% include 'components/share-icons.njk' %}
         </div>
 
         {# author card #}
