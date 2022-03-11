@@ -17,7 +17,6 @@
   "social_links": {
     "twitter":   { "link": "https://www.twitter.com/bsunter", "name": "Twitter", "icon":"/images/icons/twitter.svg"}, 
     "linkedin":   { "link": "https://www.linkedin.com/in/briansunter/", "name": "LinkedIn", "icon":"/images/icons/linkedin.svg"},
-    "email":   { "link": "mailto:public@briansunter.com", "name": "Email", "icon":"/images/icons/gmail.svg"},
     "facebook":   { "link": "https://www.facebook.com/bsunter", "name": "Facebook", "icon":"/images/icons/facebook.svg"}
   },
   "contact_links": {
