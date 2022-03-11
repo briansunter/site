@@ -15,7 +15,7 @@ tags:
 By focusing on what is interesting and keeping written track of your own intellectual development, topics questions and arguments will naturally emerge without force.
 
 # How to Take Smart Notes Book + Roam
-[How to Take Smart Notes](https://www.amazon.com/How-Take-Smart-Notes-Nonfiction-ebook/dp/B06WVYW33Y) by Sönke Ahrens describes a strategy to improve understanding, remember what you read, and generate new ideas by taking notes.
+[How to Take Smart Notes](https://www.amazon.com/How-Take-Smart-Notes-Nonfiction/dp/1542866502/ref=sr_1_1?keywords=how+to+take+smart+notes&amp;qid=1646987948&amp;sr=8-1&_encoding=UTF8&tag=bsunter-20&linkCode=ur2&linkId=f161a7322de7ee2178621edd2d10884f&camp=1789&creative=9325) by Sönke Ahrens describes a strategy to improve understanding, remember what you read, and generate new ideas by taking notes.
 
 [Roam Research](https://roamresearch.com/) is a web based tool for finding, collecting, and connecting related ideas that works well with the Smart Notes method. You can use it to take bullet point notes with headings and subheadings.
 ![Roam Group](/images/blog/how-to-take-smart-notes-roam-research/roam-group.png)
