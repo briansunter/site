@@ -6,23 +6,30 @@ tags:
     - blog
     - notes
 	- reading
-code_lang: ruby
-code_excerpt: |
-    Combine @basil leaves{20%g}, 
-    @pine nuts {20%g} (or walnuts),
-    and @garlic{3%cloves} in a 
-    food processor and process 
-    until very finely minced.
 ---
-I've started publishing some of my Obsidian notes on my personal site. Publishing my notes encourages me to understand a subject to the point I could explain it to someone else, and hopefully others will find it useful and/or interesting.
+I've started publishing some of my notes on my personal site. Publishing my notes encourages me to understand a subject well enough to explain it to someone else, and hopefully others will find it useful and/or interesting.
 
-For the past few years I've been interested in the idea of notetaking. Before, I discounted the concept as a distraction or busywork, but now I view taking notes as a form of active learning. I've completely forgotten so many books and concepts over the years. If I have a good self contained note on a concept, I can refresh my memory quickly and easily.
+## What is the difference between a note and a blog post? 
+A blog post is the most common web page format since the early 2010s. A blog post is a 1500-2500 word polished essay with a timestamp, listed in reverse chronological order. These types of posts are written once and minimally updated. Most popular web publishing software like Wordpress, Tumblr, and Blogger steer you to this format by default. This format is popular for a reason. It's good for SEO and for sharing on social media.
+
+### Notes are shorter and more interconnected
+A note is different than a blog post or essay. First of all, a note can be extremely short. Blog posts are meant to read on their own, but notes are most useful in context and in relation to other notes. 
+
+Using short notes also reduces friction in sharing something useful. I might not want to write a blog post just to share a few useful programming commands I learned recently.
+
+### Not Time Based
+Second, a note doesn't usually have a timestamp. They're never finished. They're intended to continually be updated and evolve. 
+
+Not all types of useful information fit into this essay-time pattern.
+The date isn't relevent to my notes on [[tree]] data structures and my notes aren't organized by time. As I learn more, the page will continue to grow.
 
 ## Inspiration
+For the past few years I've been interested in the idea of notetaking. Before, I discounted the concept as a distraction or busywork, but now I view taking notes as a form of active learning. I've completely forgotten so many books and concepts over the years. If I have a good self contained note on a concept, I can refresh my memory quickly and easily.
+
 There are a number of trends that have inspired me to take notes and share them online.
 
 ### Building a Second Brain
-Productivity blogger Tiago Forte has a number of userful articles on [Building a Second Brain](https://fortelabs.co/blog/basboverview/) and the [PARA Method](https://fortelabs.co/blog/para/) which explain how we can remember what we learn and put it to use.
+Productivity blogger Tiago Forte has a number of useful articles on [Building a Second Brain](https://fortelabs.co/blog/basboverview/) and the [PARA Method](https://fortelabs.co/blog/para/) which explain how we can remember what we learn and put it to use.
 
 > How many brilliant ideas have you had and forgotten? How many insights have you failed to take action on? How much useful advice have you slowly forgotten as the years have passed?
 
@@ -37,7 +44,7 @@ He emphasizes that we shouldn't just learn and collect notes aimlesslessly. We s
 This close connection between project management and knowledge management is enabled by the latest generation of productivity apps and tools.
 
 ### Show Your Work Book
-I discovered a book called ["Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered" by Austin Kleon](https://www.amazon.com/Show-Your-Work-Austin-Kleon/dp/076117897X?&_encoding=UTF8&tag=bsunter-20&linkCode=ur2&linkId=22458404a31b3fb0eadd25a1eedf51ef&camp=1789&creative=9325) through a productivity blogger named [Ali Abdaal](https://www.youtube.com/watch?v=vyVpRiqOvt4). The book only takes 30 minutes to read and is excellent, so I highly encourage it.
+I discovered a book called ["Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered" by Austin Kleon](https://www.amazon.com/Show-Your-Work-Austin-Kleon/dp/076117897X?&_encoding=UTF8&tag=bsunter-20&linkCode=ur2&linkId=22458404a31b3fb0eadd25a1eedf51ef&camp=1789&creative=9325) through a productivity blogger named [Ali Abdaal](https://www.youtube.com/watch?v=vyVpRiqOvt4). The book only takes 30 minutes to read and is excellent, so I highly reccomend it.
 
 The book encourages you to share your thoughts and your work-in-progress online, even if you're not an expert, so others with similar interests can follow along with you.
 
@@ -58,8 +65,7 @@ The book gives you a good kick to stop holding back out of fear of embarassment 
 ### Other Digital Gardens
 Websites felt much more free form in the early Geocities day of the internet. Now, it feels like almost all websites are standardized and organized in reverse chronological "blog" format. The digital garden movement is a return to a Wikipedia style web of links.
 
-#### POSSE - Publish (on your) Own Site, Syndicate Elsewhere
-So much content on the internet is now hosted and locked inside big platforms like Facebook, Twitter, and Reddit. There are a number of obvious upsides to hosting content on big platforms, like user base and ease of getting started, but there are significant downsides. Over a long period of time, your content will likely be put behind spammy login popups, paywalls, or be lost. I've hosted this site, https://briansunter.com since 2005, before Twitter or Reddit were created. See [POSSE - Publish (on your) Own Site, Syndicate Elsewhere](https://indieweb.org/POSSE) for more details on this line of thinking. Your content is valuable and you should own it.
+
 
 ### Next Generation Productivity Apps
 I complete agree with Conor White-Sullivan of [Roam Research](https://roamresearch.com/) that [some productivity tools are better than others](https://twitter.com/conaw/status/1198399750032232449?lang=en). Your productivity system can't be completely tool agnostic. I spent a long time trying to make tools like Evernote, Onenote, Omnifocus work, but the notes in folder paradigm just doesn't suit my workflow.
@@ -86,6 +92,11 @@ I loosely follow this technique and try to stick to the general principles. Here
 - Carefully distill your "Literature Notes" and "Fleeting Notes" into "Permanent Notes" or "Evergreen Notes", which are "permanently" useful across a wide variety of topics. 
     - What should be come a permanent note is highly subjective and personalized. My personal litmus test is if it's one of those ideas that once you notice, you start seeing it everywhere, like "correlation vs causation".
 - Make dense connections between notes and wait for topics to naturally emerge, instead of categorizing notes up front.
+
+### POSSE - Publish (on your) Own Site, Syndicate Elsewhere
+So much content on the internet is now hosted and locked inside big platforms like Facebook, Twitter, and Reddit. There are a number of obvious upsides to hosting content on big platforms, like user base and ease of getting started, but there are significant downsides. Over a long period of time, your content will likely be put behind spammy login popups, paywalls, or be lost. I've hosted this site, https://briansunter.com since 2005, before Twitter or Reddit were created. See [POSSE - Publish (on your) Own Site, Syndicate Elsewhere](https://indieweb.org/POSSE) for more details on this line of thinking. Your content is valuable and you should own it.
+# Conclusion
+
 
 
 
