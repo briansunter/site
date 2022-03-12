@@ -14,7 +14,6 @@ Useful for [[cooking]] [[sous vide steak]].
 
 ## Tenderloin
 
-
 | Doneness          | Temperature Range            | Timing Range                                                |
 |-------------------|------------------------------|-------------------------------------------------------------|
 | Very rare to rare | 120°F (49°C) to 128°F (53°C) | 45 minutes to 2 1/2 hours                                   |
@@ -22,3 +21,11 @@ Useful for [[cooking]] [[sous vide steak]].
 | Medium            | 135°F (57°C) to 144°F (62°C) | 45 minutes to 4 hours                                       |
 | Medium-well       | 145°F (63°C) to 155°F (68°C) | 45 minutes to 3 1/2 hours                                   |
 | Well done         | 156°F (69°C) and up          | 1 to 3 hours                                                |
+
+## Pork Shoulder (Pulled Pork and Carnitas)
+
+Doneness                                                 | Temperature Range | Timing Range
+---------------------------------------------------------|-------------------|---------------
+Very moist; not shreddable. Better for cubing or searing | 145°F (63°C)      | 24 to 36 hours
+Moist and easy to shred with your hands or forks         | 165°F (74°C)      | 12 to 24 hours
+Traditional carnitas texture that shreds naturally       | 185°F (85°C)      | 8 to 16 hours
