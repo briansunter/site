@@ -29,3 +29,13 @@ Doneness                                                 | Temperature Range | T
 Very moist; not shreddable. Better for cubing or searing | 145°F (63°C)      | 24 to 36 hours
 Moist and easy to shred with your hands or forks         | 165°F (74°C)      | 12 to 24 hours
 Traditional carnitas texture that shreds naturally       | 185°F (85°C)      | 8 to 16 hours
+
+## Salmon
+
+Doneness                      | Temperature  | Time
+------------------------------|--------------|-----------
+Like firm sashimi             | 105°F (41°C) | 45-60 mins
+Soft and buttery              | 110°F (43°C) | 45-60 mins
+Very moist, tender, and flaky | 115°F (46°C) | 45-60 mins
+Firm, moist, and flaky        | 120°F (49°C) | 45-60 mins
+Soft and buttery              | 130°F (54°C) | 45-60 mins
