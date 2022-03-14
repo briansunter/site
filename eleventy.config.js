@@ -8,6 +8,8 @@ const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 const cacheBuster = require('@mightyplow/eleventy-plugin-cache-buster');
 const anchor = require('markdown-it-anchor')
 const markdownIt = require('markdown-it');
+const mdIterator = require('markdown-it-for-inline')
+const markdownItAnchor = require('markdown-it-anchor')
 const cooklang = require('cooklang');
 Array.prototype.insert = function (index, item) {
   this.splice(index, 0, item);
@@ -23,7 +25,7 @@ module.exports = eleventyConfig => {
 
   const md = markdownIt(markdownItOptions)
   .use(require('markdown-it-footnote'))
-  .use(require('markdown-it-anchor'), { 
+  .use(markdownItAnchor, { 
     permalink: anchor.permalink.headerLink()
 })
   .use(require('markdown-it-attrs'))
@@ -45,6 +47,13 @@ module.exports = eleventyConfig => {
               match.text = `[[${match.text}]]`;
           }
       })
+  }).use(mdIterator, 'url_new_win', 'link_open', function (tokens, idx) {
+    const [attrName, href] = tokens[idx].attrs.find(attr => attr[0] === 'href')
+    
+    if (href && (!href.includes('briansunter.com') && !href.startsWith('/') && !href.startsWith('#'))) {
+      tokens[idx].attrPush([ 'target', '_blank' ])
+      tokens[idx].attrPush([ 'rel', 'noopener noreferrer' ])
+    }
   })
   
   md.linkify.set({ fuzzyLink: false }); eleventyConfig.addFilter("markdownify", string => {
