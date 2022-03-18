@@ -11,4 +11,6 @@ My collection of recipes in cooklang format.
 - [Pesto](/recipes/pesto/)
 
 ## Cooking Techniques
-[[sous vide temperatures]]
+- [[sous vide temperatures]]
+- [[baking-meal-prep|Baking Meal Prep]]
+
