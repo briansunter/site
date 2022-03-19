@@ -1,5 +1,33 @@
 Various types of [[cooking]] oils and their properties.
 
+## Best High Heat Cooking Oils
+These oils are healthy, tasty, and heat tolerant.
+
+- Avocado Oil
+- Clarified Butter (Ghee)
+- Peanut Oil
+
+## Healthy Oils
+- Olive Oil
+- Walnut Oil
+- Flaxseed Oil
+- 
+
+## Unhealthy Oils
+These oils are considered unhealthy [^1] and should be avoided if possible. 
+* Hydrogenated oils (Crisco and margarine
+* Partially Hyrdrogenated Oils (Vegetable shortening)
+- corn
+- canola
+- cottonseed
+- soy
+- safflower
+- sunflower
+- grapeseed
+- rice bran
+- palm oil
+- coconut oil
+
 ## Cooking Oil Heat Chart
 
 | Oil                                   | Smoke Point ºF | Smoke Point °C |
@@ -28,3 +56,5 @@ Various types of [[cooking]] oils and their properties.
 | Extra Virgin or Unrefined Coconut Oil | 350ºF          | 177ºC          |
 | Extra Virgin Olive Oil                | 325-375ºF      | 163-190ºC      |
 | Butter                                | 302ºF          | 150ºC          |
+
+[^1]: [unhealthy vegetable oils](https://www.mindbodygreen.com/articles/unhealthy-vegetable-oils)
