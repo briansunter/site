@@ -26,7 +26,6 @@ These oils are considered unhealthy [^1] and should be avoided if possible.
 - grapeseed
 - rice bran
 - palm oil
-- coconut oil
 
 ## Cooking Oil Heat Chart
 
