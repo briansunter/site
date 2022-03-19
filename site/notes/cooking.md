@@ -13,5 +13,5 @@ My collection of recipes in cooklang format.
 ## Cooking Techniques
 - [[sous vide temperatures]]
 - [[baking-meal-prep|Baking Meal Prep]]
-- [[secret-ingredients | Secret Ingredients]]
+- [[cooking-oils | Cooking Oils]]
 - [[what-is-in-season-month|What is in season by month]]
