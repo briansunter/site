@@ -230,3 +230,61 @@ Foods that are in season by month so you can plan your [[cooking]] around the fr
 - sweet potatoes
 - tangelos
 - turnips
+
+## California Produce Chart
+
+|                      |     |     |     |     |     |      |      |        |      |     |     |     |
+| -------------------- | --- | --- | --- | --- | --- | ---- | ---- | ------ | ---- | --- | --- | --- |
+|                      | Jan | Feb | Mar | Apr | May | June | July | August | Sept | Oct | Nov | Dec |
+| Apricots             |     |     |     |     |     | X    | X    |        |      |     |     |     |
+| Arugula              |     |     |     |     |     |      |      |        |      |     | X   | X   |
+| Avocado              |     |     |     |     | X   |      |      |        |      |     |     |     |
+| Beans - string       |     |     |     |     |     | X    | X    | X      | X    |     |     |     |
+| Beans - Fava         |     |     |     |     | X   | X    | X    |        |      |     |     |     |
+| Beans - Lima         |     |     |     |     |     |      | X    | X      |      |     |     |     |
+| Beans - Yellow Wax   |     |     |     |     |     | X    | X    | X      | X    | X   |     |     |
+| Beets                | X   | X   | X   | X   | X   | X    | X    | X      | X    | X   | X   | X   |
+| Blackberries         |     |     |     |     |     |      | X    | X      |      |     |     |     |
+| Boysenberries        |     |     |     |     |     | X    | X    | X      |      |     |     |     |
+| Ollallieberries      |     |     |     |     |     | X    | X    | X      |      |     |     |     |
+| Bok Choy             |     |     |     | X   | X   | X    | X    | X      | X    | X   | X   | X   |
+| Broccoli             | X   | X   | X   | X   | X   | X    |      |        |      |     | X   |     |
+| Cabbage              | X   | X   | X   | X   | X   | X    |      |        |      |     | X   | X   |
+| Carrots              | X   | X   | X   | X   | X   | X    | X    | X      | X    | X   | X   | X   |
+| Caulifllower         | X   | X   | X   | X   | X   | X    |      |        |      |     | X   | X   |
+| Celery               | X   | X   | X   | X   | X   | X    |      |        |      |     | X   | X   |
+| Chard                |     |     |     | X   | X   | X    | X    | X      | X    | X   | X   | X   |
+| Cilantro             | X   | X   | X   | X   | X   | X    | X    | X      | X    | X   | X   | X   |
+| Cucumbers            |     |     |     |     |     | X    | X    | X      | X    | X   | X   | X   |
+| Cucumbers - Pickling |     |     |     |     |     | X    | X    | X      | X    |     |     |     |
+| Eggplant             |     |     |     |     |     |      | X    | X      | X    |     |     |     |
+| Fennel               | X   | X   | X   | X   | X   | X    | X    | X      | X    | X   | X   | X   |
+| Grapefruit           | X   | X   | X   | X   | X   | X    |      |        |      |     |     |     |
+| Kale                 | X   | X   | X   | X   |     |      |      |        |      |     | X   | X   |
+| Kohlrabi             | X   | X   | X   | X   | X   | X    | X    | X      | X    | X   | X   | X   |
+| Leeks                | X   | X   | X   | X   | X   | X    |      |        |      |     | X   | X   |
+| Lemons               | X   | X   | X   | X   | X   | X    | X    | X      | X    | X   |     |     |
+| Lettuce              | X   | X   | X   | X   | X   | X    | X    | X      | X    | X   | X   | X   |
+| Mandarins            | X   | X   | X   | X   | X   |      |      |        |      |     |     |     |
+| Nectarines           |     |     |     |     | X   | X    | X    | X      | X    |     |     |     |
+| Okra                 |     |     |     |     |     |      | X    | X      | X    |     |     |     |
+| Onions - Sweet       |     |     |     | X   | X   | X    |      |        |      |     |     |     |
+| Orange - Navel       | X   | X   | X   | X   |     |      |      |        |      |     |     | X   |
+| Orange - Valencia    |     |     |     |     |     | X    | X    |        |      |     |     |     |
+| Parsley              | X   | X   | X   | X   | X   | X    |      |        |      |     |     |     |
+| Peaches              |     |     |     |     | X   | X    | X    | X      | X    |     |     |     |
+| Peas - Blackeye      |     |     |     |     |     |      | X    | X      | X    |     |     |     |
+| Peas - English       |     |     |     | X   | X   | X    | X    | X      | X    | X   | X   | X   |
+| Peas - Snap          |     |     |     | X   | X   | X    | X    | X      | X    | X   | X   | X   |
+| Peppers              |     |     |     |     |     |      | X    | X      | X    | X   | X   |     |
+| Plums                |     |     |     |     | X   | X    | X    | X      | X    |     |     |     |
+| Potatoes             |     |     |     |     |     | X    | X    |        |      |     |     |     |
+| Potatoes - Sweet     |     |     |     |     |     | X    | X    |        |      |     |     |     |
+| Pumpkins             |     |     |     |     |     |      |      |        |      | X   |     |     |
+| Radishes             | X   | X   | X   | X   | X   | X    | X    | X      | X    | X   | X   | X   |
+| Raspberries          |     |     |     |     |     |      | X    | X      | X    | X   |     |     |
+| Spinach              | X   | X   | X   | X   | X   | X    |      |        |      | X   | X   | X   |
+| Squash - Summer      |     |     |     |     |     | X    | X    | X      | X    |     |     |     |
+| Strawberries         | X   | X   | X   | X   | X   | X    | X    | X      |      |     |     |     |
+| Tomatoes             |     |     |     |     |     |      | X    | X      | X    | X   | X   |     |
+| Turnips              |     |     |     | X   | X   | X    | X    | X      | X    | X   | X   | X   |
