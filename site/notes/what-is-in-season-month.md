@@ -288,3 +288,34 @@ Foods that are in season by month so you can plan your [[cooking]] around the fr
 | Strawberries         | X   | X   | X   | X   | X   | X    | X    | X      |      |     |     |     |
 | Tomatoes             |     |     |     |     |     |      | X    | X      | X    | X   | X   |     |
 | Turnips              |     |     |     | X   | X   | X    | X    | X      | X    | X   | X   | X   |
+
+## California Availability by Produce Type
+
+|||
+|--- |--- |
+|CROP|MONTH|
+|Asparagus|March -April|
+|Strawberries|Apr 10 - June 30|
+|Blackberries|June 1 - July 30|
+|Blueberries|May 15 - June 30|
+|Boysenberries|May 10 - July 5|
+|Cherries |May 5 - June 30|
+|Apricots|May 10 to August 15|
+|Peaches|May 20 - September 5|
+|Nectarines|May 20 - September 15|
+|Olallieberries|June 1 to July 31|
+|Plums|June 1 - September 5|
+|Pears|August 10 - September 10|
+|Green Beans|June 15 - September 15|
+|Peas|June 15 - September 15|
+|Corn|June 25 - September 30|
+|Raspberries|July 1 - September 15|
+|Grapes|July 10 - October 15|
+|Apples|July 15 (early apples) - September 25|
+|Tomatoes|July 15 - September 15|
+|Okra|July 15 - September 15|
+|Almonds|August 20 - December . 13|
+|Figs|September 05 - October 31|
+|Persimmons|September 20 - October 31|
+|Walnuts|September 25 - Jan. 10|
+|Oranges|Most of the year, depends on the variety.
