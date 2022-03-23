@@ -15,3 +15,4 @@ My collection of recipes in cooklang format.
 - [[baking-meal-prep|Baking Meal Prep]]
 - [[cooking-oils | Cooking Oils]]
 - [[what-is-in-season-month|What is in season by month]]
+- [[secret-ingredients|Ingredients]]
