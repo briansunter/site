@@ -1,4 +1,5 @@
 .DS_Store
+*.icloud
 .obsidian
 node_modules/
 dist/
