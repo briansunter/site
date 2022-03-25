@@ -1,6 +1,6 @@
 Sourdough bread is bread made with a natural starter, as opposed to instant yeast or baking powder.
 
-Baking sourdough bread is a fun and scientific hobby. It requires quite a bit of planning, but the results are amazing. It's almost impossible to get never-been-cooled bread unless you [[cooking|bake it yourself]].
+Baking sourdough bread is a fun and scientific hobby, and it requires quite a bit of planning, but the results are impressive. It's almost impossible to get never-been-cooled bread unless you [[cooking|bake it yourself]].
 
 ## Steps Overview
 
@@ -51,9 +51,9 @@ These are the basic steps and timings to make an artisan sourdough loaf. There a
 
 - Bread Flour
   - I recommend King Arthur brand bread flour
-  - Bread flour has a higher protein than other types. It has 11-13% protein vs all-purpose flour which has 9-11% [^1]
+  - Bread flour has a higher protein than other types. It has 11-13% protein vs. all-purpose flour, which has 9-11% [^1]
   - Bread flour is "chewier" than all-purpose flour.
-  - The higher protein in bread flour produces more gluten, which traps air during the fermentation process to produce the airy holes.
+  - The higher protein in bread flour produces more gluten, which traps air during the fermentation process to create airy holes.
   - I only use this for baking, not for feeding my Starter, since it is more expensive than other types, especially during the quarantine breadmaking craze.
 
 - Rye Flour [^2]
@@ -80,14 +80,14 @@ These are the basic steps and timings to make an artisan sourdough loaf. There a
   - Don't let hot (95+ F) water touch your Starter or dough
 
 - Starter
-  - I feed my starter 50g Rye flour, 50g all-purpose flour, and 100g water daily, which produces strong fermentation and sour flavor
+  - I feed my starter 50g Rye flour, 50g all-purpose flour, and 100g water daily, which produces vigorous fermentation and sour flavor
   - Use 10g Rye and 90g all-purpose flour for a less sour starter
 - [See my recipe here](/recipes/sourdough-starter/)
 
 ## Tools
 
 - Container for baking your bread.
-  - A dutch oven is the cheapest and most versatile. However, lowering the dough into a hot container with high walls is kind of dangerous.
+  - A dutch oven is the cheapest and most versatile. However, lowering the dough into a hot container with high walls is dangerous.
   - An excellent dutch oven like the enamel Lodge costs around $100. Others like the Cruset brand are more expensive and probably not worth it
   - Dedicated breadmaking pans with low walls and a tall lid are the best options but are expensive and cost $250+. You can only use them for breadmaking, unlike the other options.
   - A cast iron dutch oven all in one is another excellent option. It has lower walls, so you can safely get the loaf inside, and I wouldn't use it independently as a cast-iron due to having to clean it so often.
