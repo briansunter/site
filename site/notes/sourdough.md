@@ -1,4 +1,4 @@
-Sourdough bread is bread made with a natural starter, as opposed to instant yeast or baking powder.
+Sourdough bread is bread made with a natural starter instead of instant yeast or baking powder.
 
 Baking sourdough bread is a fun and scientific hobby, and it requires quite a bit of planning, but the results are impressive. It's almost impossible to get never-been-cooled bread unless you [[cooking|bake it yourself]].
 
@@ -41,7 +41,7 @@ These are the basic steps and timings to make an artisan sourdough loaf. There a
 - Both yeast and bacteria primarily originate from the flour (very little from the air)[^6]
 - Bacteria usually outnumbers yeast 100:1. Although bacteria produce less gas than yeast, there's a higher proportion of bacteria. Overall, bacteria contribute 50% of the CO2, and yeast contributes the other 50%. [^6]
 - Both yeast and bacteria occasionally need air to survive
-- Flour is 75% starch. For starch to be used by the bacteria and yeast, it must be broken down into simpler sugars.
+- Flour is 75% starch. For bacteria and yeast to digest starch, something else must break it into simpler sugars.
 - Amylase is an enzyme that breaks down starch into simpler sugars usable by yeast and bacteria. [^7]
 - Amylase is naturally present in flour but can be enhanced with the addition of malt flour [^6]
 
@@ -95,7 +95,7 @@ These are the basic steps and timings to make an artisan sourdough loaf. There a
   - Strong paper to lower your dough into your dutch oven
 - Starter Jar
   - I recommend a small pyrex with low walls because it's much easier to clean.
-  - Most people use a mason jar, which helps to see the starter rise and fall, but is more difficult to feed and clean.
+  - Most people use a mason jar, which helps see the starter rise and fall, but is more difficult to feed and clean.
 - Stand Mixer or Hand dough mixer
   - I love my stand mixer, but they're expensive
   - A hand dough mixer works well too
