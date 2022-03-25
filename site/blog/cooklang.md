@@ -60,9 +60,10 @@ Although the text is human readable, this is what the special syntax means.
 
 `@ingredient{quantity%unit}` for example `@butter{30%g}`
 
-You can specify simple ingredients using `@`, for example, `@salt`.
+You can specify simple ingredients using `@`, for example, `@salt`
 
 Ingredients with spaces can use curly braces `@ground pepper{}`
+
 
 ### Time
 

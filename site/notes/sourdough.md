@@ -49,15 +49,17 @@ These are the basic steps and timings to make an artisan sourdough loaf. There a
 
 ## Sourdough Ingredients
 
-- Bread Flour
+- ### Bread Flour
+
   - I recommend King Arthur brand bread flour
   - Bread flour has a higher protein than other types. It has 11-13% protein vs. all-purpose flour, which has 9-11% [^1]
   - Bread flour is "chewier" than all-purpose flour.
   - The higher protein in bread flour produces more gluten, which traps air during the fermentation process to create airy holes.
   - I only use this for baking, not for feeding my Starter, since it is more expensive than other types, especially during the quarantine breadmaking craze.
 
-- Rye Flour [^2]
-  - Rye flour produces the strongest fermentation and sour flavors.
+- ### Rye Flour
+
+  - Rye flour produces the strongest fermentation and sour flavors [^2].
   - Starters with Rye mature faster than other types
   - It has less protein than other types of flour, so the dough is less stretchy and fluffy
   - Rye is expensive and hard to find, so you shouldn't use more than necessary to feed your Starter
@@ -70,33 +72,43 @@ These are the basic steps and timings to make an artisan sourdough loaf. There a
   - It provides faster fermentation, second to rye
   - I occasionally use a mixture of 90% bread flour and 10% wheat for flavor.
 
-- Rice Flour
+- ### Rice Flour
+
   - Rice flour doesn't contain gluten, so it doesn't become sticky
   I use this to dust some of my workspaces and proof baskets, so the dough comes off easily.
 
-- Water
+- ### Water
+
   - The type of water isn't that important, but the temperature throughout the process is essential.
   - The ideal temperature for fermentation is around 75 F, but you may want to adjust fermentation times depending on your schedule.
   - Don't let hot (95+ F) water touch your Starter or dough
 
-- Starter
+- ### Starter
+
   - I feed my starter 50g Rye flour, 50g all-purpose flour, and 100g water daily, which produces vigorous fermentation and sour flavor
   - Use 10g Rye and 90g all-purpose flour for a less sour starter
 - [See my recipe here](/recipes/sourdough-starter/)
 
 ## Tools
 
-- Container for baking your bread.
+- ### Baking Container
+
   - A dutch oven is the cheapest and most versatile. However, lowering the dough into a hot container with high walls is dangerous.
   - An excellent dutch oven like the enamel Lodge costs around $100. Others like the Cruset brand are more expensive and probably not worth it
   - Dedicated breadmaking pans with low walls and a tall lid are the best options but are expensive and cost $250+. You can only use them for breadmaking, unlike the other options.
   - A cast iron dutch oven all in one is another excellent option. It has lower walls, so you can safely get the loaf inside, and I wouldn't use it independently as a cast-iron due to having to clean it so often.
-- Parchment Paper
+
+- ### Parchment Paper
+
   - Strong paper to lower your dough into your dutch oven
-- Starter Jar
+
+- ### Starter Jar
+
   - I recommend a small pyrex with low walls because it's much easier to clean.
   - Most people use a mason jar, which helps see the starter rise and fall, but is more difficult to feed and clean.
-- Stand Mixer or Hand dough mixer
+
+- ### Stand Mixer or Hand dough mixer
+
   - I love my stand mixer, but they're expensive
   - A hand dough mixer works well too
 - Proofing basket
