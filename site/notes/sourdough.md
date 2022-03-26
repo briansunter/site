@@ -1,4 +1,4 @@
-You make sourdough bread with a natural starter instead of instant yeast or baking powder.
+You make sourdough bread with a natural Starter instead of instant yeast or baking powder.
 
 Baking sourdough bread is a fun and scientific hobby, and it requires quite a bit of planning, but the results are impressive. It's almost impossible to get never-been-cooled bread unless you [[cooking|bake it yourself]].
 
@@ -40,8 +40,8 @@ These are the basic steps and timings to make an artisan sourdough loaf. There a
 - The bacteria produce lactic acid, which contributes flavor and sourness
 - Both yeast and bacteria primarily originate from the flour (very little from the air)[^6]
 - Bacteria usually outnumbers yeast 100:1. Although bacteria produce less gas than yeast, there's a higher proportion of bacteria. Overall, bacteria contribute 50% of the CO2, and yeast contributes the other 50%. [^6]
-- Both yeast and bacteria occasionally need air to survive
-- Flour is 75% starch. For bacteria and yeast to digest starch, something else must break it into simpler sugars.
+- Both yeast and bacteria occasionally need air to survive, so you'll need to expose your Starter to air every once in a while (open your starter jar periodically)
+- Flour is 75% starch. For bacteria and yeast to digest starch, enzymes must break it into simpler sugars.
 - Amylase is an enzyme that breaks down starch into simpler sugars usable by yeast and bacteria. [^7]
 - Amylase is naturally present in flour but can be enhanced with the addition of malt flour [^6]
 
@@ -112,15 +112,15 @@ These are the basic steps and timings to make an artisan sourdough loaf. There a
 
   - I love my stand mixer, but they're expensive
   - A hand dough mixer works well too
-- Proofing basket
+- ### Proofing basket
   - A small woven basket with some cloth for shaping your bread and letting it ferment a bit longer.
   - I initially thought these were unnecessary, but they help shape the dough and make it easy to remove from the bowl.
   - Making it easy to remove is crucial because you don't want to degas or rip your dough after days of hard work making it fluffy.
   - I cover these with a big ziplock bag in my fridge
-- Silicone Spatula
+- ### Silicone Spatula
   - Highly recommended for nonstick mixing
   - I like the silicone spoons.
-- Temperature Probe
+- ### Temperature Probe
   - I like taking the temperature of my ingredients as I work and adjusting fermentation times based on that[^3]. Not necessary in the beginning, but very useful for getting consistent results and learning from your experiences.
   
 ## Detailed Steps
