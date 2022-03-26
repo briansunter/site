@@ -1,4 +1,4 @@
-Sourdough bread is bread made with a natural starter instead of instant yeast or baking powder.
+You make sourdough bread with a natural starter instead of instant yeast or baking powder.
 
 Baking sourdough bread is a fun and scientific hobby, and it requires quite a bit of planning, but the results are impressive. It's almost impossible to get never-been-cooled bread unless you [[cooking|bake it yourself]].
 
@@ -66,7 +66,8 @@ These are the basic steps and timings to make an artisan sourdough loaf. There a
   - I feed my Starter with 50/50 Rye and All-Purpose Flour
   - To have a more mild Starter yet still have vigorous fermentation, use a 10% rye blend in your Starter.
 
-- Wheat Flour [^2]
+- ### Wheat Flour [^2]
+
   - This flour includes the whole grain of wheat, including the bran, endosperm, and germ.
   - Including bran can inhibit gluten development. Bran disrupts the bonds formed in a gluten matrix.
   - It provides faster fermentation, second to rye
@@ -127,11 +128,35 @@ These are the basic steps and timings to make an artisan sourdough loaf. There a
 1. ### Prepare Starter
 
    - You should have a mature sourdough starter ahead of time. See my [recipe for making sourdough starter](../recipes/sourdough-starter/) or buy one online and follow its instructions.
+   - I recommend feeding the Starter for two weeks before baking with it.
    - Sourdough starter is mature when it doubles in size 5 hours after feeding.
-   - Feed Starter twice daily two days leading up to baking, ideally feeding 5 hours before starting baking.
+   - Feed Starter twice daily two days leading up to baking.
 
 2. ### Make Levain
 
+- Levain is when you take a portion of your Starter and mix it with flour and water. This levain mixture is used in its entirety when baking your bread, which is why you leave behind some Starter.
+- Starter is an ongoing live culture continuously fed and never wholly used in any given bake. In contrast, Levain is an offshoot of your Starter where you use all of it in your final bake.
+- Remove a portion of your Starter to use in the levain
+- For making two loaves, I usually remove 33 grams of Starter.
+- Replace the Starter you removed with equal parts flour and water back into the starter jar to "feed" it.
+  - Note the amount of stater removed for the levain in grams using a digital scale.
+  - Add that same amount of flour and water back into the jar.
+- Mix the Starter you removed with flour and water
+- I usually mix 40g starter, 80g bread flour, and 80g water.
+- Let the levain ferment for at least five and up to 8 hours at room temperature.
+- It should be ready when it doubles in size.
+- You can use the float test as a rough gauge if your levain is ready.
+  - If it floats, it is likely ready to use for baking.
+  - If it doesn't float, it may still be ready to bake depending on the type of flour or hydration level you use. The float test can lead to false negatives. [^9]
+
+3. ### Autolyse
+
+- Autolyse is mixing flour and water before adding salt or yeast and letting it sit for 20 minutes.
+- Autolyse is intended to allow extra time for the flour to "hydrate" by absorbing the water.
+- This is supposed to improve gluten development and reduce the need for intensive mixing
+- I do this simultaneously while preparing the levain, so it doesn't add time to my recipe.
+- Some people claim doing autolyse isn't worth it. It seems only to add a little bit of volume [^10]
+  
 [^1]: [flour types](https://www.bonappetit.com/story/difference-bread-all-purpose-cake-pastry-flour#:~:text=The%20main%20difference%20between%20bread,to%20produce%20lots%20of%20gluten.)
 
 [^2]: [Serious Eats Best Sourdough Starter Flour](https://www.bonappetit.com/story/difference-bread-all-purpose-cake-pastry-flour#:~:text=The%20main%20difference%20between%20bread,to%20produce%20lots%20of%20gluten.)
@@ -147,3 +172,7 @@ These are the basic steps and timings to make an artisan sourdough loaf. There a
 [^7]: [Bread Enzymes](https://blogs.scientificamerican.com/guest-blog/enzymes-the-little-molecules-that-bake-bread/)
 
 [^8]: [Natural Yeast Digestion Study](https://pubmed.ncbi.nlm.nih.gov/24230470/)
+
+[^9]: [Sourdough Starter FAQ](https://www.theperfectloaf.com/frequently-asked-sourdough-starter-questions/)
+
+[^10]: [How to Autolyse](https://www.theperfectloaf.com/guides/how-to-autolyse/)
