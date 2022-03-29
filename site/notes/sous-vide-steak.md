@@ -4,22 +4,22 @@
     {
       "@context": "https://schema.org/",
       "@type": "Recipe",
-      "name": "Party Coffee Cake",
+      "name": "Sous Vide Steak",
       "image": [
-        "https://example.com/photos/1x1/photo.jpg",
-        "https://example.com/photos/4x3/photo.jpg",
-        "https://example.com/photos/16x9/photo.jpg"
+        "https://briansunter.com/images/blog/python.png",
+        "https://briansunter.com/images/blog/five-minute-journal/journal.jpg",
+        "https://briansunter.com/images/blog/how-to-take-smart-notes-roam-research/smart-notes-cover.jpg"
       ],
       "author": {
         "@type": "Person",
-        "name": "Mary Stone"
+        "name": "Brian Sunter"
       },
-      "datePublished": "2018-03-10",
-      "description": "This coffee cake is awesome and perfect for parties.",
+      "datePublished": "2020-03-10",
+      "description": "The best way to cook steak",
       "prepTime": "PT20M",
       "cookTime": "PT30M",
       "totalTime": "PT50M",
-      "keywords": "cake for a party, coffee",
+      "keywords": "sous-vide, steak, sous vide",
       "recipeYield": "10",
       "recipeCategory": "Dessert",
       "recipeCuisine": "American",
@@ -28,7 +28,7 @@
         "calories": "270 calories"
       },
       "recipeIngredient": [
-        "2 cups of flour",
+        "2 pounds steak",
         "3/4 cup white sugar",
         "2 teaspoons baking powder",
         "1/2 teaspoon salt",
@@ -41,94 +41,74 @@
           "@type": "HowToStep",
           "name": "Preheat",
           "text": "Preheat the oven to 350 degrees F. Grease and flour a 9x9 inch pan.",
-          "url": "https://example.com/party-coffee-cake#step1",
-          "image": "https://example.com/photos/party-coffee-cake/step1.jpg"
+          "url": "https://briansunter.com/notes/sous-vide-steak/#step1",
+          "image": "https://briansunter.com/images/blog/five-minute-journal/journal.jpg"
         },
         {
           "@type": "HowToStep",
           "name": "Mix dry ingredients",
           "text": "In a large bowl, combine flour, sugar, baking powder, and salt.",
-          "url": "https://example.com/party-coffee-cake#step2",
-          "image": "https://example.com/photos/party-coffee-cake/step2.jpg"
+          "url": "https://briansunter.com/notes/sous-vide-steak/#step2",
+          "image": "https://briansunter.com/images/blog/five-minute-journal/journal.jpg"
         },
         {
           "@type": "HowToStep",
           "name": "Add wet ingredients",
           "text": "Mix in the butter, eggs, and milk.",
-          "url": "https://example.com/party-coffee-cake#step3",
-          "image": "https://example.com/photos/party-coffee-cake/step3.jpg"
+          "url": "https://briansunter.com/notes/sous-vide-steak/#step3",
+          "image": "https://briansunter.com/images/blog/five-minute-journal/journal.jpg"
         },
         {
           "@type": "HowToStep",
           "name": "Spread into pan",
           "text": "Spread into the prepared pan.",
-          "url": "https://example.com/party-coffee-cake#step4",
-          "image": "https://example.com/photos/party-coffee-cake/step4.jpg"
+          "url": "https://briansunter.com/notes/sous-vide-steak/#step4",
+          "image": "https://briansunter.com/images/blog/python.pngg"
         },
         {
           "@type": "HowToStep",
           "name": "Bake",
           "text": "Bake for 30 to 35 minutes, or until firm.",
-          "url": "https://example.com/party-coffee-cake#step5",
-          "image": "https://example.com/photos/party-coffee-cake/step5.jpg"
+          "url": "https://briansunter.com/notes/sous-vide-steak/#step5",
+          "image": "https://briansunter.com/images/blog/python.png"
         },
         {
           "@type": "HowToStep",
           "name": "Enjoy",
           "text": "Allow to cool and enjoy.",
-          "url": "https://example.com/party-coffee-cake#step6",
-          "image": "https://example.com/photos/party-coffee-cake/step6.jpg"
+          "url": "https://briansunter.com/notes/sous-vide-steak/#step6",
+          "image": "https://briansunter.com/images/blog/python.png"
         }
       ],
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "5",
         "ratingCount": "18"
-      },
-      "video": {
-        "@type": "VideoObject",
-        "name": "How to make a Party Coffee Cake",
-        "description": "This is how you make a Party Coffee Cake.",
-        "thumbnailUrl": [
-          "https://example.com/photos/1x1/photo.jpg",
-          "https://example.com/photos/4x3/photo.jpg",
-          "https://example.com/photos/16x9/photo.jpg"
-         ],
-        "contentUrl": "http://www.example.com/video123.mp4",
-        "embedUrl": "http://www.example.com/videoplayer?video=123",
-        "uploadDate": "2018-02-05T08:00:00+08:00",
-        "duration": "PT1M33S",
-        "interactionStatistic": {
-          "@type": "InteractionCounter",
-          "interactionType": { "@type": "WatchAction" },
-          "userInteractionCount": 2347
-        },
-        "expires": "2019-02-05T08:00:00+08:00"
       }
     }
     </script>
 
 ## Ingredients
-450 g steaks
-salt
-pepper
-sous vide bags
-4 sprigs thyme
-4 sprigs rosemary
-4 cloves garlic
-2 thinly sliced shallots
-20 g butter
+- 450 g steaks
+- salt
+- pepper
+- sous vide bags
+- 4 sprigs thyme
+- 4 sprigs rosemary
+- 4 cloves garlic
+- 2 thinly sliced shallots
+- 20 g butter
 
 ## Steps
-Preheat a sous vide cooker to desired final temperature.
-Season 450 g steaks generously with 1 salt and 1 pepper
-Place in 1 sous vide bags along with 4 sprigs thyme, 4 sprigs rosemary, 4 cloves garlic, and 2 thinly sliced shallots and distribute evenly.
-Seal bags and place in water bath for desired time according to charts.
-Turn on your vents and open your windows. Add one tablespoon of ghee, vegetable,
-canola, or rice bran oil to a heavy cast ironor stainless steel skillet
-set over the hottest burner you have, and preheat the skillet until it reaches 450 degrees.
-Gently lay steak in skillet, using your fingers or a set of tongs.
-Add 30 g butter (2 tablespoons).
-After 15 to 30 seconds, flip steak so that the second side comes into contact with the pan.
-Repeat, flipping steak every 30 seconds, until it has developed a nice brown sear, about 1.5 minutes total.
-Serve steak immediately
+- Preheat a sous vide cooker to desired final temperature.
+- Season 450 g steaks generously with 1 salt and 1 pepper
+- Place in 1 sous vide bags along with 4 sprigs thyme, 4 sprigs rosemary, 4 cloves garlic, and 2 thinly sliced shallots and distribute evenly.
+- Seal bags and place in water bath for desired time according to charts.
+- Turn on your vents and open your windows. Add one tablespoon of ghee, vegetable,
+- canola, or rice bran oil to a heavy cast ironor stainless steel skillet
+- set over the hottest burner you have, and preheat the skillet until it reaches 450 degrees.
+- Gently lay steak in skillet, using your fingers or a set of tongs.
+- Add 30 g butter (2 tablespoons).
+- After 15 to 30 seconds, flip steak so that the second side comes into contact with the pan.
+- Repeat, flipping steak every 30 seconds, until it has developed a nice brown sear, about 1.5 minutes total.
+- Serve steak immediately
