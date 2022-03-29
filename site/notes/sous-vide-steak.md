@@ -107,3 +107,28 @@
       }
     }
     </script>
+
+## Ingredients
+450 g steaks
+salt
+pepper
+sous vide bags
+4 sprigs thyme
+4 sprigs rosemary
+4 cloves garlic
+2 thinly sliced shallots
+20 g butter
+
+## Steps
+Preheat a sous vide cooker to desired final temperature.
+Season 450 g steaks generously with 1 salt and 1 pepper
+Place in 1 sous vide bags along with 4 sprigs thyme, 4 sprigs rosemary, 4 cloves garlic, and 2 thinly sliced shallots and distribute evenly.
+Seal bags and place in water bath for desired time according to charts.
+Turn on your vents and open your windows. Add one tablespoon of ghee, vegetable,
+canola, or rice bran oil to a heavy cast ironor stainless steel skillet
+set over the hottest burner you have, and preheat the skillet until it reaches 450 degrees.
+Gently lay steak in skillet, using your fingers or a set of tongs.
+Add 30 g butter (2 tablespoons).
+After 15 to 30 seconds, flip steak so that the second side comes into contact with the pan.
+Repeat, flipping steak every 30 seconds, until it has developed a nice brown sear, about 1.5 minutes total.
+Serve steak immediately
