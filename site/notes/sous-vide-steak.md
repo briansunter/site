@@ -1,4 +1,4 @@
-# sous vide steak
+# sous vide steak recipe
 
  <script type="application/ld+json">
     {
@@ -84,6 +84,26 @@
         "@type": "AggregateRating",
         "ratingValue": "5",
         "ratingCount": "18"
+      },
+      "video": {
+        "@type": "VideoObject",
+        "name": "How to make a steak",
+        "description": "This is how you make a steak",
+        "thumbnailUrl": [
+        "https://briansunter.com/images/blog/python.png",
+        "https://briansunter.com/images/blog/five-minute-journal/journal.jpg",
+        "https://briansunter.com/images/blog/how-to-take-smart-notes-roam-research/smart-notes-cover.jpg"
+         ],
+        "contentUrl": "http://www.example.com/video123.mp4",
+        "embedUrl": "http://www.example.com/videoplayer?video=123",
+        "uploadDate": "2018-02-05T08:00:00+08:00",
+        "duration": "PT1M33S",
+        "interactionStatistic": {
+          "@type": "InteractionCounter",
+          "interactionType": { "@type": "WatchAction" },
+          "userInteractionCount": 2347
+        },
+        "expires": "2019-02-05T08:00:00+08:00"
       }
     }
     </script>
@@ -100,11 +120,28 @@
 - 20 g butter
 
 ## Steps
+
+### step1
 - Preheat a sous vide cooker to desired final temperature.
+
+### step2
+
 - Season 450 g steaks generously with 1 salt and 1 pepper
+
+### step3
+
 - Place in 1 sous vide bags along with 4 sprigs thyme, 4 sprigs rosemary, 4 cloves garlic, and 2 thinly sliced shallots and distribute evenly.
+
+### step4
+
 - Seal bags and place in water bath for desired time according to charts.
+
+### step5
+
 - Turn on your vents and open your windows. Add one tablespoon of ghee, vegetable,
+
+### step6
+
 - canola, or rice bran oil to a heavy cast ironor stainless steel skillet
 - set over the hottest burner you have, and preheat the skillet until it reaches 450 degrees.
 - Gently lay steak in skillet, using your fingers or a set of tongs.
