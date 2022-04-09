@@ -38,4 +38,105 @@ This is essential for Filipino foods, but it's a really good slightly pungent vi
 ## Truffle Salt
 Has an amazing pungent indescribable flavor. There are some decent salts available, but quality varies and it goes stale quickly.
 
+## Shao Xing Wine
+Essential for authentic kung apo chicken
+
+## Cojita Cheese
+
+Mexican Parmesaean
+
+##  Doenjang
+A salty, savory soybean paste that is
+used to season many
+Korean dishes, doenjang is fermented in a
+similar way to miso
+paste, a Japanese
+staple, but is much
+more robust and rich
+in flavor.
+
+## Dumpling Wrappers
+Really convenient to have on hand for snacks.
+
+## FISH SAUCE
+A popular condiment
+made from salt-brined
+fish—sharp and salty,
+with a deep umami flavor and strong aroma.
+Various brands from
+across Southeast Asia
+can be found in most
+supermarkets. Look
+for additive-free varieties that list only
+anchovy and salt as
+ingredients.
+
+## Gojuchiang
+This bright red chili
+paste is similar to
+gochugaru but
+blended with glutinous rice and salty
+soybean paste. Thick
+and sticky, it is often
+added to marinades
+and sauces.
+
+## Oyster Sauce
+
+OYSTER SAUCE
+Made from cookeddown oyster extract
+(among other ingredients), oyster sauce is
+thick and brown with
+a complex salty-sweet
+
+## Hot Sauce
+
+sambal oelek (of
+Indonesia), Tabasco
+(made in Louisiana),
+and chili oil (commonly linked with
+Chinese cuisine).
+
+## Reduce spiciness
+
+How to scale
+down the spice
+in any of Roy’s
+recipes
+When using fresh or
+canned chilies:
+Substitute spicy serrano peppers with
+milder jalapeños. If
+straight jalapeños
+are too much, scrape
+out the seeds or use
+a bell pepper.
+When using dried
+chilies:
+Reduce the amount
+of gochugaru
+(Korean chili flakes)
+called for by half and
+replace it with an
+equal amount of
+smoked paprika.
+This will tame the
+spiciness without
+sacrificing the
+vibrant red color and
+smokiness that
+gochugaru providesi this is a good way of 
+
+## fermented shrimp
+SALTED
+FERMENTED SHRIMP
+This briny, umami-rich
+Korean ingredient is
+often used to season
+dishes in lieu of salt.
+It’s also a popular
+ingredient for traditional kimchi-making.
+Store it in the refrigerator, where it will last
+for many months. 
+
 [^1]: [msg research](https://www.healthline.com/nutrition/msg-good-or-bad)
