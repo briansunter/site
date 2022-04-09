@@ -1,6 +1,84 @@
 Foods that are in season by month so you can plan your [[cooking]] around the freshest ingredients. This guide is for California, which grows about 80% of all fruits and vegetables in the U.S. so California seasons are in many ways national seasons.
 
-## January
+## Seasons
+
+### Winter
+
+During the winter months of **December**, **January** and **February** there are many produce items harvested and in peak quality. These items thrive in the cooler temperatures and have the best flavor during this time. Some favorites of this season are:
+
+#### Citrus
+Winter is peak citrus season and there are a bounty of varieties available including:
+
+- Navel Oranges 
+- Mandarins 
+- Grapefruit 
+- Tangelos 
+- Tangerines
+- Meyer Lemons 
+- Satsumas 
+- Pommelos 
+- Clementines 
+- Kumquats
+
+#### Radicchio
+As all chicories do, radicchio become sweeter during the winter. The standard round variety is called Radicchio di Chioggia and has deep red leaves with white veins and is very firmly packed together.
+ 
+#### Kale
+While kale is available year round, it is in its peak quality during the winter months. Kale comes in many varieties such as Red Rus- sian Kale, Curly Kale, Lacinato Kale and Redbor Kale. The cooler temperatures keep this super food and leafy green sweet and not bitter.
+
+#### Rutabagas
+This cross between a cabbage and a turnip has a slightly bitter flavor and is crisp and juicy when raw. Once cooked this member of the Brassica family turns golden in color and sweet like a potato, but with less starch.
+
+### Spring
+
+Spring brings rebirth to our environment as we warm up from winter and start to see new growth in the fields. During **March**, **April** and **May** there are an abundance of new items for our plates. A few notable favorites are:
+
+#### Asparagus
+Asparagus is in season from about **February** to **June**, peaking in the Spring months. These shoots come from a fern plant that if left alone, would grow to about 6ft. It is known as a luxury vegetable because of the amount of time and space the plant requires. The first harvest produces very thin spears, but as the season progress the stalks become thicker. Both green and white varieties are available.
+
+#### Green Garlic
+While green garlic often looks like a regular scal- lion, it is actually an immature garlic plant with a very delicate garlic flavor. These plants used to be the by product of thinning out a field of garlic, but today they are increasing in popularity and are often now grown as a crop of their own. They are available from **March** to **July**.
+
+#### Fava Beans
+Fava Beans are an ancient food source and are in fact one of the oldest plants under cultivation today. While cleaning and removing the beans from the shells is labor intensive, their distinct sweet and nutty flavor and creamy texture lend themselves well to a wide variety of dishes.
+
+#### Strawberries
+Strawberries are the first fruit to ripen in the Spring time in California. They are harvested From **January** through **November** with peak season being April to June. These sweet berries are a universal favorite and can be used in sweet and savory dishes alike.
+
+### Summer
+
+Summer showcases California’s most impressive harvest in terms of variety of fresh produce. During **June**, **July** and **August** crowd favorites are in abundance as the days get warmer and longer. Here are just a few highlights from this delicious season.
+
+#### Tomatoes
+Juicy tomatoes begin to become available in **June** and last into fall. They are at their peek sweetness during the warm summer months. There are a large variety of tomatoes available today including heirloom, cherry, grape, roma and beefsteak. They come in color from red to green, purple, black to striped and more. Tomatoes are truly a summer treat not to be missed.
+
+#### Stone Fruit
+Sweet, sticky, juicy stone fruit is long awaited by many all year long. While some varieties may begin showing up on the market in late Spring, the best fruit will be during the heat of summer from **June** to **August**. Stone fruit includes peaches, nectarines, cherries, apricots, apriums, plums and pluots .
+
+#### Summer Squash
+Summer squash includes zuchinni, scallop, yellow crookneck, yellow straightneck, sun drops, blossom, globe and more. The skin of summer squash is delicate and the flesh when cooked has buttery notes. Squash is an incredibly versatile ingredient and lends itself especially well to being stuffed.
+
+#### Melons
+There are many varieties of melons and heirloom melons available during the summer months. Watermelon, cantaloupe, honeydew, crenshaw, canary, casaba, sugar melon, Piel de Sapo and many more. They will last from summer into early fall.
+
+### Fall
+
+During the months of **September**, **October** and **November** lower temperatures bring diverse harvest to the market. California’s varied climates offer a rich assortment of crops including:
+
+#### Persimmons
+Persimmons come in two common varieties, fuyu and hachiyas. Both varieties have a nutty and mild pumpkin like flavor. Fuyus can be eaten raw, but hachiyas are most commonly used in baking and are prized for their pulp in sweets. Unless completely ripe, hachiyas have a very tart flavor.
+
+#### Broccoli Rabe
+While related to broccoli, broccoli rabe is actually most closely related to turnips. This plant has a nutty taste with a slightly pleasant bitterness. The large dark green leaves and stalks are perfect for sautéing.
+
+#### Pears
+Comice, bosc, red anjou, French butter, bartlett, seckel and asian pears are just some of the popular varieties of pears available in the fall. With their firm flesh and often delicate skin, pears are used in a variety of dishes, both savory and sweet.
+
+#### Figs
+Figs are a luxury fruit that is becoming more popular and widely available. They have two seasons, a short season in early summer and a second main season in late summer through fall. Figs have a very unique texture and flavor. They are very soft, sweet and are full of delicate seeds and prized in both savory and sweet dishes.
+
+## Produce by Month
+### January
 - broccoli
 - Brussels sprouts
 - cabbage
@@ -16,7 +94,7 @@ Foods that are in season by month so you can plan your [[cooking]] around the fr
 - tangerines
 - turnips.
 
-## February
+### February
 - broccoli
 - Brussels sprouts
 - cabbage
@@ -31,7 +109,7 @@ Foods that are in season by month so you can plan your [[cooking]] around the fr
 - tangelos
 - turnips.
 
-## March
+### March
 - artichokes
 - broccoli
 - Brussels sprouts
@@ -45,7 +123,7 @@ Foods that are in season by month so you can plan your [[cooking]] around the fr
 - rutabagas
 - turnips
 
-## April
+### April
 - artichokes
 - asparagus
 - broccoli
@@ -58,7 +136,7 @@ Foods that are in season by month so you can plan your [[cooking]] around the fr
 - rhubarb
 - spring peas
 
-## May
+### May
 - apricots
 - artichokes
 - asparagus
@@ -74,7 +152,7 @@ Foods that are in season by month so you can plan your [[cooking]] around the fr
 - Swiss chard
 - zucchini
 
-## June
+### June
 - apricots
 - blueberries
 - cantaloupe
@@ -89,7 +167,7 @@ Foods that are in season by month so you can plan your [[cooking]] around the fr
 - watermelon
 - zucchini.
 
-## July
+### July
 - apricots
 - blackberries
 - blueberries
@@ -113,7 +191,7 @@ Foods that are in season by month so you can plan your [[cooking]] around the fr
 - watermelon
 - zucchini
 
-## August
+### August
 - acorn squash
 - apples
 - apricots
@@ -141,7 +219,7 @@ Foods that are in season by month so you can plan your [[cooking]] around the fr
 - watermelon
 - zucchini
 
-## September
+### September
 - acorn squash
 - apples
 - beets
@@ -165,7 +243,7 @@ Foods that are in season by month so you can plan your [[cooking]] around the fr
 - Swiss chard
 - tomatoes.
 
-## October
+### October
 - acorn squash
 - apples
 - beets
@@ -190,7 +268,7 @@ Foods that are in season by month so you can plan your [[cooking]] around the fr
 - turnips
 - winter squash
 
-## November
+### November
 - beets
 - broccoli
 - Brussels sprouts
@@ -212,7 +290,7 @@ Foods that are in season by month so you can plan your [[cooking]] around the fr
 - turnips
 - winter squash
 
-## December
+### December
 - broccoli
 - Brussels sprouts
 - cabbage
