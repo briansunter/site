@@ -319,3 +319,43 @@ Foods that are in season by month so you can plan your [[cooking]] around the fr
 |Persimmons|September 20 - October 31|
 |Walnuts|September 25 - Jan. 10|
 |Oranges|Most of the year, depends on the variety.
+
+## Year Round Produce
+Many fruits and vegetables are available year round due to California’s varied climates, modern growing practices and storage capabilities. 
+
+- Apples 
+- Arugula
+- Beans
+- Beets
+- Belgian Endive 
+- Bok Choy 
+- Broccoli 
+- Broccoli Rabe 
+- Cabbage 
+- Carrots
+- Cauliflower 
+- Celery
+- Chard
+- Collard Greens 
+- Fennel
+- Kale 
+- Leeks 
+- Lemons 
+- Lettuce 
+- Mint
+- Mushrooms 
+- Mustard Greens 
+- Onions 
+- Oregano 
+- Parsley 
+- Potatoes 
+- Radicchio 
+- Rosemary
+- Sage
+- Scallions
+- Sorrel Spinach 
+- Spring Mix 
+- Sprouts 
+- Thyme 
+- Turnips 
+- Watercress
