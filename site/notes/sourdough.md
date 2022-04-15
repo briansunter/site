@@ -37,15 +37,41 @@ These are the basic steps and timings to make an artisan sourdough loaf. There a
 - Both Starter and instant yeast cause the dough to rise by producing gas
 - Starter is a mixture of yeast and lactic acid bacteria [^4]
 - The yeast and bacteria produce the CO2 gas that causes the bread to rise[^6]
-- The bacteria produce lactic acid, which contributes flavor and sourness
+- The bacteria produce lactic acid, which contributes to flavor and sourness
 - Both yeast and bacteria primarily originate from the flour (very little from the air)[^6]
 - Bacteria usually outnumbers yeast 100:1. Although bacteria produce less gas than yeast, there's a higher proportion of bacteria. Overall, bacteria contribute 50% of the CO2, and yeast contributes the other 50%. [^6]
 - Both yeast and bacteria occasionally need air to survive, so you'll need to expose your Starter to air every once in a while (open your starter jar periodically)
+
+### Sourdough Bread Enzymes
+
+#### Amylase
+
 - Flour is 75% starch. For bacteria and yeast to digest starch, enzymes must break it into simpler sugars.
+- Starches are chains of glucose molecules, mostly, amylose or amylopectin. [^7]
+- Starch normally contains about 20–30% amylose and 70–80% amylopectin, but amylose content can range from < 1% in waxy starches and > 70% in certain high amylose starches.
 - Amylase is an enzyme that breaks down starch into simpler sugars usable by yeast and bacteria. [^7]
 - Amylase is naturally present in flour but can be enhanced with the addition of malt flour [^6]
+- There are two kinds of amylase: α-amylase (alpha-amylase) and β-amylase (beta-amylase) [^7]
+- α-amylase (alpha-amylase) randomly breaks the chain into smaller pieces. [^7]
+- β-amylase (beta-amylase) breaks maltose units off the end of the chain. [^7]
+- Amylase enzymes start working when water is added. This is one reason why doughs with a higher hydration often ferment faster. The enzymes are more active in higher hydration bread.[^7]
+- Amylase breaks down the starch in bread dough into maltose, a double-ring sugar composed of two glucose molecules [^7]
+- Maltose can't be used by fermentation, so it needs to be broken down further into glucose. [^7]
 
--
+#### Maltase
+
+- The yeast from the Starter used in sourdough bread making contains the enzyme maltase, which breaks maltose into glucose. [^7]
+- The yeast absorbs the maltose, then the yeast's maltase enzyme breaks the maltose into two glucose molecules. [^7]
+- Yeast cells also contain invertase, another enzyme that can break sucrose. This enzyme works on the small percentage of sucrose found in the flour. [^7]
+
+#### Protease
+
+- Protease breaks down protein chains of amino acids [^7]
+- Protease only accounts for a small amount of the enzyme activity, but it this small amount is important. [^7]
+- Too much protease activity would break up the gluten, destroying the network that forms during kneading, making the dough fall apart. [^7]
+- A little bit of protease activity just softens the dough, without breaking it apart [^7]
+- If the dough is allowed to autolyse (i.e., rest) proteases have time to work before kneading, making the dough easier to knead.
+- Protease affects both the dough's consistency and flavor. The amino acids from the protease reactions participate in the reactions that occur during baking [^7]
 
 ## Sourdough Ingredients
 
@@ -76,7 +102,7 @@ These are the basic steps and timings to make an artisan sourdough loaf. There a
 - ### Rice Flour
 
   - Rice flour doesn't contain gluten, so it doesn't become sticky
-  I use this to dust some of my workspaces and proof baskets, so the dough comes off easily.
+  - I use this to dust some of my workspaces and proof baskets, so the dough comes off easily.
 
 - ### Water
 
@@ -95,8 +121,8 @@ These are the basic steps and timings to make an artisan sourdough loaf. There a
 - ### Baking Container
 
   - A dutch oven is the cheapest and most versatile. However, lowering the dough into a hot container with high walls is dangerous.
-  - An excellent dutch oven like the enamel Lodge costs around $100. Others like the Cruset brand are more expensive and probably not worth it
-  - Dedicated breadmaking pans with low walls and a tall lid are the best options but are expensive and cost $250+. You can only use them for breadmaking, unlike the other options.
+  - An excellent dutch oven like the enamel Lodge costs around $100. Others like the Cruset brand are more expensive and probably not worth it. Cast iron ones are better for bread-making though less versatile for other types of cooking compared to enamel.
+  - Dedicated bread-making pans with low walls and a tall lid are the best options but are expensive and cost $250+. You can only use them for bread-making, unlike the other options.
   - A cast iron dutch oven all in one is another excellent option. It has lower walls, so you can safely get the loaf inside, and I wouldn't use it independently as a cast-iron due to having to clean it so often.
 
 - ### Parchment Paper
@@ -112,15 +138,21 @@ These are the basic steps and timings to make an artisan sourdough loaf. There a
 
   - I love my stand mixer, but they're expensive
   - A hand dough mixer works well too
+
 - ### Proofing basket
+
   - A small woven basket with some cloth for shaping your bread and letting it ferment a bit longer.
   - I initially thought these were unnecessary, but they help shape the dough and make it easy to remove from the bowl.
   - Making it easy to remove is crucial because you don't want to degas or rip your dough after days of hard work making it fluffy.
   - I cover these with a big ziplock bag in my fridge
+
 - ### Silicone Spatula
+
   - Highly recommended for nonstick mixing
   - I like the silicone spoons.
+
 - ### Temperature Probe
+
   - I like taking the temperature of my ingredients as I work and adjusting fermentation times based on that[^3]. Not necessary in the beginning, but very useful for getting consistent results and learning from your experiences.
   
 ## Detailed Steps
@@ -176,3 +208,7 @@ These are the basic steps and timings to make an artisan sourdough loaf. There a
 [^9]: [Sourdough Starter FAQ](https://www.theperfectloaf.com/frequently-asked-sourdough-starter-questions/)
 
 [^10]: [How to Autolyse](https://www.theperfectloaf.com/guides/how-to-autolyse/)
+
+[^11]: [Starches](https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Map%3A_Organic_Chemistry_(Smith)/05%3A_Stereochemistry/5.01%3A_Starch_and_Cellulose)
+
+[^12]: [Amylopectin Structure](https://jasbsci.biomedcentral.com/articles/10.1186/s40104-018-0303-8#:~:text=Starch%20normally%20contains%20about%2020,and%20high%20levels%20of%20branches.)

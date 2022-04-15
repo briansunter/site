@@ -4,10 +4,8 @@ Foods that are in season by month so you can plan your [[cooking]] around the fr
 
 ### Winter
 
-During the winter months of **December**, **January** and **February** there are many produce items harvested and in peak quality. These items thrive in the cooler temperatures and have the best flavor during this time. Some favorites of this season are:
-
+**December**, **January** and **February**
 #### Citrus
-Winter is peak citrus season and there are a bounty of varieties available including:
 
 - Navel Oranges 
 - Mandarins 
@@ -21,23 +19,23 @@ Winter is peak citrus season and there are a bounty of varieties available inclu
 - Kumquats
 
 #### Radicchio
-As all chicories do, radicchio become sweeter during the winter. The standard round variety is called Radicchio di Chioggia and has deep red leaves with white veins and is very firmly packed together.
+Radicchio becomes sweeter during the winter. The standard round variety is called Radicchio di Chioggia and has deep red leaves with white veins and is very firmly packed together.
  
 #### Kale
-While kale is available year round, it is in its peak quality during the winter months. Kale comes in many varieties such as Red Rus- sian Kale, Curly Kale, Lacinato Kale and Redbor Kale. The cooler temperatures keep this super food and leafy green sweet and not bitter.
+While kale is available year round, it is in its peak quality during the winter months. Kale comes in many varieties such as Red Russian Kale, Curly Kale, Lacinato Kale and Redbor Kale. The cooler temperatures keep this super food and leafy green sweet and not bitter.
 
 #### Rutabagas
 This cross between a cabbage and a turnip has a slightly bitter flavor and is crisp and juicy when raw. Once cooked this member of the Brassica family turns golden in color and sweet like a potato, but with less starch.
 
 ### Spring
 
-Spring brings rebirth to our environment as we warm up from winter and start to see new growth in the fields. During **March**, **April** and **May** there are an abundance of new items for our plates. A few notable favorites are:
+ **March**, **April** and **May** 
 
 #### Asparagus
 Asparagus is in season from about **February** to **June**, peaking in the Spring months. These shoots come from a fern plant that if left alone, would grow to about 6ft. It is known as a luxury vegetable because of the amount of time and space the plant requires. The first harvest produces very thin spears, but as the season progress the stalks become thicker. Both green and white varieties are available.
 
 #### Green Garlic
-While green garlic often looks like a regular scal- lion, it is actually an immature garlic plant with a very delicate garlic flavor. These plants used to be the by product of thinning out a field of garlic, but today they are increasing in popularity and are often now grown as a crop of their own. They are available from **March** to **July**.
+While green garlic often looks like a regular scallion, it is actually an immature garlic plant with a very delicate garlic flavor. These plants used to be the by product of thinning out a field of garlic, but today they are increasing in popularity and are often now grown as a crop of their own. They are available from **March** to **July**.
 
 #### Fava Beans
 Fava Beans are an ancient food source and are in fact one of the oldest plants under cultivation today. While cleaning and removing the beans from the shells is labor intensive, their distinct sweet and nutty flavor and creamy texture lend themselves well to a wide variety of dishes.
@@ -399,41 +397,41 @@ Figs are a luxury fruit that is becoming more popular and widely available. They
 |Oranges|Most of the year, depends on the variety.
 
 ## Year Round Produce
-Many fruits and vegetables are available year round due to California’s varied climates, modern growing practices and storage capabilities. 
+Many fruits and vegetables are available year round due to California’s varied climates, modern growing practices and storage capabilities.
 
-- Apples 
+- Apples
 - Arugula
 - Beans
 - Beets
-- Belgian Endive 
-- Bok Choy 
-- Broccoli 
-- Broccoli Rabe 
-- Cabbage 
+- Belgian Endive
+- Bok Choy
+- Broccoli
+- Broccoli Rabe
+- Cabbage
 - Carrots
-- Cauliflower 
+- Cauliflower
 - Celery
 - Chard
-- Collard Greens 
+- Collard Greens
 - Fennel
-- Kale 
-- Leeks 
-- Lemons 
-- Lettuce 
+- Kale
+- Leeks
+- Lemons
+- Lettuce
 - Mint
-- Mushrooms 
-- Mustard Greens 
-- Onions 
-- Oregano 
-- Parsley 
-- Potatoes 
-- Radicchio 
+- Mushrooms
+- Mustard Greens
+- Onions
+- Oregano
+- Parsley
+- Potatoes
+- Radicchio
 - Rosemary
 - Sage
 - Scallions
-- Sorrel Spinach 
-- Spring Mix 
-- Sprouts 
-- Thyme 
-- Turnips 
+- Sorrel Spinach
+- Spring Mix
+- Sprouts
+- Thyme
+- Turnips
 - Watercress
