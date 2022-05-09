@@ -3,10 +3,10 @@
 	"version": "1.0.1",
 	"description": "The personal site of Brian Sunter",
 	"scripts": {
-		"dev": "gulp & ELEVENTY_ENV=development eleventy --config=eleventy.config.js --serve",
+		"dev": "gulp && ELEVENTY_ENV=development eleventy --config=eleventy.config.js --serve",
 		"serve": "eleventy --config=eleventy.config.js --serve --dryrun --quiet",
 		"test:lh:ci": "lhci collect --start-server-command='npm run serve' --url=http://localhost:8080 --settings.chromeFlags='--no-sandbox' --startServerReadyPattern 'Serving files from:'",
-		"test": "npm run serve & cypress run",
+		"test": "npm run serve && cypress run",
 		"build": "NODE_ENV='production' gulp build && eleventy --config=eleventy.config.js"
 	},
 	"repository": {
