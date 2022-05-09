@@ -114,7 +114,7 @@ These are the basic steps and timings to make an artisan sourdough loaf. There a
 
   - I feed my starter 50g Rye flour, 50g all-purpose flour, and 100g water daily, which produces vigorous fermentation and sour flavor
   - Use 10g Rye and 90g all-purpose flour for a less sour starter
-- [See my recipe here](/recipes/sourdough-starter/)
+- [See my recipe here](/recipes/make-your-own-sourdough-starter/)
 
 ## Tools
 
@@ -159,7 +159,7 @@ These are the basic steps and timings to make an artisan sourdough loaf. There a
 
 1. ### Prepare Starter
 
-   - You should have a mature sourdough starter ahead of time. See my [recipe for making sourdough starter](../recipes/sourdough-starter/) or buy one online and follow its instructions.
+   - You should have a mature sourdough starter ahead of time. See my [recipe for making sourdough starter](../recipes/make-your-own-sourdough-starter/) or buy one online and follow its instructions.
    - I recommend feeding the Starter for two weeks before baking with it.
    - Sourdough starter is mature when it doubles in size 5 hours after feeding.
    - Feed Starter twice daily two days leading up to baking.
