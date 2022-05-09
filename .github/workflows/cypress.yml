@@ -20,6 +20,8 @@ jobs:
         uses: cypress-io/github-action@v2.7.1
         with:
           start: npm run serve
+          wait-on: 'http://localhost:8080'
+
       - uses: actions/setup-node@v2
         with:
           node-version-file: '.nvmrc'
