@@ -159,7 +159,7 @@ These are the basic steps and timings to make an artisan sourdough loaf. There a
 
 1. ### Prepare Starter
 
-   - You should have a mature sourdough starter ahead of time. See my [recipe for making sourdough starter](../recipes/make-your-own-sourdough-starter/) or buy one online and follow its instructions.
+   - You should have a mature sourdough starter ahead of time. See my [recipe for making sourdough starter](/recipes/make-your-own-sourdough-starter/) or buy one online and follow its instructions.
    - I recommend feeding the Starter for two weeks before baking with it.
    - Sourdough starter is mature when it doubles in size 5 hours after feeding.
    - Feed Starter twice daily two days leading up to baking.
