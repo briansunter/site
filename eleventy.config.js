@@ -130,7 +130,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPassthroughCopy({".tmp/images": "images"});
   eleventyConfig.addPassthroughCopy("site/mind-maps");
   eleventyConfig.addPassthroughCopy({"resources/static/keybase.txt": "keybase.txt"});
-
+  eleventyConfig.addPassthroughCopy({"resources/garden/": "garden/"});
   eleventyConfig.addPassthroughCopy({"resources/data/": "data/"});
   eleventyConfig.addPassthroughCopy({".tmp/talks": "talks"});
 
