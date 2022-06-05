@@ -11,6 +11,8 @@ const markdownIt = require('markdown-it');
 const mdIterator = require('markdown-it-for-inline')
 const markdownItAnchor = require('markdown-it-anchor')
 const cooklang = require('cooklang');
+const { html5Media } = require('markdown-it-html5-media');
+
 Array.prototype.insert = function (index, item) {
   this.splice(index, 0, item);
 };
@@ -29,6 +31,7 @@ module.exports = eleventyConfig => {
     permalink: anchor.permalink.headerLink()
 })
   .use(require('markdown-it-attrs'))
+  .use(html5Media)
   .use(require('markdown-it-textual-uml'))
   .use(function(md) {
       // Recognize Mediawiki links ([[text]])
@@ -68,7 +71,7 @@ module.exports = eleventyConfig => {
     swDest: "./dist/service-worker.js",
     globDirectory: "./dist",
     maximumFileSizeToCacheInBytes: 10000000, 
-    globIgnores: ["**/*.jpg","**/*.png","**/*.gif"]
+    globIgnores: ["**/*.jpg","**/*.png","**/*.gif, **/*.mp4"]
   });
 
   eleventyConfig.addPlugin(pluginRss);
@@ -128,6 +131,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPassthroughCopy("robots.txt");
   eleventyConfig.addPassthroughCopy({".tmp/javascript": "javascript"});
   eleventyConfig.addPassthroughCopy({".tmp/images": "images"});
+  eleventyConfig.addPassthroughCopy({"videos": "videos"});
   eleventyConfig.addPassthroughCopy("site/mind-maps");
   eleventyConfig.addPassthroughCopy({"resources/static/keybase.txt": "keybase.txt"});
   eleventyConfig.addPassthroughCopy({"resources/garden/": "garden/"});
