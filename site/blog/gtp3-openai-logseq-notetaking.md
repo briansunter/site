@@ -42,7 +42,7 @@ Even if you aren't interested in all the features of Logseq, it is an excellent 
 
 ## Text Summarization
 
-The original motivation for the project was text summarization. After reading an article, I wanted to turn the paper into a summary to look back on for my notes. GPT-3 does an incredible job of turning long text into a few-sentence summary. Keeping these short summaries in my notes helps me remember what I read. GPT-3 often does a better job summarizing text than I could do by hand.
+The original motivation for the project was text summarization. After reading an article, I wanted to turn the page into a summary to look back on for my notes. GPT-3 does an incredible job of turning long text into a few-sentence summary. Keeping these short summaries in my notes helps me remember what I read. GPT-3 often does a better job summarizing text than I could do by hand.
 
 ![Summarize Jupiter](/images/blog/openai/tldr.gif)
 
