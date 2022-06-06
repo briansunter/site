@@ -44,13 +44,13 @@ Even if you aren't interested in all the features of Logseq, it is an excellent 
 
 The original motivation for the project was text summarization. After reading an article, I wanted to turn the paper into a summary to look back on for my notes. GPT-3 does an incredible job of turning long text into a few-sentence summary. Keeping these short summaries in my notes helps me remember what I read. GPT-3 often does a better job summarizing text than I could do by hand.
 
-![Summarize Jupiter](/videos/blog/tldr.gif)
+![Summarize Jupiter](/images/blog/openai/tldr.gif)
 
 ## Text Generation
 
 The most impressive feature of GPT-3 is the text generation. You can ask it to write many different kinds of things, and sometimes its answers are a bit off or unpredictable, but it's usually a good starting point for you to edit down yourself. It generates a surprisingly good workout routine.
 
-![GPT-3 Workout routine](/videos/blog/workout.gif)
+![GPT-3 Workout routine](/images/blog/openai/workout.gif)
 
 ## Code Explanation
 
@@ -68,13 +68,13 @@ GPT-3 can do a decent job of explaining code in human-readable English. It's a h
 
 You can ask it to create tables of data from scratch. If you want to watch the top-rated IMDb movies of all time, you can request the AI to make you a table with the movie title, rating, and IMDb link.
 
-![table explanation](/videos/blog/table.gif)
+![table explanation](/images/blog/openai/table.gif)
 
 ## Create Study Plan
 
 If you want to learn a new topic, the AI can create a study plan for you to get an overview of the field.
 
-![study plan](/videos/blog/study.gif)
+![study plan](/images/blog/openai/study.gif)
 
 ## Conclusion
 
