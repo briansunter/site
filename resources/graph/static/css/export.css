@@ -83,3 +83,39 @@ a.delete {
 .block-content.inline {
   white-space: revert;
 }
+/* sign up form */
+
+/* Style the form element with a border around it */
+.revue-form-field {
+  border: 2px solid #141313;
+  width: 100%;
+  height: 3em;
+  padding: 5px;
+}
+
+/* Add some padding and a grey background color to containers */
+#revue-embed {
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+/* Style the input elements and the submit button */
+input[type="text"],
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid rgb(0, 0, 0);
+  box-sizing: border-box;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.8;
+}
